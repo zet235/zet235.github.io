@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "一些環境"
+categories:
+tags: [env]
+---
+紀錄一下環境的東西，有什麼沒記錄到的之後再更新
+
+- 字體
+
+等寬字體 
+
+- monaco
+- sourcecode pro
+- Bitstream Vera Sans Mono
+- ubuntu mono
+
+### 硬體方面
+
+架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能
+
+```diff
+mb:asus N3150M-E
+ram:8G
+storage:120G SSD + 1T
+```
+
+### 鍵盤
+
+ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了
+
+### 軟體方面
+
+- f.lux - 飽護眼睛
+
+    飽護眼睛的，可以讓白色變得比較黃一點，看久了眼睛不會那麼吃力，字體當然是要調大一點更好
+
+- Karabiner - 鍵盤映射
+
+    <https://pqrs.org/osx/karabiner/>
+
+    可以調整osx 的映射鍵把F1-F12 換成，歌曲切換聲音調整之類的，另外我也用內建的工具把`Caps lock`換成 `ctrl`，這樣 tmux 比較好用 `Caps` + `a` 就行
+
+- parallels desktop - 虛擬機
+
+    融合模式超猛，偶爾開 IDA Pro 或是些win 的軟體
+    
+- VANILLA
+
+    <http://matthewpalmer.net/vanilla/>
+
+### server架了一些服務
+
+```diff
+docker - nginx - php - ubuntu for pwnable
+avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
+time-machine (硬碟格式需要注意一下，我是用ext4)
+samba
+```
+
+在iterm下新增多個profile，搭配command `ssh user@192.168.xx.xx` ，使用ssh-key `cmd` + `o` ，開啟視窗直接選擇要登入的主機爽度大增
+
+### pwnable
+用docker跑起來的，寫了shell script跟一般的dotfile 分離，有興趣可以看一下
+<https://github.com/zet235/ctf-tools>
+
+
+### reference:
+<https://samuelhewitt.com/blog/2015-09-12-debian-linux-server-mac-os-time-machine-backups-how-to>
