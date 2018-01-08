@@ -33,7 +33,7 @@ yandex_metrica:
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
 disqus: zet-blog
-comments: true
+comments: True
 
 permalink: /:year/:month/:title
 
