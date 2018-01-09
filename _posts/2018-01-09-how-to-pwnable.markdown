@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "How to pwnalbe"
+categories:
+tags: [pwn]
+---
+
 陸續更新～
 
 ## website, doc and video
