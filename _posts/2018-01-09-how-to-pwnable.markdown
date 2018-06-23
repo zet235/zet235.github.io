@@ -38,6 +38,11 @@ http://inaz2.hatenablog.com/archive/category/Exploit?page=2
 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
 
 https://github.com/str4tan/pwning
+
+Heap:
+https://github.com/DhavalKapil/libdheap
+https://github.com/degrigis/Heapy
+https://github.com/shellphish/how2heap
 ```
 
 
