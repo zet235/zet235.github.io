@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Use TTL to unbrick router"
-categories:
 tags: [router]
 ---
 
