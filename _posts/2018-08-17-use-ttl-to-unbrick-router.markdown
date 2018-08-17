@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Use TTL to unbrick router"
-tags: [router]
+tags: [router]
 ---
 
 之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。
