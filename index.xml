@@ -9,7 +9,19 @@
       <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 14:44:20 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>scoop install list</title>
+      <link>https://blog.zet.tw/posts/2022-01-12-scoop-install-list/</link>
+      <pubDate>Wed, 12 Jan 2022 14:44:20 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2022-01-12-scoop-install-list/</guid>
+      <description>紀錄一下安裝清單
+scoop 是一套 windows 下的 installer，有點像是 MacOS 下的 brew 以 powershell 當做後端
+也有許多 buckets 可以加入
+scoop bucket add nerd-fonts scoop bucket add extras 7zip 21.07 [main] ag 2.2.5 [main] anydesk 7.0.4 [extras] aria2 1.36.0-1 [main] bat 0.19.0 [main] cacert 2021-10-26 [main] cmake 3.22.1 [main] croc 9.5.0 [main] curl 7.81.0 [main] dark 3.11.2 [main] draw.io 16.0.0 [extras] DroidSansMono-NF 2.1.0 [nerd-fonts] file 5.38 [main] FiraCode 6.2 [nerd-fonts] firefox 95.0.2 [extras] git 2.34.1.windows.1 [main] hashcheck 2.</description>
+    </item>
+    
     <item>
       <title>ASRock IPMI reset</title>
       <link>https://blog.zet.tw/posts/2020-09-05-asrock-ipmi-reset/</link>

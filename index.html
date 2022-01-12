@@ -86,6 +86,20 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>scoop install list
+</h2>
+</header>
+<section class=entry-content>
+<p>紀錄一下安裝清單
+scoop 是一套 windows 下的 installer，有點像是 MacOS 下的 brew 以 powershell 當做後端
+也有許多 buckets 可以加入
+scoop bucket add nerd-fonts scoop bucket add extras 7zip 21.07 [main] ag 2.2.5 [main] anydesk 7.0.4 [extras] aria2 1.36.0-1 [main] bat 0.19.0 [main] cacert 2021-10-26 [main] cmake 3.22.1 [main] croc 9.5.0 [main] curl 7.81.0 [main] dark 3.11.2 [main] draw.io 16.0.0 [extras] DroidSansMono-NF 2.1.0 [nerd-fonts] file 5.38 [main] FiraCode 6.2 [nerd-fonts] firefox 95.0.2 [extras] git 2.34.1.windows.1 [main] hashcheck 2....</p>
+</section>
+<footer class=entry-footer><span title="2022-01-12 14:44:20 +0800 CST">January 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to scoop install list" href=https://blog.zet.tw/posts/2022-01-12-scoop-install-list/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>ASRock IPMI reset
 </h2>
 </header>
@@ -147,25 +161,6 @@ services docker - nginx - php - ubuntu for pwnable avahi-daemon (在區網中可
 </section>
 <footer class=entry-footer><span title="2016-08-05 00:00:00 +0800 CST">August 5, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
 <a class=entry-link aria-label="post link to 一些環境" href=https://blog.zet.tw/posts/2016-08-05-evn/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>Return Oriented Programming
-</h2>
-</header>
-<section class=entry-content>
-<p>整理一下
-找 getgads 工具 rp++ ROPgadget Ret2libc 當程式有打開NX的時候造成 stack 上的 shellcode 無法執行，可以利用ret2libc或是利用ROP做mprotect開一個rwx的段，
-參數傳遞 x86 利用stack x86_64 利用reg Ret2libc 疊法 可以盡可能的把參數疊完整，比較不會發生一些鳥問題
-一般x86的疊法是：
-padding + function + ret address + argv1 + argv2 + argv3 .... 一般 function 可以直接跳 .plt ， ret address 是執行完以後我要去的地方，假如一般疊出 system("/bin/sh")，ret address 可以直接填空沒關係
-例如 :
-'A'*100 + p32(system_addr) + p32(0) + p32(binsh_addr) x64: 利用一些 pop reg 的getgads把reg設定好
-x32 參數直接疊在stack上，用 pop_ret 清掉用過的參數
-read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64 最大地址 0x00007fffffffffff DynELF 假如在不知道對方libc 的情況下可以使用pwntools中的一個工具DynELF，給他一個leak的點，可以幫你找出function的位置...</p>
-</section>
-<footer class=entry-footer><span title="2016-05-31 00:00:00 +0800 CST">May 31, 2016</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Zet</footer>
-<a class=entry-link aria-label="post link to Return Oriented Programming" href=https://blog.zet.tw/posts/2016-05-31-rop/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>
