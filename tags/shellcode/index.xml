@@ -22,6 +22,19 @@
 可以參考下方的參考資料
 References
  http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </description>
+      <content:encoded><![CDATA[<p>可以使用<code>alpha3</code>這套工具，他會產生出具有encoder的ascii shellcode ， 利用本身的encoder去解碼，產生出來的shellcode很短，不過這類的shellcode需要一個<code>reg</code>去指向shellcode的起頭</p>
+<p>其他別種的有些是利用偏移去xor，最後<code>jmp esp</code>去執行</p>
+<p>紀錄一下一題題目的解法：
+利用stack上的位置跟<code>ROP</code>的<code>ret</code>跳到那個位置上，再利用stack上的值去跟eax去做xor，利用的是像<code>xor al,[esp+0x34]</code>這類的op code，偏移的部分利用<code>push eax</code> 來填充，最後剛好使eax 指向我們shellcode的位置</p>
+<p>可以參考下方的參考資料</p>
+<p>References</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://inaz2.hatenablog.com/entry/2014/07/11/004655
+http://inaz2.hatenablog.com/entry/2014/07/12/000007
+http://inaz2.hatenablog.com/entry/2014/07/13/025626
+https://code.google.com/archive/p/alpha3/
+https://nets.ec/Ascii_shellcode
+</code></pre></div>]]></content:encoded>
     </item>
     
   </channel>

