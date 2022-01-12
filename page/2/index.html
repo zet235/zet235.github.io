@@ -1,0 +1,163 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Zet’s playground</title>
+<meta name=keywords content="Blog,zet235,zet">
+<meta name=description content="廢物筆記">
+<meta name=author content="Zet">
+<link rel=canonical href=https://blog.zet.tw/>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://blog.zet.tw/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://blog.zet.tw/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://blog.zet.tw/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://blog.zet.tw/apple-touch-icon.png>
+<link rel=mask-icon href=https://blog.zet.tw/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.91.2">
+<link rel=alternate type=application/rss+xml href=https://blog.zet.tw/index.xml>
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+</noscript>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Zet’s playground">
+<meta property="og:description" content="廢物筆記">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.zet.tw/"><meta property="og:image" content="https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Zet's playground">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="Zet’s playground">
+<meta name=twitter:description content="廢物筆記">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Organization","name":"Zet’s playground","url":"https://blog.zet.tw","description":"廢物筆記","thumbnailUrl":"https://blog.zet.tw/favicon.ico","sameAs":["https://twitter.com/zet_235","https://github.com/zet235"]}</script>
+</head>
+<body class="list dark" id=top>
+<script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://blog.zet.tw accesskey=h title="Home (Alt + H)">Home</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://blog.zet.tw/archives title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://blog.zet.tw/categories/ title=categories>
+<span>categories</span>
+</a>
+</li>
+<li>
+<a href=https://blog.zet.tw/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+<li>
+<a href=https://blog.zet.tw/tags/ title=tags>
+<span>tags</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-entry>
+<header class=entry-header>
+<h2>TU CTF - Where Heretics Suffer
+</h2>
+</header>
+<section class=entry-content>
+<p>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
+80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉...</p>
+</section>
+<footer class=entry-footer><span title="2016-05-21 00:00:00 +0800 CST">May 21, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to TU CTF - Where Heretics Suffer" href=https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>install qira on rpi
+</h2>
+</header>
+<section class=entry-content>
+<p>把install.sh裡面capstone的地方註解掉後執行
+下載capstone
+git clone https://github.com/aquynh/capstone.git $ ./make.sh $ sudo ./make.sh install </p>
+</section>
+<footer class=entry-footer><span title="2016-03-16 00:00:00 +0800 CST">March 16, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to install qira on rpi" href=https://blog.zet.tw/posts/2016-03-16-install-qira-on-rpi/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>ascii shellcode
+</h2>
+</header>
+<section class=entry-content>
+<p>可以使用alpha3這套工具，他會產生出具有encoder的ascii shellcode ， 利用本身的encoder去解碼，產生出來的shellcode很短，不過這類的shellcode需要一個reg去指向shellcode的起頭
+其他別種的有些是利用偏移去xor，最後jmp esp去執行
+紀錄一下一題題目的解法： 利用stack上的位置跟ROP的ret跳到那個位置上，再利用stack上的值去跟eax去做xor，利用的是像xor al,[esp+0x34]這類的op code，偏移的部分利用push eax 來填充，最後剛好使eax 指向我們shellcode的位置
+可以參考下方的參考資料
+References
+http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </p>
+</section>
+<footer class=entry-footer><span title="2016-02-09 00:00:00 +0800 CST">February 9, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to ascii shellcode" href=https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>zshrc
+</h2>
+</header>
+<section class=entry-content>
+<p>用過prezto與oh-my-zsh的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以
+嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在Prompt的git訊息輸出到tmp裡面，等跑完以後在資料撈回Prompt
+大約如下：
+setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info zstyle ':vcs_info:*' enable bzr git hg svn zstyle ':vcs_info:*' check-for-changes true zstyle ':vcs_info:*' stagedstr '%F{green}●%f' zstyle ':vcs_info:*' unstagedstr '%F{yellow}●%f' zstyle ':vcs_info:*' formats ' %b%c%u' zstyle ':vcs_info:*' actionformats " - [%b%c%u|%F{cyan}%a%f]" zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b|%F{cyan}%r%f' zstyle ':vcs_info:git*+set-message:*' hooks git_status ASYNC_PROC=0 ASYNC_DATA="${TMPPREFIX}-prompt_sorin_data" function precmd() { function async() { vcs_info # save to temp file printf "%s" "${vcs_info_msg_0_}" > $ASYNC_DATA # signal parent kill -s USR1 $$ } # do not clear RPROMPT, let it persist # kill child if necessary if [[ "${ASYNC_PROC}" !...</p>
+</section>
+<footer class=entry-footer><span title="2016-02-07 00:00:00 +0800 CST">February 7, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to zshrc" href=https://blog.zet.tw/posts/2016-02-07-zshrc/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>linux kernel exploits tested
+</h2>
+</header>
+<section class=entry-content>
+<p>搜尋
+aptitude search linux-image- 安裝
+aptitude install linux-image-xxxx 或是上網找尋deb檔下載安裝
+wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-image-3.16.0-30-generic_3.16.0-30.40~14.04.1_amd64.deb sudo dpkg -i *.deb 查看kernel安裝紀錄
+dpkg --get-selections | grep linux-image 移除舊kernel
+aptitude remove linux-image-3.19.0-18-generic linux kernel exploits db
+https://www.kernel-exploits.com/</p>
+</section>
+<footer class=entry-footer><span title="2016-01-05 00:00:00 +0800 CST">January 5, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to linux kernel exploits tested" href=https://blog.zet.tw/posts/2016-01-05-linux-kernel-exploits-tested/></a>
+</article>
+<footer class=page-footer>
+<nav class=pagination>
+<a class=prev href=https://blog.zet.tw/>« Prev Page</a>
+<a class=next href=https://blog.zet.tw/page/3/>Next Page »</a>
+</nav>
+</footer>
+</main>
+<footer class=footer>
+<span>&copy; 2022 <a href=https://blog.zet.tw>Zet’s playground</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>

