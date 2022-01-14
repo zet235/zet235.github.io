@@ -103,7 +103,7 @@ read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64 最大地址 0x0000
 </article>
 <article class="post-entry tag-entry">
 <header class=entry-header>
-<h2>AIS3 pwn
+<h2>AIS3 PWN
 </h2>
 </header>
 <section class=entry-content>
@@ -116,7 +116,7 @@ call ret argv1 ￼argv2 argv3 可以控制read的返回地址跟參數,所以可
 from pwn import * import time r = remote('127.0.0.1', 4000) read_adr = "\xa0\x83\x04\x08" read = "\x00\x00\x00\x00" + "\x00\xa1\x04\x08" + "\x00\x01\x00\x00" p = "a"*20 + read_adr + "\x00\xa1\x04\x08" + read r....</p>
 </section>
 <footer class=entry-footer><span title="2015-11-24 00:00:00 +0800 CST">November 24, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
-<a class=entry-link aria-label="post link to AIS3 pwn" href=https://blog.zet.tw/posts/2015-11-24-ais3-pwn/></a>
+<a class=entry-link aria-label="post link to AIS3 PWN" href=https://blog.zet.tw/posts/2015-11-24-ais3-pwn/></a>
 </article>
 </main>
 <footer class=footer>

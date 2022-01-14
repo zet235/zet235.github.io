@@ -34,7 +34,7 @@ WF-1000XM4 帶起來滿吃耳朵輪廓的，就我而言 Airpods Pro 比較舒�
     </item>
     
     <item>
-      <title>scoop install list</title>
+      <title>Scoop install list</title>
       <link>https://blog.zet.tw/posts/2022-01-12-scoop-install-list/</link>
       <pubDate>Wed, 12 Jan 2022 14:44:20 +0800</pubDate>
       
@@ -469,7 +469,7 @@ r<span style="color:#f92672">.</span>interactive()
     </item>
     
     <item>
-      <title>install qira on rpi</title>
+      <title>Install qira on rpi</title>
       <link>https://blog.zet.tw/posts/2016-03-16-install-qira-on-rpi/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0800</pubDate>
       
@@ -486,7 +486,7 @@ $ sudo ./make.sh install
     </item>
     
     <item>
-      <title>ascii shellcode</title>
+      <title>Ascii shellcode</title>
       <link>https://blog.zet.tw/posts/2016-02-09-ascii-shellcode/</link>
       <pubDate>Tue, 09 Feb 2016 00:00:00 +0800</pubDate>
       
@@ -577,7 +577,7 @@ http://www.cnblogs.com/ma6174/archive/2012/05/08/2490921.html
     </item>
     
     <item>
-      <title>linux kernel exploits tested</title>
+      <title>Linux kernel exploits tested</title>
       <link>https://blog.zet.tw/posts/2016-01-05-linux-kernel-exploits-tested/</link>
       <pubDate>Tue, 05 Jan 2016 00:00:00 +0800</pubDate>
       
@@ -606,7 +606,7 @@ sudo dpkg -i *.deb
     </item>
     
     <item>
-      <title>pwn tool list</title>
+      <title>PWN tool list</title>
       <link>https://blog.zet.tw/posts/2015-11-25-pwn-tool-list/</link>
       <pubDate>Wed, 25 Nov 2015 00:00:00 +0800</pubDate>
       
@@ -646,7 +646,7 @@ https://github.com/longld/peda
     </item>
     
     <item>
-      <title>AIS3 pwn</title>
+      <title>AIS3 PWN</title>
       <link>https://blog.zet.tw/posts/2015-11-24-ais3-pwn/</link>
       <pubDate>Tue, 24 Nov 2015 00:00:00 +0800</pubDate>
       
@@ -735,7 +735,7 @@ r<span style="color:#f92672">.</span>interactive()
     </item>
     
     <item>
-      <title>badusb</title>
+      <title>Badusb</title>
       <link>https://blog.zet.tw/posts/2015-04-12-badusb/</link>
       <pubDate>Sun, 12 Apr 2015 00:00:00 +0800</pubDate>
       
@@ -859,7 +859,7 @@ Hint:OD窗口插件</p>
     </item>
     
     <item>
-      <title>use powershell lunch shellcode</title>
+      <title>Use powershell lunch shellcode</title>
       <link>https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/</link>
       <pubDate>Mon, 18 Mar 2013 00:00:00 +0800</pubDate>
       
