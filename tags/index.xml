@@ -60,5 +60,15 @@
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
+    <item>
+      <title>powershell</title>
+      <link>https://blog.zet.tw/tags/powershell/</link>
+      <pubDate>Mon, 18 Mar 2013 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/tags/powershell/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
   </channel>
 </rss>

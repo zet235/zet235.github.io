@@ -72,6 +72,20 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>zshrc
+</h2>
+</header>
+<section class=entry-content>
+<p>用過prezto與oh-my-zsh的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以
+嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在Prompt的git訊息輸出到tmp裡面，等跑完以後在資料撈回Prompt
+大約如下：
+setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info zstyle ':vcs_info:*' enable bzr git hg svn zstyle ':vcs_info:*' check-for-changes true zstyle ':vcs_info:*' stagedstr '%F{green}●%f' zstyle ':vcs_info:*' unstagedstr '%F{yellow}●%f' zstyle ':vcs_info:*' formats ' %b%c%u' zstyle ':vcs_info:*' actionformats " - [%b%c%u|%F{cyan}%a%f]" zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b|%F{cyan}%r%f' zstyle ':vcs_info:git*+set-message:*' hooks git_status ASYNC_PROC=0 ASYNC_DATA="${TMPPREFIX}-prompt_sorin_data" function precmd() { function async() { vcs_info # save to temp file printf "%s" "${vcs_info_msg_0_}" > $ASYNC_DATA # signal parent kill -s USR1 $$ } # do not clear RPROMPT, let it persist # kill child if necessary if [[ "${ASYNC_PROC}" !...</p>
+</section>
+<footer class=entry-footer><span title="2016-02-07 00:00:00 +0800 CST">February 7, 2016</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to zshrc" href=https://blog.zet.tw/posts/2016-02-07-zshrc/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>linux kernel exploits tested
 </h2>
 </header>
@@ -120,9 +134,26 @@ from pwn import * import time r = remote('127.0.0.1', 4000) read_adr = "\xa0\x83
 <footer class=entry-footer><span title="2015-11-24 00:00:00 +0800 CST">November 24, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
 <a class=entry-link aria-label="post link to AIS3 pwn" href=https://blog.zet.tw/posts/2015-11-24-ais3-pwn/></a>
 </article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>badusb
+</h2>
+</header>
+<section class=entry-content>
+<p>https://slides.com/zettain/bad-usb
+https://github.com/adamcaudill/Psychson
+支援設備 Patriot 8GB Supersonic Xpress* Kingston DataTraveler 3.0 T111 8GB Silicon power marvel M60 64GB Patriot Stellar 64 Gb Phison Toshiba TransMemory-MX USB 3.0 16GB Toshiba TransMemory-MX USB 3.0 8GB Kingston DataTraveler G4 64 GB Patriot PSF16GXPUSB Supersonic Xpress 16GB Silicon Power 32GB Blaze B30 (SP032GBUF3B30V1K) Kingston Digital 8GB USB 3.0 DataTraveler 取得晶片 型號 下載 Firmware 與 燒錄檔案
+Firmware PS2251-03 flash chip
+http://www.usbdev.ru/?wpfb_dl=777
+編譯環境 Visual Studio 2012...</p>
+</section>
+<footer class=entry-footer><span title="2015-04-12 00:00:00 +0800 CST">April 12, 2015</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Zet</footer>
+<a class=entry-link aria-label="post link to badusb" href=https://blog.zet.tw/posts/2015-04-12-badusb/></a>
+</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://blog.zet.tw/posts/page/2/>« Prev Page</a>
+<a class=next href=https://blog.zet.tw/posts/page/4/>Next Page »</a>
 </nav>
 </footer>
 </main>

