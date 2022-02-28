@@ -19,24 +19,24 @@
       <description>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法
 首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG
 https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI
-ipmicfg -user list Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes ipmicfg -user setpwd 2 admin 或是回到原廠設定
+ipmicfg -user list  Maximum number of Users : 10 Count of currently enabled Users : 1 User ID | User Name | Privilege Level | Enable --------|-----------|-----------------|------- 2 | admin | Administrator | Yes  ipmicfg -user setpwd 2 admin 或是回到原廠設定
 ipmicfg -fd ref
  https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/ https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</description>
       <content:encoded><![CDATA[<p>因為在網路上買了一片 ASRock 的二手 server 主機板，想用 IPMI 的功能，不過密碼已經被改過了，所以上網找一下有沒有可以 reset 的方法</p>
 <p>首先可以用個隨便 windows 開機，下載 supermicro 的工具 IPMICFG</p>
 <p><a href="https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI">https://www.supermicro.com/SwDownload/SwSelect_Free.aspx?cat=IPMI</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -user list
-
-Maximum number of Users          : 10
-Count of currently enabled Users : 1
-User ID | User Name | Privilege Level | Enable
---------|-----------|-----------------|-------
-2       | admin     | Administrator   | Yes
-
-ipmicfg -user setpwd 2 admin
-</code></pre></div><p>或是回到原廠設定</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ipmicfg -fd
-</code></pre></div><p>ref</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ipmicfg -user list
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Maximum number of Users          : 10
+</span></span><span style="display:flex;"><span>Count of currently enabled Users : 1
+</span></span><span style="display:flex;"><span>User ID | User Name | Privilege Level | Enable
+</span></span><span style="display:flex;"><span>--------|-----------|-----------------|-------
+</span></span><span style="display:flex;"><span>2       | admin     | Administrator   | Yes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ipmicfg -user setpwd 2 admin
+</span></span></code></pre></div><p>或是回到原廠設定</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ipmicfg -fd
+</span></span></code></pre></div><p>ref</p>
 <hr>
 <p><a href="https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/">https://blog.kingj.net/2014/03/15/how-to/resetting-the-ipmi-password-on-the-e3c224d2i/</a>
 <a href="https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc">https://support.siliconmechanics.com/portal/en/kb/articles/resetting-the-bmc</a></p>
@@ -65,10 +65,10 @@ mb:asus N3150M-E ram:8G storage:120G SSD + 1T 鍵盤 ducky one 80% 茶軸，自�
 </ul>
 <h1 id="硬體">硬體</h1>
 <p>架了一台家裡的server，跑debian，總耗電瓦數不超過30瓦，非常省電CP值超高!!!，唯一覺得可惜的是，SATA接頭只有2個而且主機板沒有支援RAID的功能</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mb:asus N3150M-E
-ram:8G
-storage:120G SSD + 1T
-</code></pre></div><h2 id="鍵盤">鍵盤</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>mb:asus N3150M-E
+</span></span><span style="display:flex;"><span>ram:8G
+</span></span><span style="display:flex;"><span>storage:120G SSD + 1T
+</span></span></code></pre></div><h2 id="鍵盤">鍵盤</h2>
 <p>ducky one 80% 茶軸，自己換了PBT鍵帽，PBT摸起來感覺有種粉粉的感覺，也買好清理的，高度Cherry原廠鍵帽的高度，剛開始是OEM不過用個幾天就習慣了</p>
 <h1 id="軟體">軟體</h1>
 <h2 id="flux---飽護眼睛">f.lux - 飽護眼睛</h2>
@@ -86,11 +86,11 @@ storage:120G SSD + 1T
 <pre><code>&lt;http://matthewpalmer.net/vanilla/&gt;
 </code></pre>
 <h1 id="services">services</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">docker - nginx - php - ubuntu for pwnable
-avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
-time-machine (硬碟格式需要注意一下，我是用ext4)
-samba
-</code></pre></div><p>在iterm下新增多個profile，搭配command <code>ssh user@192.168.xx.xx</code> ，使用ssh-key <code>cmd</code> + <code>o</code> ，開啟視窗直接選擇要登入的主機爽度大增</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>docker - nginx - php - ubuntu for pwnable
+</span></span><span style="display:flex;"><span>avahi-daemon  (在區網中可以直接使用 hostname.local 登入)
+</span></span><span style="display:flex;"><span>time-machine (硬碟格式需要注意一下，我是用ext4)
+</span></span><span style="display:flex;"><span>samba
+</span></span></code></pre></div><p>在iterm下新增多個profile，搭配command <code>ssh user@192.168.xx.xx</code> ，使用ssh-key <code>cmd</code> + <code>o</code> ，開啟視窗直接選擇要登入的主機爽度大增</p>
 <h2 id="pwnable">pwnable</h2>
 <p>用docker跑起來的，寫了shell script跟一般的dotfile 分離，有興趣可以看一下
 <a href="https://github.com/zet235/ctf-tools">https://github.com/zet235/ctf-tools</a></p>

